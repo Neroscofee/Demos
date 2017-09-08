@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>豌豆凉粉</string>
+		<key>detail</key>
+		<string>豌豆,香椿,辣椒油</string>
+		<key>price</key>
+		<string>5</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>油炸排骨</string>
+		<key>detail</key>
+		<string>排骨,薄荷,小粉</string>
+		<key>price</key>
+		<string>18</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>酸菜鱼</string>
+		<key>detail</key>
+		<string>上好酸菜,草鱼一条</string>
+		<key>price</key>
+		<string>15</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>香辣肉片</string>
+		<key>detail</key>
+		<string>青椒,土豆片,五花肉</string>
+		<key>price</key>
+		<string>12元</string>
+	</dict>
+</array>
+</plist>
