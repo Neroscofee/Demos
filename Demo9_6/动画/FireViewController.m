@@ -33,37 +33,19 @@ static NSInteger count = 100;
     button.center = CGPointMake(SCREEN_WIDTH/2, 100);
     [button setTitle:@"Start" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(Start:) forControlEvents:UIControlEventTouchUpInside];
-    
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.tag = 12000;
-    btn.layer.cornerRadius = 5;
-    btn.backgroundColor = [UIColor whiteColor];
-    btn.frame = CGRectMake(SCREEN_WIDTH/2 + 60, 100, 40, 40);
-    [btn setTitle:@"Stop" forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(Stop:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
-    [self.view addSubview:btn];
-    // Do any additional setup after loading the view.
-}
 
-- (void)Stop:(id)sender {
-    NSLog(@"结束");
-    count = 200;
-    //[self.timer invalidate];
-    //self.timer = nil;
-    [self firework:nil];
+    [self.view addSubview:button];
+
 }
 
 - (void)Start:(UIButton *)button {
-    count = 100;
     if (button.tag%2 == 0) {
         [button setTitle:@"Stop" forState:UIControlStateNormal];
         button.tag--;
         if (!self.timer) {
-            NSLog(@"开始");
+            [self firework:nil];
             self.timer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(firework:) userInfo:nil repeats:YES];
         }
-        NSLog(@"开始");
         [self fire:nil];
     } else {
         [button setTitle:@"Start" forState:UIControlStateNormal];
@@ -72,21 +54,27 @@ static NSInteger count = 100;
         if (self.timer.isValid) {
             [self.timer invalidate];
             self.timer = nil;
-            NSLog(@"结束");
         }
     }
-
-
-    
 }
 
 - (void)firework:(NSTimer *)timer {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"firework" ofType:@"wav"];
-    NSURL *url = [NSURL URLWithString:path];
-    SystemSoundID soundID = 777;
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef _Nonnull)(url), &soundID);
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"firework" ofType:@"wav"];
+//    NSURL *url = [NSURL URLWithString:path];
+//    SystemSoundID soundID = 777;
+//    AudioServicesCreateSystemSoundID((__bridge CFURLRef _Nonnull)(url), &soundID);
 //    AudioServicesPlayAlertSound(soundID);
-    AudioServicesPlaySystemSound(soundID);
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"firework" ofType:@"wav"];
+        NSURL *url = [NSURL URLWithString:path];
+        SystemSoundID soundID = 777;
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef _Nonnull)(url), &soundID);
+        AudioServicesPlayAlertSound(soundID);
+    });
+    
+//    AudioServicesPlaySystemSound(soundID);
 }
 
 - (void)ice:(NSTimer *)timer {

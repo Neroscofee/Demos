@@ -70,8 +70,8 @@
 //    AnimationTimer *vc = [[AnimationTimer alloc] init];//用timer生成动画
 //    StackTestViewController *vc = [[StackTestViewController alloc] init];//用OC实现栈
 //        SnowViewController *vc = [[SnowViewController alloc] init];//下雪动画
-    RecipeController *vc = [[RecipeController alloc] init];//用plist当Model源
-//    FireViewController *vc = [[FireViewController alloc] init];//烟花
+//    RecipeController *vc = [[RecipeController alloc] init];//用plist当Model源
+    FireViewController *vc = [[FireViewController alloc] init];//烟花
     
     
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
