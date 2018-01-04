@@ -38,6 +38,8 @@
 #import "RecipeController.h"
 //9.5
 #import "FireViewController.h"
+//11.21
+#import "DynamicMenuViewController.h"
 
 @interface AppDelegate ()
 
@@ -71,7 +73,8 @@
 //    StackTestViewController *vc = [[StackTestViewController alloc] init];//用OC实现栈
 //        SnowViewController *vc = [[SnowViewController alloc] init];//下雪动画
 //    RecipeController *vc = [[RecipeController alloc] init];//用plist当Model源
-    FireViewController *vc = [[FireViewController alloc] init];//烟花
+//    FireViewController *vc = [[FireViewController alloc] init];//烟花
+    DynamicMenuViewController *vc = [[DynamicMenuViewController alloc] init];
     
     
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];

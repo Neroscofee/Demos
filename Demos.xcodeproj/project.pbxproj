@@ -95,6 +95,9 @@
 		7FCB26CB1D7EA31600DA95AE /* DemosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB26CA1D7EA31600DA95AE /* DemosTests.m */; };
 		7FCB26D61D7EA31600DA95AE /* DemosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB26D51D7EA31600DA95AE /* DemosUITests.m */; };
 		7FCB6C7A1F6283E700DB8922 /* firework.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7FCB6C6E1F6273BD00DB8922 /* firework.wav */; };
+		C41B854F1FC30E8A002445A8 /* ShowDynamicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B854E1FC30E8A002445A8 /* ShowDynamicVC.m */; };
+		C41B85521FC45765002445A8 /* DynamicMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B85511FC45765002445A8 /* DynamicMenuViewController.m */; };
+		C41B85551FC5A878002445A8 /* SnapView.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B85541FC5A878002445A8 /* SnapView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -254,7 +257,7 @@
 		7FAF27C11F5FB301006C30DD /* wei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wei.png; sourceTree = "<group>"; };
 		7FAF27C21F5FB301006C30DD /* jia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jia.png; sourceTree = "<group>"; };
 		7FAF27C31F5FB301006C30DD /* zhao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zhao.png; sourceTree = "<group>"; };
-		7FCB26AD1D7EA31500DA95AE /* Demo9_6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo9_6.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FCB26AD1D7EA31500DA95AE /* Demo9_6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Demo9_6.app; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCB26B11D7EA31500DA95AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7FCB26B31D7EA31500DA95AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7FCB26B41D7EA31500DA95AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -269,6 +272,12 @@
 		7FCB26D51D7EA31600DA95AE /* DemosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemosUITests.m; sourceTree = "<group>"; };
 		7FCB26D71D7EA31600DA95AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FCB6C6E1F6273BD00DB8922 /* firework.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = firework.wav; sourceTree = "<group>"; };
+		C41B854D1FC30E8A002445A8 /* ShowDynamicVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowDynamicVC.h; sourceTree = "<group>"; };
+		C41B854E1FC30E8A002445A8 /* ShowDynamicVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowDynamicVC.m; sourceTree = "<group>"; };
+		C41B85501FC45765002445A8 /* DynamicMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicMenuViewController.h; sourceTree = "<group>"; };
+		C41B85511FC45765002445A8 /* DynamicMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicMenuViewController.m; sourceTree = "<group>"; };
+		C41B85531FC5A878002445A8 /* SnapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnapView.h; sourceTree = "<group>"; };
+		C41B85541FC5A878002445A8 /* SnapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnapView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -531,10 +540,16 @@
 		7FA9CA3D1FA09C4700BA4A48 /* 物理特效 */ = {
 			isa = PBXGroup;
 			children = (
+				C41B85501FC45765002445A8 /* DynamicMenuViewController.h */,
+				C41B85511FC45765002445A8 /* DynamicMenuViewController.m */,
+				C41B854D1FC30E8A002445A8 /* ShowDynamicVC.h */,
+				C41B854E1FC30E8A002445A8 /* ShowDynamicVC.m */,
 				7FA9CA3E1FA09DE600BA4A48 /* DynamicBaseView.h */,
 				7FA9CA3F1FA09DE600BA4A48 /* DynamicBaseView.m */,
 				7FA9CA471FA0A08400BA4A48 /* PushView.h */,
 				7FA9CA481FA0A08400BA4A48 /* PushView.m */,
+				C41B85531FC5A878002445A8 /* SnapView.h */,
+				C41B85541FC5A878002445A8 /* SnapView.m */,
 				7FA9CA411FA09F2200BA4A48 /* AttachmentPoint_Mask@2x.png */,
 				7FA9CA431FA09F2200BA4A48 /* BackgroundTile@2x.png */,
 				7FA9CA421FA09F2200BA4A48 /* Box1@2x.png */,
@@ -793,6 +808,7 @@
 				7F16D5481E656345006B8572 /* PNRadarChartDataItem.m in Sources */,
 				7F42CF0A1E70107D00156F93 /* AnimationTimer.m in Sources */,
 				7F16D5471E656345006B8572 /* PNRadarChart.m in Sources */,
+				C41B85551FC5A878002445A8 /* SnapView.m in Sources */,
 				7F42D9C21EAF20F0005F3C0A /* StackForNSObject.m in Sources */,
 				7F16D5831E6576B4006B8572 /* TestCollectionViewController.m in Sources */,
 				7F16D53E1E656345006B8572 /* PNChartLabel.m in Sources */,
@@ -811,6 +827,7 @@
 				7FA9CA401FA09DE600BA4A48 /* DynamicBaseView.m in Sources */,
 				7F16D54C1E656345006B8572 /* UICountingLabel.m in Sources */,
 				7F16D5491E656345006B8572 /* PNScatterChart.m in Sources */,
+				C41B85521FC45765002445A8 /* DynamicMenuViewController.m in Sources */,
 				7F16D5761E65759F006B8572 /* SearchData.m in Sources */,
 				7F16D50C1E6561B4006B8572 /* DrawLine.m in Sources */,
 				7FCB26B51D7EA31500DA95AE /* AppDelegate.m in Sources */,
@@ -830,6 +847,7 @@
 				7F16D5821E6576B4006B8572 /* TestCollectionViewCell.m in Sources */,
 				7FAF27A21F5E8953006C30DD /* FireViewController.m in Sources */,
 				7F16D5431E656345006B8572 /* PNLineChartData.m in Sources */,
+				C41B854F1FC30E8A002445A8 /* ShowDynamicVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
