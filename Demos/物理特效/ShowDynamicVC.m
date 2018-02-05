@@ -22,14 +22,14 @@
     DynamicBaseView *baseView = nil;
     CGFloat StatusBarHeight = [[UIApplication sharedApplication] statusBarFrame].size.height;
     CGFloat NaviBarHeight = 44.0;
+    self.view.backgroundColor = [UIColor whiteColor];
     switch (self.type) {
         case NSDynamicTypePush:
-            baseView = [[PushView alloc] initWithFrame:CGRectMake(0, StatusBarHeight+NaviBarHeight, 375, self.view.bounds.size.height-StatusBarHeight-NaviBarHeight-34)];
+            baseView = [[PushView alloc] initWithFrame:CGRectMake(0, 0, 375, self.view.bounds.size.height-StatusBarHeight-NaviBarHeight-34)];
             break;
-        case NSDynamicTypeSnap:
-            baseView = [[SnapView alloc] initWithFrame:CGRectMake(0, 64, 375, self.view.bounds.size.height-64)];
+            case NSDynamicTypeSnap:
+            baseView = [[SnapView alloc] initWithFrame:CGRectMake(0, 0, 375, self.view.bounds.size.height-64)];
             break;
-            
         default:
             break;
     }

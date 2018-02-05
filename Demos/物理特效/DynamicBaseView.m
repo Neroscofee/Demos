@@ -13,7 +13,7 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [UIApplication sharedApplication].keyWindow.backgroundColor = [UIColor whiteColor];
+        //[UIApplication sharedApplication].keyWindow.backgroundColor = [UIColor whiteColor];
         self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"BackgroundTile"]];
         UIImageView *box = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Box1"]];
         box.frame = CGRectMake(0, 0, 40, 40);

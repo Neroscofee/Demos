@@ -81,8 +81,8 @@
     self.window.rootViewController = navi;//
 //    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
 //    navi.navigationBar.barStyle = UIBarStyleBlack;
-    
-    
+   
+    [UINavigationBar appearance].translucent = NO;
     [self.window makeKeyAndVisible];
     
     

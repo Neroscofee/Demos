@@ -105,7 +105,7 @@ static NSString *const cellID = @"pCell";
             [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound|UIUserNotificationTypeAlert|UIUserNotificationTypeBadge)   categories:nil]];
             
             [[UIApplication sharedApplication] registerForRemoteNotifications];
-        }else{
+        } else {
             NSLog(@"推送打开");
             [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound|UIUserNotificationTypeAlert|UIUserNotificationTypeBadge)   categories:nil]];
             
