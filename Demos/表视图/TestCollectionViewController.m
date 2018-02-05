@@ -62,16 +62,16 @@ static NSString const * identify = @"sg";
 //    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
     
     
-    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    flowLayout.itemSize = CGSizeMake(50, 50);
-    flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    flowLayout.minimumInteritemSpacing = 10;
-    flowLayout.sectionInset = UIEdgeInsetsMake(10, 20, 10, 20);
-
+//    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+//    flowLayout.itemSize = CGSizeMake(50, 50);
+//    flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+//    flowLayout.minimumInteritemSpacing = 10;
+//    flowLayout.sectionInset = UIEdgeInsetsMake(10, 20, 10, 20);
+//
+//    
+//    self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
     
-    self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
-    
-    [self.collectionView registerClass:[TestCollectionViewCell class] forCellWithReuseIdentifier:@"MYCELL"];
+//    [self.collectionView registerClass:[TestCollectionViewCell class] forCellWithReuseIdentifier:@"MYCELL"];
     
     
     // Uncomment the following line to preserve selection between presentations
@@ -129,7 +129,6 @@ static NSString const * identify = @"sg";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
 //    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
     TestCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MYCELL" forIndexPath:indexPath];
     if (indexPath.row%2 == 0) {
         cell.displayLabel.text = [NSString stringWithFormat:@"Single"];
