@@ -59,7 +59,7 @@
     CGPoint offset = self.myTableView.contentOffset;
     offset.y = totalH;
     self.myTableView.contentOffset = offset;
-    
+
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
