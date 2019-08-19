@@ -25,7 +25,7 @@ static NSInteger count = 100;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Love VV";
+    self.title = @"💓";
     FireButton *button = [FireButton buttonWithType:UIButtonTypeCustom];
     button.tag = 10000;
     button.backgroundColor = [UIColor orangeColor];
@@ -121,19 +121,20 @@ static NSInteger count = 100;
         spark.velocity = 130;
         spark.emissionRange = M_PI * 2;
         spark.yAcceleration = 80;
+        
         spark.lifetime = 3;
         //粒子大小 pi
-        spark.contentsScale = 0.8;
+        spark.contentsScale = 0.66;
         //int value = arc4random()%4+1;
         switch (i) {
             case 0:
-                spark.contents = (id)[UIImage imageNamed:@"wei.png"].CGImage;
+                spark.contents = (id)[UIImage imageNamed:@"DazHeart.png"].CGImage;
                 break;
             case 1:
-                spark.contents = (id)[UIImage imageNamed:@"zhao.png"].CGImage;
+                spark.contents = (id)[UIImage imageNamed:@"DazHeart.png"].CGImage;
                 break;
             case 2:
-                spark.contents = (id)[UIImage imageNamed:@"jia.png"].CGImage;
+                spark.contents = (id)[UIImage imageNamed:@"DazHeart.png"].CGImage;
                 break;
             case 3:
                 spark.contents = (id)[UIImage imageNamed:@"DazHeart.png"].CGImage;

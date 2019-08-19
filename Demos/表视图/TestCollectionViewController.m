@@ -62,14 +62,14 @@ static NSString const * identify = @"sg";
 //    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
     
     
-    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    flowLayout.itemSize = CGSizeMake(50, 50);
-    flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    flowLayout.minimumInteritemSpacing = 10;
-    flowLayout.sectionInset = UIEdgeInsetsMake(10, 20, 10, 20);
-
-    
-    self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
+//    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+//    flowLayout.itemSize = CGSizeMake(50, 50);
+//    flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+//    flowLayout.minimumInteritemSpacing = 10;
+//    flowLayout.sectionInset = UIEdgeInsetsMake(10, 20, 10, 20);
+//
+//
+//    self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
     
     [self.collectionView registerClass:[TestCollectionViewCell class] forCellWithReuseIdentifier:@"MYCELL"];
     
@@ -78,7 +78,7 @@ static NSString const * identify = @"sg";
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+//    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     // Do any additional setup after loading the view.
 //    UINavigationItem *item = [UINavigationItem alloc] initWithTitle:<#(nonnull NSString *)#>
@@ -119,9 +119,8 @@ static NSString const * identify = @"sg";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 7;
+    return 1;
 }
-
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return 5;
@@ -139,7 +138,29 @@ static NSString const * identify = @"sg";
         cell.contentView.backgroundColor = [UIColor blueColor];
     }
     
+    
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    cell.layer.transform = CATransform3DMakeScale(0.8, 0.8, 1);
+    [UIView animateWithDuration:0.8 animations:^{
+        cell.layer.transform = CATransform3DMakeScale(1, 1, 1);
+    }];
+    
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    [collectionView deselectItemAtIndexPath:indexPath animated:NO];
+    TestCollectionViewCell * cell = (TestCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    cell.displayLabel.text = [NSString stringWithFormat:@"Red%ld",(long)indexPath.row];
+    cell.layer.transform = CATransform3DMakeScale(1.5, 1.5, 1);
+    [UIView animateWithDuration:0.6 animations:^{
+        cell.layer.transform = CATransform3DMakeScale(1, 1, 1);
+    }];
+    
+    
+    NSLog(@"被点击的是%ld",(long)indexPath.row);
 }
 
 #pragma mark <UICollectionViewDelegate>

@@ -40,6 +40,10 @@
 #import "FireViewController.h"
 //11.21
 #import "DynamicMenuViewController.h"
+//7.11
+#import "DealerProxy.h"
+//7.27
+#import "GCDViewController.h"
 
 @interface AppDelegate ()
 
@@ -51,7 +55,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     NSLog(@"App启动时调用此方法!");
     // Override point for customization after application launch.
-    ViewController *vc = [[ViewController alloc] init];//表视图
+//    DealerProxy *dp = [DealerProxy dealerProxy];
+//    [dp purchaseToyWithTitle:@"变形金刚"];
+//    [dp purchasePantsWithSize:PantsSizeMedium];
+    
+    
+    
+    
+    
+//    ViewController *vc = [[ViewController alloc] init];//表视图
     
 //    TestViewController *vc = [[TestViewController alloc] init];
 //    self.window.rootViewController = vc;
@@ -74,15 +86,17 @@
 //    StackTestViewController *vc = [[StackTestViewController alloc] init];//用OC实现栈
 //        SnowViewController *vc = [[SnowViewController alloc] init];//下雪动画
 //    RecipeController *vc = [[RecipeController alloc] init];//用plist当Model源
-//    FireViewController *vc = [[FireViewController alloc] init];//烟花
-//    DynamicMenuViewController *vc = [[DynamicMenuViewController alloc] init];
     
+    FireViewController *vc = [[FireViewController alloc] init];//烟花
+//    DynamicMenuViewController *vc = [[DynamicMenuViewController alloc] init];
+//    GCDViewController *vc = [[GCDViewController alloc] init];
     
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = navi;//
 //    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
 //    navi.navigationBar.barStyle = UIBarStyleBlack;
    
+    
     [UINavigationBar appearance].translucent = NO;
     [self.window makeKeyAndVisible];
     

@@ -98,6 +98,10 @@
 		C41B854F1FC30E8A002445A8 /* ShowDynamicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B854E1FC30E8A002445A8 /* ShowDynamicVC.m */; };
 		C41B85521FC45765002445A8 /* DynamicMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B85511FC45765002445A8 /* DynamicMenuViewController.m */; };
 		C41B85551FC5A878002445A8 /* SnapView.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B85541FC5A878002445A8 /* SnapView.m */; };
+		C44624DE20F4DFEF002A27F5 /* ToyProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C44624DD20F4DFEF002A27F5 /* ToyProvider.m */; };
+		C44624E120F4E1E0002A27F5 /* PantsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C44624E020F4E1E0002A27F5 /* PantsProvider.m */; };
+		C44624E420F50449002A27F5 /* DealerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C44624E320F50449002A27F5 /* DealerProxy.m */; };
+		C49144B8210B715900B626BA /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C49144B7210B715900B626BA /* GCDViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -278,6 +282,14 @@
 		C41B85511FC45765002445A8 /* DynamicMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicMenuViewController.m; sourceTree = "<group>"; };
 		C41B85531FC5A878002445A8 /* SnapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnapView.h; sourceTree = "<group>"; };
 		C41B85541FC5A878002445A8 /* SnapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnapView.m; sourceTree = "<group>"; };
+		C44624DC20F4DFEF002A27F5 /* ToyProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToyProvider.h; sourceTree = "<group>"; };
+		C44624DD20F4DFEF002A27F5 /* ToyProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToyProvider.m; sourceTree = "<group>"; };
+		C44624DF20F4E1E0002A27F5 /* PantsProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PantsProvider.h; sourceTree = "<group>"; };
+		C44624E020F4E1E0002A27F5 /* PantsProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PantsProvider.m; sourceTree = "<group>"; };
+		C44624E220F50449002A27F5 /* DealerProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DealerProxy.h; sourceTree = "<group>"; };
+		C44624E320F50449002A27F5 /* DealerProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DealerProxy.m; sourceTree = "<group>"; };
+		C49144B6210B715900B626BA /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		C49144B7210B715900B626BA /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -485,11 +497,17 @@
 				7F3C1BB51E696516002E536E /* BlockButtonViewController.m */,
 				7F3C1BBD1E697371002E536E /* AssociateViewController.h */,
 				7F3C1BBE1E697371002E536E /* AssociateViewController.m */,
+				C44624DC20F4DFEF002A27F5 /* ToyProvider.h */,
+				C44624DD20F4DFEF002A27F5 /* ToyProvider.m */,
+				C44624DF20F4E1E0002A27F5 /* PantsProvider.h */,
+				C44624E020F4E1E0002A27F5 /* PantsProvider.m */,
+				C44624E220F50449002A27F5 /* DealerProxy.h */,
+				C44624E320F50449002A27F5 /* DealerProxy.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
 		};
-		7F42CF071E7008A200156F93 /* 动画 */ = {
+		7F42CF071E7008A200156F93 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
 				7F42CF081E70107D00156F93 /* AnimationTimer.h */,
@@ -523,10 +541,10 @@
 				7FAF27C21F5FB301006C30DD /* jia.png */,
 				7FAF27C31F5FB301006C30DD /* zhao.png */,
 			);
-			path = "动画";
+			path = Animation;
 			sourceTree = "<group>";
 		};
-		7F42D9BF1EAF208B005F3C0A /* 栈 */ = {
+		7F42D9BF1EAF208B005F3C0A /* Stack */ = {
 			isa = PBXGroup;
 			children = (
 				7F42D9C01EAF20F0005F3C0A /* StackForNSObject.h */,
@@ -534,10 +552,10 @@
 				7F42D9C31EAF3239005F3C0A /* StackTestViewController.h */,
 				7F42D9C41EAF3239005F3C0A /* StackTestViewController.m */,
 			);
-			path = "栈";
+			path = Stack;
 			sourceTree = "<group>";
 		};
-		7FA9CA3D1FA09C4700BA4A48 /* 物理特效 */ = {
+		7FA9CA3D1FA09C4700BA4A48 /* Dynamic */ = {
 			isa = PBXGroup;
 			children = (
 				C41B85501FC45765002445A8 /* DynamicMenuViewController.h */,
@@ -554,7 +572,7 @@
 				7FA9CA431FA09F2200BA4A48 /* BackgroundTile@2x.png */,
 				7FA9CA421FA09F2200BA4A48 /* Box1@2x.png */,
 			);
-			path = "物理特效";
+			path = Dynamic;
 			sourceTree = "<group>";
 		};
 		7FCB26A41D7EA31500DA95AE = {
@@ -583,12 +601,13 @@
 			children = (
 				7FCB26B31D7EA31500DA95AE /* AppDelegate.h */,
 				7FCB26B41D7EA31500DA95AE /* AppDelegate.m */,
-				7FA9CA3D1FA09C4700BA4A48 /* 物理特效 */,
-				7F42D9BF1EAF208B005F3C0A /* 栈 */,
-				7F42CF071E7008A200156F93 /* 动画 */,
-				7F3C1B7B1E68FE12002E536E /* Runtime */,
+				7F42CF071E7008A200156F93 /* Animation */,
 				7F3C1B611E67B215002E536E /* Block */,
+				7FA9CA3D1FA09C4700BA4A48 /* Dynamic */,
+				C49144B2210B6FB300B626BA /* GCD */,
 				7F3C1B591E66BC32002E536E /* Protocol */,
+				7F3C1B7B1E68FE12002E536E /* Runtime */,
+				7F42D9BF1EAF208B005F3C0A /* Stack */,
 				7F16D5781E6576B4006B8572 /* 表视图 */,
 				7F16D5071E6561B4006B8572 /* 画线 */,
 				7F16D5121E656323006B8572 /* 画折线图 */,
@@ -630,6 +649,15 @@
 				7FCB26D71D7EA31600DA95AE /* Info.plist */,
 			);
 			path = DemosUITests;
+			sourceTree = "<group>";
+		};
+		C49144B2210B6FB300B626BA /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				C49144B6210B715900B626BA /* GCDViewController.h */,
+				C49144B7210B715900B626BA /* GCDViewController.m */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -793,6 +821,7 @@
 				7F16D5401E656345006B8572 /* PNColor.m in Sources */,
 				7FAF27A51F5E8964006C30DD /* FireButton.m in Sources */,
 				7F16D5541E6563D2006B8572 /* UIButton+BackgroundColor.m in Sources */,
+				C44624E120F4E1E0002A27F5 /* PantsProvider.m in Sources */,
 				7F16D54A1E656345006B8572 /* PNScatterChartData.m in Sources */,
 				7F16D56D1E65659A006B8572 /* DownloadIndicator.m in Sources */,
 				7F16D5451E656345006B8572 /* PNPieChart.m in Sources */,
@@ -809,6 +838,7 @@
 				7F42CF0A1E70107D00156F93 /* AnimationTimer.m in Sources */,
 				7F16D5471E656345006B8572 /* PNRadarChart.m in Sources */,
 				C41B85551FC5A878002445A8 /* SnapView.m in Sources */,
+				C44624E420F50449002A27F5 /* DealerProxy.m in Sources */,
 				7F42D9C21EAF20F0005F3C0A /* StackForNSObject.m in Sources */,
 				7F16D5831E6576B4006B8572 /* TestCollectionViewController.m in Sources */,
 				7F16D53E1E656345006B8572 /* PNChartLabel.m in Sources */,
@@ -833,7 +863,9 @@
 				7FCB26B51D7EA31500DA95AE /* AppDelegate.m in Sources */,
 				7F16D5461E656345006B8572 /* PNPieChartDataItem.m in Sources */,
 				7F16D5421E656345006B8572 /* PNLineChart.m in Sources */,
+				C49144B8210B715900B626BA /* GCDViewController.m in Sources */,
 				7F16D56E1E65659A006B8572 /* Square.m in Sources */,
+				C44624DE20F4DFEF002A27F5 /* ToyProvider.m in Sources */,
 				7F16D5771E65759F006B8572 /* SearchTableViewController.m in Sources */,
 				7F16D5811E6576B4006B8572 /* MyDataSource.m in Sources */,
 				7F16D54B1E656345006B8572 /* PNScatterChartDataItem.m in Sources */,
