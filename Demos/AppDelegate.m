@@ -45,6 +45,10 @@
 //7.27
 #import "GCDViewController.h"
 
+#import "NSTabBarController.h"
+#import "NSNavigationController.h"
+ 
+
 @interface AppDelegate ()
 
 @end
@@ -87,18 +91,24 @@
 //        SnowViewController *vc = [[SnowViewController alloc] init];//下雪动画
 //    RecipeController *vc = [[RecipeController alloc] init];//用plist当Model源
     
-    FireViewController *vc = [[FireViewController alloc] init];//烟花
+//    FireViewController *vc = [[FireViewController alloc] init];//烟花
 //    DynamicMenuViewController *vc = [[DynamicMenuViewController alloc] init];
 //    GCDViewController *vc = [[GCDViewController alloc] init];
     
-    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = navi;//
+//    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+//    self.window.rootViewController = navi;//
 //    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
 //    navi.navigationBar.barStyle = UIBarStyleBlack;
    
+    [NSThread sleepForTimeInterval:2];
     
-    [UINavigationBar appearance].translucent = NO;
+    NSTabBarController *tabBarController = [[NSTabBarController alloc] init];
+    self.rootNaviController = [[NSNavigationController alloc] initWithRootViewController:tabBarController];
+    self.window.rootViewController = self.rootNaviController;
+    
+
     [self.window makeKeyAndVisible];
+    [UINavigationBar appearance].translucent = NO;//可以影响界面锚点 NO 锚点从导航栏下开始
     
     
     

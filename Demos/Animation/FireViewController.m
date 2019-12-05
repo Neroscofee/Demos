@@ -25,7 +25,7 @@ static NSInteger count = 100;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"💓";
+//    self.title = @"夜空中💓最亮的你";
     FireButton *button = [FireButton buttonWithType:UIButtonTypeCustom];
     button.tag = 10000;
     button.backgroundColor = [UIColor orangeColor];
@@ -105,7 +105,7 @@ static NSInteger count = 100;
     CAEmitterCell *burst = [CAEmitterCell emitterCell];
     burst.birthRate = 1;
     burst.velocity = 0;
-    burst.scale = 3;
+    burst.scale = 55;
     burst.redSpeed = -1.5;
     burst.blueRange = 1.5;
     burst.greenRange = 1;
@@ -117,14 +117,14 @@ static NSInteger count = 100;
     NSMutableArray *arr = [NSMutableArray arrayWithCapacity:0];
     for (int i = 0; i < 4; i++) {
         CAEmitterCell *spark = [CAEmitterCell emitterCell];
-        spark.birthRate = 133;
+        spark.birthRate = 10;//133
         spark.velocity = 130;
         spark.emissionRange = M_PI * 2;
         spark.yAcceleration = 80;
         
         spark.lifetime = 3;
         //粒子大小 pi
-        spark.contentsScale = 0.66;
+        spark.contentsScale = 4;
         //int value = arc4random()%4+1;
         switch (i) {
             case 0:
