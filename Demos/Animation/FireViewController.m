@@ -28,8 +28,8 @@ static NSInteger count = 100;
 //    self.title = @"夜空中💓最亮的你";
     FireButton *button = [FireButton buttonWithType:UIButtonTypeCustom];
     button.tag = 10000;
-    button.backgroundColor = [UIColor orangeColor];
-    button.frame = CGRectMake(0, 0, 40, 40);
+    button.backgroundColor = [UIColor clearColor];
+    button.frame = CGRectMake(0, 0, 100, 50);
     button.center = CGPointMake(SCREEN_WIDTH/2, 100);
     [button setTitle:@"Start" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(Start:) forControlEvents:UIControlEventTouchUpInside];
@@ -41,6 +41,7 @@ static NSInteger count = 100;
 - (void)Start:(UIButton *)button {
     if (button.tag%2 == 0) {
         [button setTitle:@"Stop" forState:UIControlStateNormal];
+        [button setImage:UIImageMake(@"fire_stop.png") forState:UIControlStateNormal];
         button.tag--;
         if (!self.timer) {
             [self firework:nil];
@@ -49,6 +50,7 @@ static NSInteger count = 100;
         [self fire:nil];
     } else {
         [button setTitle:@"Start" forState:UIControlStateNormal];
+        [button setImage:UIImageMake(@"fire_start.png") forState:UIControlStateNormal];
         button.tag++;
         [fireEmitter removeFromSuperlayer];
         if (self.timer.isValid) {
@@ -128,14 +130,23 @@ static NSInteger count = 100;
         //int value = arc4random()%4+1;
         switch (i) {
             case 0:
-                spark.contents = (id)[UIImage imageNamed:@"DazHeart.png"].CGImage;
+                spark.contents = (id)[UIImage imageNamed:@"zhao.png"].CGImage;
                 break;
             case 1:
-                spark.contents = (id)[UIImage imageNamed:@"DazHeart.png"].CGImage;
+                spark.contents = (id)[UIImage imageNamed:@"jia.png"].CGImage;
                 break;
             case 2:
-                spark.contents = (id)[UIImage imageNamed:@"DazHeart.png"].CGImage;
+                spark.contents = (id)[UIImage imageNamed:@"wei.png"].CGImage;
                 break;
+//            case 0:
+//                spark.contents = (id)[UIImage imageNamed:@"DazHeart.png"].CGImage;
+//                break;
+//            case 1:
+//                spark.contents = (id)[UIImage imageNamed:@"DazHeart.png"].CGImage;
+//                break;
+//            case 2:
+//                spark.contents = (id)[UIImage imageNamed:@"DazHeart.png"].CGImage;
+//                break;
             case 3:
                 spark.contents = (id)[UIImage imageNamed:@"DazHeart.png"].CGImage;
                 break;

@@ -12,7 +12,7 @@
 #import "UIColor+RandomColor.h"
 #import "SDWebImageManager.h"
 #import "AFNetworking.h"
-
+#import "UIImageView+WebCache.h"
 
 
 #pragma mark - 颜色初始化
@@ -42,7 +42,8 @@
 /** 图片初始化 */
 #define UIImageMake(img) [UIImage imageNamed:img]
 #define UIOriginalImageMake(img) [UIImageMake(img) imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
-#define NSURLWithStr(imgStr) [imgStr hasPrefix:@"http"] ? [NSURL URLWithString:[NSString stringWithFormat:@"%@",imgStr]] : [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",D_SERVER_PIC_ADDRESS,imgStr]]
+#define NSURLWithStr(imgStr) [NSURL URLWithString:[NSString stringWithFormat:@"%@",imgStr]]
+//[imgStr hasPrefix:@"http"] ? [NSURL URLWithString:[NSString stringWithFormat:@"%@",imgStr]] : [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",D_SERVER_PIC_ADDRESS,imgStr]]
 /** 一像素 */
 #define PixelOne 1 / [[UIScreen mainScreen] scale]
 

@@ -21,6 +21,7 @@
         emitterView = [[EmitterView alloc] init];
         [self addSubview:emitterView];
         [self setNeedsDisplay];
+        [self setImage:UIImageMake(@"fire_start.png") forState:UIControlStateNormal];
     }
     return self;
 }
