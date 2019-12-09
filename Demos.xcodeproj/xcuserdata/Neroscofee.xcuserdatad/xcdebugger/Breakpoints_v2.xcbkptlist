@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
+   uuid = "5169BD66-33BE-438E-8F1A-B7935C1BF906"
    type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
+            uuid = "C3EC00E6-2C1C-4D79-93EA-73058DDFB768"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -16,6 +18,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "7B638875-E7F2-46AF-B270-3784476884BB"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -32,6 +35,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "7EE11E04-F5D2-468A-A621-1AA3E11EA8E1"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -45,6 +49,7 @@
             landmarkType = "7">
             <Locations>
                <Location
+                  uuid = "7EE11E04-F5D2-468A-A621-1AA3E11EA8E1 - 4033bdc3f5e07e72"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -60,6 +65,7 @@
                   offsetFromSymbolStart = "98">
                </Location>
                <Location
+                  uuid = "7EE11E04-F5D2-468A-A621-1AA3E11EA8E1 - 42ec42ea880c8f09"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -75,6 +81,7 @@
                   offsetFromSymbolStart = "16">
                </Location>
                <Location
+                  uuid = "7EE11E04-F5D2-468A-A621-1AA3E11EA8E1 - 1f708caeffdff662"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -95,6 +102,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "5F63E97E-B36A-4538-B3B0-68945E5E871C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -111,6 +119,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "C1D817E9-AA71-47A2-9AA9-8990819E3981"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -121,6 +130,86 @@
             startingLineNumber = "22"
             endingLineNumber = "22"
             landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D791867-1B84-44A0-B3DE-7A00676C688D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Demos/WelcomeViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "-startDismissAnimation:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A52FDF3E-C67E-4E16-87C8-CA942ECAEC7B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Demos/WelcomeViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "-textImgAnimation"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A52FDF3E-C67E-4E16-87C8-CA942ECAEC7B - 6f897aa4e913ca4d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__41-[WelcomeViewController textImgAnimation]_block_invoke"
+                  moduleName = "Demos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/neroscofee/Documents/GitHub/Demos/Demos/WelcomeViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "A52FDF3E-C67E-4E16-87C8-CA942ECAEC7B - 6f897aa4e913ca4d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__41-[WelcomeViewController textImgAnimation]_block_invoke"
+                  moduleName = "Demos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/neroscofee/Documents/GitHub/Demos/Demos/WelcomeViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "78">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67B6D831-B48D-4403-802A-B62FF57A7A6C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Demos/WelcomeViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "-textImgAnimation"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

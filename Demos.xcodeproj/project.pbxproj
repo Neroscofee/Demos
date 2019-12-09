@@ -144,12 +144,21 @@
 		7FCB26CB1D7EA31600DA95AE /* DemosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB26CA1D7EA31600DA95AE /* DemosTests.m */; };
 		7FCB26D61D7EA31600DA95AE /* DemosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB26D51D7EA31600DA95AE /* DemosUITests.m */; };
 		7FCB6C7A1F6283E700DB8922 /* firework.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7FCB6C6E1F6273BD00DB8922 /* firework.wav */; };
+		C4107BEF239C1629007B4C20 /* NSFrameworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4107BEE239C1629007B4C20 /* NSFrameworkManager.m */; };
 		C41B854F1FC30E8A002445A8 /* ShowDynamicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B854E1FC30E8A002445A8 /* ShowDynamicVC.m */; };
 		C41B85521FC45765002445A8 /* DynamicMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B85511FC45765002445A8 /* DynamicMenuViewController.m */; };
 		C41B85551FC5A878002445A8 /* SnapView.m in Sources */ = {isa = PBXBuildFile; fileRef = C41B85541FC5A878002445A8 /* SnapView.m */; };
 		C44624DE20F4DFEF002A27F5 /* ToyProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C44624DD20F4DFEF002A27F5 /* ToyProvider.m */; };
 		C44624E120F4E1E0002A27F5 /* PantsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C44624E020F4E1E0002A27F5 /* PantsProvider.m */; };
 		C44624E420F50449002A27F5 /* DealerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C44624E320F50449002A27F5 /* DealerProxy.m */; };
+		C487F114239BE34900CA3C2E /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = C487F10D239BE34900CA3C2E /* 4.png */; };
+		C487F115239BE34900CA3C2E /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = C487F10E239BE34900CA3C2E /* 3.png */; };
+		C487F116239BE34900CA3C2E /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = C487F10F239BE34900CA3C2E /* 1.png */; };
+		C487F117239BE34900CA3C2E /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = C487F110239BE34900CA3C2E /* 2.png */; };
+		C487F118239BE34900CA3C2E /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = C487F111239BE34900CA3C2E /* 5.png */; };
+		C487F119239BE34900CA3C2E /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = C487F112239BE34900CA3C2E /* 6.png */; };
+		C487F11A239BE34900CA3C2E /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = C487F113239BE34900CA3C2E /* 0.png */; };
+		C487F11D239BE4A800CA3C2E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C487F11C239BE4A800CA3C2E /* WelcomeViewController.m */; };
 		C49144B8210B715900B626BA /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C49144B7210B715900B626BA /* GCDViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -414,6 +423,8 @@
 		7FCB26D51D7EA31600DA95AE /* DemosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemosUITests.m; sourceTree = "<group>"; };
 		7FCB26D71D7EA31600DA95AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FCB6C6E1F6273BD00DB8922 /* firework.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = firework.wav; sourceTree = "<group>"; };
+		C4107BED239C1629007B4C20 /* NSFrameworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSFrameworkManager.h; sourceTree = "<group>"; };
+		C4107BEE239C1629007B4C20 /* NSFrameworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSFrameworkManager.m; sourceTree = "<group>"; };
 		C41B854D1FC30E8A002445A8 /* ShowDynamicVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowDynamicVC.h; sourceTree = "<group>"; };
 		C41B854E1FC30E8A002445A8 /* ShowDynamicVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowDynamicVC.m; sourceTree = "<group>"; };
 		C41B85501FC45765002445A8 /* DynamicMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicMenuViewController.h; sourceTree = "<group>"; };
@@ -426,6 +437,15 @@
 		C44624E020F4E1E0002A27F5 /* PantsProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PantsProvider.m; sourceTree = "<group>"; };
 		C44624E220F50449002A27F5 /* DealerProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DealerProxy.h; sourceTree = "<group>"; };
 		C44624E320F50449002A27F5 /* DealerProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DealerProxy.m; sourceTree = "<group>"; };
+		C487F10D239BE34900CA3C2E /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		C487F10E239BE34900CA3C2E /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		C487F10F239BE34900CA3C2E /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		C487F110239BE34900CA3C2E /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		C487F111239BE34900CA3C2E /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		C487F112239BE34900CA3C2E /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		C487F113239BE34900CA3C2E /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		C487F11B239BE4A800CA3C2E /* WelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		C487F11C239BE4A800CA3C2E /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		C49144B6210B715900B626BA /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		C49144B7210B715900B626BA /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -459,6 +479,8 @@
 		4C2AA1792398A2DD00DA7240 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				C4107BED239C1629007B4C20 /* NSFrameworkManager.h */,
+				C4107BEE239C1629007B4C20 /* NSFrameworkManager.m */,
 				4C2AA17A2398A9C100DA7240 /* NSNavigationController.h */,
 				4C2AA17B2398A9C100DA7240 /* NSNavigationController.m */,
 				4C2AA1F22398B52200DA7240 /* NSTabBarController.h */,
@@ -550,6 +572,17 @@
 		4C2AA1E42398AFDC00DA7240 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				C487F113239BE34900CA3C2E /* 0.png */,
+				C487F10F239BE34900CA3C2E /* 1.png */,
+				C487F110239BE34900CA3C2E /* 2.png */,
+				C487F10E239BE34900CA3C2E /* 3.png */,
+				C487F10D239BE34900CA3C2E /* 4.png */,
+				C487F111239BE34900CA3C2E /* 5.png */,
+				C487F112239BE34900CA3C2E /* 6.png */,
+				4C2AA205239A328900DA7240 /* catsound1.mp3 */,
+				4C2AA208239A3AF000DA7240 /* catsound2.mp3 */,
+				4C2AA207239A3AF000DA7240 /* catsound3.mp3 */,
+				4C2AA209239A3AF000DA7240 /* catsound4.mp3 */,
 				4C2AA1E52398AFED00DA7240 /* back@2x.png */,
 				4C2AA1E62398AFED00DA7240 /* back@3x.png */,
 				4C2AA1FE2399114700DA7240 /* cat_fagu.png */,
@@ -564,10 +597,6 @@
 			children = (
 				4C2AA1F62398B73400DA7240 /* NSCatViewController.h */,
 				4C2AA1F72398B73400DA7240 /* NSCatViewController.m */,
-				4C2AA205239A328900DA7240 /* catsound1.mp3 */,
-				4C2AA208239A3AF000DA7240 /* catsound2.mp3 */,
-				4C2AA207239A3AF000DA7240 /* catsound3.mp3 */,
-				4C2AA209239A3AF000DA7240 /* catsound4.mp3 */,
 			);
 			path = NSCat;
 			sourceTree = "<group>";
@@ -867,6 +896,8 @@
 				4C2AA1792398A2DD00DA7240 /* Base */,
 				7FCB26B31D7EA31500DA95AE /* AppDelegate.h */,
 				7FCB26B41D7EA31500DA95AE /* AppDelegate.m */,
+				C487F11B239BE4A800CA3C2E /* WelcomeViewController.h */,
+				C487F11C239BE4A800CA3C2E /* WelcomeViewController.m */,
 				4C2AA1F52398B70700DA7240 /* NSCat */,
 				7F42CF071E7008A200156F93 /* Animation */,
 				7F3C1B611E67B215002E536E /* Block */,
@@ -1035,6 +1066,7 @@
 				7FCB6C7A1F6283E700DB8922 /* firework.wav in Resources */,
 				7FAF27C41F5FB301006C30DD /* wei.png in Resources */,
 				4C2AA2002399114700DA7240 /* cat_fagu.png in Resources */,
+				C487F114239BE34900CA3C2E /* 4.png in Resources */,
 				4C2AA20B239A3AF000DA7240 /* catsound2.mp3 in Resources */,
 				7FCB26C01D7EA31500DA95AE /* LaunchScreen.storyboard in Resources */,
 				7FA9CA461FA09F2200BA4A48 /* BackgroundTile@2x.png in Resources */,
@@ -1052,7 +1084,10 @@
 				7FAF27BA1F5E8B39006C30DD /* DazSmoke.png in Resources */,
 				7FAF27B71F5E8B39006C30DD /* DazFlake.png in Resources */,
 				7FAF27C61F5FB301006C30DD /* zhao.png in Resources */,
+				C487F11A239BE34900CA3C2E /* 0.png in Resources */,
 				7FA9CA441FA09F2200BA4A48 /* AttachmentPoint_Mask@2x.png in Resources */,
+				C487F119239BE34900CA3C2E /* 6.png in Resources */,
+				C487F118239BE34900CA3C2E /* 5.png in Resources */,
 				7FA9CA451FA09F2200BA4A48 /* Box1@2x.png in Resources */,
 				4C2AA204239912EF00DA7240 /* test@2x.png in Resources */,
 				7F42D9CA1EB327A5005F3C0A /* snow.png in Resources */,
@@ -1061,11 +1096,14 @@
 				7FA28D801EB862F400CC2702 /* raindrop_4@2x.png in Resources */,
 				7FAF27B61F5E8B39006C30DD /* DazFire.png in Resources */,
 				7FAF27C01F5E8B39006C30DD /* first@2x.png in Resources */,
+				C487F117239BE34900CA3C2E /* 2.png in Resources */,
 				7FAF27961F5D4C2D006C30DD /* recipeData.plist in Resources */,
 				7FAF27B91F5E8B39006C30DD /* DazRing.png in Resources */,
 				7FCB26BD1D7EA31500DA95AE /* Assets.xcassets in Resources */,
 				7FCB26BB1D7EA31500DA95AE /* Main.storyboard in Resources */,
 				4C2AA20C239A3AF000DA7240 /* catsound4.mp3 in Resources */,
+				C487F115239BE34900CA3C2E /* 3.png in Resources */,
+				C487F116239BE34900CA3C2E /* 1.png in Resources */,
 				7FAF27B81F5E8B39006C30DD /* DazHeart.png in Resources */,
 				7FAF27C51F5FB301006C30DD /* jia.png in Resources */,
 				7F29362E1E72A66100C5E7B5 /* c.jpg in Resources */,
@@ -1100,6 +1138,7 @@
 				4C2AA1DE2398AD4C00DA7240 /* UIView+WebCache.m in Sources */,
 				7F42D9CD1EB327EA005F3C0A /* SnowViewController.m in Sources */,
 				7F3C1B5C1E66BC82002E536E /* ProtocolViewController.m in Sources */,
+				C4107BEF239C1629007B4C20 /* NSFrameworkManager.m in Sources */,
 				4C2AA1CA2398AD4C00DA7240 /* UIImage+ForceDecode.m in Sources */,
 				7F16D5401E656345006B8572 /* PNColor.m in Sources */,
 				7FAF27A51F5E8964006C30DD /* FireButton.m in Sources */,
@@ -1152,6 +1191,7 @@
 				7F16D5441E656345006B8572 /* PNLineChartDataItem.m in Sources */,
 				4C2AA17C2398A9C100DA7240 /* NSNavigationController.m in Sources */,
 				4C2AA1C72398AD4C00DA7240 /* SDWebImageManager.m in Sources */,
+				C487F11D239BE4A800CA3C2E /* WelcomeViewController.m in Sources */,
 				7F3C1B811E69018A002E536E /* ActionButtonViewController.m in Sources */,
 				4C2AA1F12398B27B00DA7240 /* UIImage+NSImage.m in Sources */,
 				7F16D5411E656345006B8572 /* PNGenericChart.m in Sources */,
@@ -1349,7 +1389,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Demos/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fang.www.Demo9-6";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fang.www.Demo9-6-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1366,7 +1406,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Demos/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fang.www.Demo9-6";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fang.www.Demo9-6-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

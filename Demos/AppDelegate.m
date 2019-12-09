@@ -47,6 +47,10 @@
 
 #import "NSTabBarController.h"
 #import "NSNavigationController.h"
+
+#import "WelcomeViewController.h"
+
+#import "NSFrameworkManager.h"
  
 
 @interface AppDelegate ()
@@ -100,12 +104,15 @@
 //    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
 //    navi.navigationBar.barStyle = UIBarStyleBlack;
    
-    [NSThread sleepForTimeInterval:2];
+//    [NSThread sleepForTimeInterval:2];
+
     
-    NSTabBarController *tabBarController = [[NSTabBarController alloc] init];
-    self.rootNaviController = [[NSNavigationController alloc] initWithRootViewController:tabBarController];
-    self.window.rootViewController = self.rootNaviController;
     
+//    NSTabBarController *tabBarController = [[NSTabBarController alloc] init];
+//    self.rootNaviController = [[NSNavigationController alloc] initWithRootViewController:tabBarController];
+//    self.window.rootViewController = self.rootNaviController;
+    
+    [self applicationFramework];
 
     [self.window makeKeyAndVisible];
     [UINavigationBar appearance].translucent = NO;//可以影响界面锚点 NO 锚点从导航栏下开始
@@ -164,6 +171,21 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     NSLog(@"应用被杀死时调用此方法!");
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)applicationFramework {
+    NSFrameworkManager *frameworkManager = [NSFrameworkManager sharedInstance];
+    frameworkManager.welcomeFrameworkHandle = ^{
+        WelcomeViewController *vc = [[WelcomeViewController alloc] init];
+        NSNavigationController *navi = [[NSNavigationController alloc] initWithRootViewController:vc];
+        self.window.rootViewController = navi;
+    };
+    frameworkManager.mainFrameworkHandle = ^{
+        NSTabBarController *tabBC = [[NSTabBarController alloc] init];
+        NSNavigationController *navi = [[NSNavigationController alloc] initWithRootViewController:tabBC];
+        self.window.rootViewController = navi;
+    };
+    [frameworkManager toWelcomeFramework];
 }
 
 @end
