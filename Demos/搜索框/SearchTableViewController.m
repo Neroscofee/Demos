@@ -22,11 +22,12 @@
     [super viewDidLoad];
     self.title = @"长歌怀采薇丶";
     
-    UISearchBar *sb = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 88)];
+    UISearchBar *sb = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 44)];
+//    UISearchBar *sb = [[UISearchBar alloc] init];
 //    sb.showsScopeBar = YES;
 //    sb.scopeButtonTitles = @[@"设备", @"软件", @"其它"];
 //    sb.showsCancelButton = YES;
-//    sb.showsSearchResultsButton = YES;
+    sb.showsSearchResultsButton = YES;
     sb.delegate = self;
     self.searchBar = sb;
     self.tableView.tableHeaderView = self.searchBar;
@@ -62,9 +63,9 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//    return 1;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //    if (tableView == self.searchDisplayController.searchResultsTableView) {
@@ -108,14 +109,21 @@
 //        NSRange rang = [data.name rangeOfString:searchText];
 //        if (rang.length > 0) {
 //            [results addObject:data];
+//        } else {
+//            [results removeAllObjects];
 //        }
 //    }
 //    self.searchResult = results;
-    //
+    
     
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"self contains[c]%@",searchText];
+//    NSPredicate *pred = [NSPredicate predicateWithFormat:@"self like[cd]%@",searchText];
+//    NSArray *res = [self.products filteredArrayUsingPredicate:pred];
+    
+    
     NSMutableArray *results = [[NSMutableArray alloc] init];
     for (SearchData *data in self.products) {
+        NSLog(@"%@",data.name);//
         if ([pred evaluateWithObject:data.name]) {
             [results addObject:data];
         } else {
@@ -174,9 +182,9 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    TestCollectionViewController *tcvc = [[TestCollectionViewController alloc] init];
+//    TestCollectionViewController *tcvc = [[TestCollectionViewController alloc] init];
 //    ViewController *vc = [[ViewController alloc] init];
-    [self.navigationController pushViewController:tcvc animated:YES];
+//    [self.navigationController pushViewController:tcvc animated:YES];
 }
 
 

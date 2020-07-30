@@ -71,7 +71,7 @@
     
     
     
-//    ViewController *vc = [[ViewController alloc] init];//表视图
+    ViewController *vc = [[ViewController alloc] init];//表视图
     
 //    TestViewController *vc = [[TestViewController alloc] init];
 //    self.window.rootViewController = vc;
@@ -99,8 +99,8 @@
 //    DynamicMenuViewController *vc = [[DynamicMenuViewController alloc] init];
 //    GCDViewController *vc = [[GCDViewController alloc] init];
     
-//    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
-//    self.window.rootViewController = navi;//
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = navi;//
 //    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
 //    navi.navigationBar.barStyle = UIBarStyleBlack;
    
@@ -112,7 +112,7 @@
 //    self.rootNaviController = [[NSNavigationController alloc] initWithRootViewController:tabBarController];
 //    self.window.rootViewController = self.rootNaviController;
     
-    [self applicationFramework];
+//    [self applicationFramework];
 
     [self.window makeKeyAndVisible];
     [UINavigationBar appearance].translucent = NO;//可以影响界面锚点 NO 锚点从导航栏下开始

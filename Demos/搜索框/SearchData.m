@@ -32,8 +32,11 @@
     SearchData *s7 = [[SearchData alloc] init];
     s7.name = @"Cornerstone";
     s7.type = TPTypeSoft;
+    SearchData *s8 = [[SearchData alloc] init];
+    s8.name = @"郭麒麟";
+    s8.type = TPTypeSoft;
     
-    return @[s1, s2, s3, s4, s5, s6, s7];
+    return @[s1, s2, s3, s4, s5, s6, s7, s8];
     
 }
 

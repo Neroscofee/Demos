@@ -36,57 +36,57 @@ static NSString *const cellID = @"pCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-//    layout.scrollDirection = UICollectionViewScrollDirectionVertical;
-//    layout.itemSize = CGSizeMake(135, 166);
-//    layout.minimumInteritemSpacing = 0;
-//    layout.minimumLineSpacing = 0;
-//    layout.sectionInset = UIEdgeInsetsMake(0, 50, 0, 50);
-//    
-//    UICollectionView *coView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
-//    coView.delegate = self;
-//    coView.dataSource = self;
-//    coView.backgroundColor = [UIColor whiteColor];
-//    [coView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:cellID];
-//    [self.view addSubview:coView];
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    layout.itemSize = CGSizeMake(47, 60);
+    layout.minimumInteritemSpacing = 25;
+    layout.minimumLineSpacing = 20;
+    layout.sectionInset = UIEdgeInsetsMake(10, 25, 10, 25);
+    
+    UICollectionView *coView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+    coView.delegate = self;
+    coView.dataSource = self;
+    coView.backgroundColor = [UIColor whiteColor];
+    [coView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:cellID];
+    [self.view addSubview:coView];
     self.title = @"滚动视图";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    TriangleView *triangle = [[TriangleView alloc] initWithFrame:CGRectMake(100, 200, 70, 70)];
-    triangle.backgroundColor = [UIColor whiteColor];
-//    [self.view addSubview:triangle];
-    
-    sq = [[Square alloc] initWithFrame:self.view.bounds];
-    sq.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:sq];
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(40, 64, 60, 44);
-//    [button setTitle:@"GO" forState:UIControlStateNormal];
-//    [button setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
-    button.backgroundColor = [UIColor blueColor];
-    [button setBackgroundColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
-    [button addTarget:self action:@selector(changeButtonColor) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.view addSubview:button];
-    
-    UISlider *sd = [[UISlider alloc] initWithFrame:CGRectMake(70, 250, self.view.bounds.size.width-140, 60)];
-    self.slider = sd;
-    [self.slider addTarget:self action:@selector(sliderChangeValue:) forControlEvents:UIControlEventValueChanged];
-    [self.view addSubview:self.slider];
-    
-    self.indicator = [[DownloadIndicator alloc] initWithFrame:CGRectMake(100, 360, 170, 110)];
-    self.indicator.backgroundColor = [UIColor whiteColor];
-//    self.indicator.lineWidth = 30;
-    self.indicator.lineColor = [UIColor redColor];
-    [self.view addSubview:self.indicator];
-    
-    
-//    [self.view addSubview:self.scrollView];
-//    self.timer = [NSTimer scheduledTimerWithTimeInterval:4 target:self selector:@selector(scrollViewRecycle) userInfo:nil repeats:YES];
-    //
-    UISwitch *sw = [[UISwitch alloc] initWithFrame:CGRectMake(100, 450, 60, 44)];
-    [sw addTarget:self action:@selector(swSlider) forControlEvents:UIControlEventValueChanged];
-    [self.view addSubview:sw];
+//    TriangleView *triangle = [[TriangleView alloc] initWithFrame:CGRectMake(100, 200, 70, 70)];
+//    triangle.backgroundColor = [UIColor whiteColor];
+////    [self.view addSubview:triangle];
+//
+//    sq = [[Square alloc] initWithFrame:self.view.bounds];
+//    sq.backgroundColor = [UIColor whiteColor];
+//    [self.view addSubview:sq];
+//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+//    button.frame = CGRectMake(40, 64, 60, 44);
+////    [button setTitle:@"GO" forState:UIControlStateNormal];
+////    [button setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+//    button.backgroundColor = [UIColor blueColor];
+//    [button setBackgroundColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+//    [button addTarget:self action:@selector(changeButtonColor) forControlEvents:UIControlEventTouchUpInside];
+//
+//    [self.view addSubview:button];
+//
+//    UISlider *sd = [[UISlider alloc] initWithFrame:CGRectMake(70, 250, self.view.bounds.size.width-140, 60)];
+//    self.slider = sd;
+//    [self.slider addTarget:self action:@selector(sliderChangeValue:) forControlEvents:UIControlEventValueChanged];
+//    [self.view addSubview:self.slider];
+//
+//    self.indicator = [[DownloadIndicator alloc] initWithFrame:CGRectMake(100, 360, 170, 110)];
+//    self.indicator.backgroundColor = [UIColor whiteColor];
+////    self.indicator.lineWidth = 30;
+//    self.indicator.lineColor = [UIColor redColor];
+//    [self.view addSubview:self.indicator];
+//
+//
+////    [self.view addSubview:self.scrollView];
+////    self.timer = [NSTimer scheduledTimerWithTimeInterval:4 target:self selector:@selector(scrollViewRecycle) userInfo:nil repeats:YES];
+//    //
+//    UISwitch *sw = [[UISwitch alloc] initWithFrame:CGRectMake(100, 450, 60, 44)];
+//    [sw addTarget:self action:@selector(swSlider) forControlEvents:UIControlEventValueChanged];
+//    [self.view addSubview:sw];
 
     
     // Do any additional setup after loading the view.
@@ -182,11 +182,11 @@ static NSString *const cellID = @"pCell";
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 7;
+    return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 7;
+    return 30;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
