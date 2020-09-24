@@ -71,7 +71,7 @@
     
     
     
-    ViewController *vc = [[ViewController alloc] init];//表视图
+//    ViewController *vc = [[ViewController alloc] init];//表视图
     
 //    TestViewController *vc = [[TestViewController alloc] init];
 //    self.window.rootViewController = vc;
@@ -86,7 +86,7 @@
 //    PNChartViewController *vc = [[PNChartViewController alloc] init];//折线图
 //    DrawLineViewController *vc = [[DrawLineViewController alloc] init];//画线
 //    ProtocolViewController *vc = [[ProtocolViewController alloc] init];//协议传值
-//    BlockPassNumFirst *vc = [[BlockPassNumFirst alloc] init];//block传值
+    BlockPassNumFirst *vc = [[BlockPassNumFirst alloc] init];//block传值
 //    ActionButtonViewController *vc = [[ActionButtonViewController alloc] init];//runtime 关联
 //    BlockButtonViewController *vc = [[BlockButtonViewController alloc] init];//用block来与button关联
 //    AssociateViewController *vc = [[AssociateViewController alloc] init];//tableView与alertView关联

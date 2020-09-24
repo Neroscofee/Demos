@@ -8,6 +8,7 @@
 
 #import "BlockPassNumFirst.h"
 #import "BlockPassNumSecond.h"
+#import "BlockThirdController.h"
 
 @interface BlockPassNumFirst ()
 
@@ -50,28 +51,36 @@
 }
 
 - (void)goToNextVC {
-    BlockPassNumSecond *pns = [[BlockPassNumSecond alloc] init];
+//    BlockPassNumSecond *pns = [[BlockPassNumSecond alloc] init];
 //    [pns returnTextString:^(NSString *showStr) {
 //        self.showLabel.text = showStr;
 //    }];
-//    pns.pstr = ^(NSString *textString, int a) {
-//        return [NSString stringWithFormat:@"%d%@",a,textString];
-//    };
-//    self.showLabel.text = [pns getTextString:^NSString *(NSString *textString, int a) {
-//        return [NSString stringWithFormat:@"%d%@",a,textString];
-//    }];
-    [self presentViewController:pns animated:YES completion:nil];
+////    pns.pstr = ^(NSString *textString, int a) {
+////        return [NSString stringWithFormat:@"%d%@",a,textString];
+////    };
+////    self.showLabel.text = [pns getTextString:^NSString *(NSString *textString, int a) {
+////        return [NSString stringWithFormat:@"%d%@",a,textString];
+////    }];
+//    [self presentViewController:pns animated:YES completion:nil];
+    
+    WS(weakSelf);
+    BlockThirdController *vc = [[BlockThirdController alloc] init];
+    vc.passString = ^NSString * _Nullable(NSString * _Nonnull string) {
+        weakSelf.showLabel.text = string;
+        return string;
+    };
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    BlockPassNumSecond *pns = [[BlockPassNumSecond alloc] init];
-    self.showLabel.text = [pns getTextString:^NSString *(NSString *textString, int a) {
-        return [NSString stringWithFormat:@"%d%@",a,textString];
-    }];
+//    BlockPassNumSecond *pns = [[BlockPassNumSecond alloc] init];
+//    self.showLabel.text = [pns getTextString:^NSString *(NSString *textString, int a) {
+//        return [NSString stringWithFormat:@"%d%@",a,textString];
+//    }];
     [_showLabel sizeToFit];//自适应,很有意思!
     _showLabel.center = CGPointMake(SCREEN_WIDTH/2, 100);
-    //[self.showLabel sizeToFit];
+    [self.showLabel sizeToFit];
     
 }
 
