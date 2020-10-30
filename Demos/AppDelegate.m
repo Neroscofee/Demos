@@ -51,7 +51,9 @@
 #import "WelcomeViewController.h"
 
 #import "NSFrameworkManager.h"
- 
+
+#import "SimuController.h"
+#import "ChargeController.h"
 
 @interface AppDelegate ()
 
@@ -86,7 +88,7 @@
 //    PNChartViewController *vc = [[PNChartViewController alloc] init];//折线图
 //    DrawLineViewController *vc = [[DrawLineViewController alloc] init];//画线
 //    ProtocolViewController *vc = [[ProtocolViewController alloc] init];//协议传值
-    BlockPassNumFirst *vc = [[BlockPassNumFirst alloc] init];//block传值
+//    BlockPassNumFirst *vc = [[BlockPassNumFirst alloc] init];//block传值
 //    ActionButtonViewController *vc = [[ActionButtonViewController alloc] init];//runtime 关联
 //    BlockButtonViewController *vc = [[BlockButtonViewController alloc] init];//用block来与button关联
 //    AssociateViewController *vc = [[AssociateViewController alloc] init];//tableView与alertView关联
@@ -98,9 +100,12 @@
 //    FireViewController *vc = [[FireViewController alloc] init];//烟花
 //    DynamicMenuViewController *vc = [[DynamicMenuViewController alloc] init];
 //    GCDViewController *vc = [[GCDViewController alloc] init];
+//    SimuController *vc = [[SimuController alloc] init];
+    ChargeController *vc = [[ChargeController alloc] init];
+    self.window.rootViewController = vc;
     
-    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = navi;//
+//    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+//    self.window.rootViewController = navi;//
 //    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
 //    navi.navigationBar.barStyle = UIBarStyleBlack;
    
