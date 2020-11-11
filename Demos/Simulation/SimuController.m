@@ -16,6 +16,7 @@
 @property (nonatomic, strong) UITextField *tf3;
 @property (nonatomic, strong) UITextField *tf4;
 @property (nonatomic, strong) UITextField *tf5;
+@property (nonatomic, strong) UITextField *tf6;
 @property (nonatomic, strong) UIButton *button;
 
 
@@ -28,18 +29,53 @@
     self.title = @"Simulation";
     self.view.backgroundColor = [UIColor whiteColor];
     
+    
+//    [UIScreen mainScreen].brightness = 0.5;
+    
     [self.view addSubview:self.tf1];
     [self.view addSubview:self.tf2];
     [self.view addSubview:self.tf3];
     [self.view addSubview:self.tf4];
     [self.view addSubview:self.tf5];
+    [self.view addSubview:self.tf6];
     
     [self.view addSubview:self.button];
     [self.button addTarget:self action:@selector(anotherVC) forControlEvents:UIControlEventTouchUpInside];
     
     
+    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeAction:)];
+    swipe.direction = UISwipeGestureRecognizerDirectionUp;
+    [self.view addGestureRecognizer:swipe];
     
-    // Do any additional setup after loading the view.
+    UISwipeGestureRecognizer *swipe1 = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeAction:)];
+    swipe1.direction = UISwipeGestureRecognizerDirectionDown;
+    [self.view addGestureRecognizer:swipe1];
+    
+}
+
+- (void)swipeAction:(UISwipeGestureRecognizer *)gr {
+    CGFloat bright = [UIScreen mainScreen].brightness;
+    NSLog(@"%f",bright);
+    
+    if (gr.direction == UISwipeGestureRecognizerDirectionUp) {
+        NSLog(@"向上滑动");
+        bright = bright + 0.1;
+        if (bright >= 1.0) {
+            bright = 1.0;
+        }
+        [UIScreen mainScreen].brightness = bright;
+    } else if (gr.direction == UISwipeGestureRecognizerDirectionDown) {
+        NSLog(@"向下滑动");
+        bright = bright - 0.1;
+        if (bright <= 0) {
+            bright = 0;
+        }
+        [UIScreen mainScreen].brightness = bright;
+    } else if (gr.direction == UISwipeGestureRecognizerDirectionLeft) {
+        NSLog(@"向左滑动");
+    } else if (gr.direction == UISwipeGestureRecognizerDirectionRight) {
+        NSLog(@"向右滑动");
+    }
 }
 
 - (UITextField *)tf1 {
@@ -87,10 +123,19 @@
     return _tf5;
 }
 
+- (UITextField *)tf6 {
+    if (!_tf6) {
+        _tf6 = [[UITextField alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-120)/2, CGRectGetMaxY(self.tf5.frame)+10, 120, 40)];
+        _tf6.placeholder = @"王小明";
+        _tf6.borderStyle = UITextBorderStyleRoundedRect;
+    }
+    return _tf6;
+}
+
 - (UIButton *)button {
     if (!_button) {
         _button = [UIButton buttonWithType:UIButtonTypeCustom];
-        _button.frame = CGRectMake((SCREEN_WIDTH-60)/2, 300, 60, 30);
+        _button.frame = CGRectMake((SCREEN_WIDTH-60)/2, CGRectGetMaxY(self.tf6.frame)+20, 60, 30);
         _button.layer.cornerRadius = 10;
         _button.layer.borderWidth = 0.5;
         _button.layer.borderColor = [UIColor blackColor].CGColor;
@@ -107,10 +152,19 @@
     vc.str3 = self.tf3.text;
     vc.str4 = self.tf4.text;
     vc.str5 = self.tf5.text;
+    vc.str6 = self.tf6.text;
     
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.tf1 resignFirstResponder];
+    [self.tf2 resignFirstResponder];
+    [self.tf3 resignFirstResponder];
+    [self.tf4 resignFirstResponder];
+    [self.tf5 resignFirstResponder];
+    [self.tf6 resignFirstResponder];
+}
 
 /*
 #pragma mark - Navigation

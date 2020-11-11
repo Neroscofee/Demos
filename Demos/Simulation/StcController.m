@@ -84,6 +84,7 @@
     [self.view addSubview:self.tableView];
     
     self.midLabel.text = self.str5.length > 0 ? self.str5 : @"2020.10";
+    self.name.text = self.str6.length > 0 ? self.str6 : @"王小明";
 }
 
 - (void)getStcData {

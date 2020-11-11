@@ -29,6 +29,8 @@
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     self.view.backgroundColor = [UIColor blackColor];
     
+    [UIScreen mainScreen].brightness = 0.5;
+    
     isTap = NO;
     
     [self.view addSubview:self.batteryView];

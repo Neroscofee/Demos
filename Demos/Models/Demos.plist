@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>isFullScreen</key>
+		<false/>
+		<key>controller</key>
+		<string>SimuController</string>
+		<key>demosName</key>
+		<string>调节亮度</string>
+	</dict>
+	<dict>
+		<key>isFullScreen</key>
+		<true/>
+		<key>controller</key>
+		<string>ChargeController</string>
+		<key>demosName</key>
+		<string>正在充电</string>
+	</dict>
+</array>
+</plist>

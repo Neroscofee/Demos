@@ -49,11 +49,12 @@
 #import "NSNavigationController.h"
 
 #import "WelcomeViewController.h"
-
 #import "NSFrameworkManager.h"
 
 #import "SimuController.h"
 #import "ChargeController.h"
+
+#import "MainViewController.h"
 
 @interface AppDelegate ()
 
@@ -101,11 +102,11 @@
 //    DynamicMenuViewController *vc = [[DynamicMenuViewController alloc] init];
 //    GCDViewController *vc = [[GCDViewController alloc] init];
 //    SimuController *vc = [[SimuController alloc] init];
-    ChargeController *vc = [[ChargeController alloc] init];
-    self.window.rootViewController = vc;
+//    ChargeController *vc = [[ChargeController alloc] init];
+//    self.window.rootViewController = vc;
     
 //    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
-//    self.window.rootViewController = navi;//
+//    self.window.rootViewController = navi;
 //    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
 //    navi.navigationBar.barStyle = UIBarStyleBlack;
    
@@ -117,7 +118,7 @@
 //    self.rootNaviController = [[NSNavigationController alloc] initWithRootViewController:tabBarController];
 //    self.window.rootViewController = self.rootNaviController;
     
-//    [self applicationFramework];
+    [self applicationFramework];
 
     [self.window makeKeyAndVisible];
     [UINavigationBar appearance].translucent = NO;//可以影响界面锚点 NO 锚点从导航栏下开始
@@ -180,17 +181,25 @@
 
 - (void)applicationFramework {
     NSFrameworkManager *frameworkManager = [NSFrameworkManager sharedInstance];
-    frameworkManager.welcomeFrameworkHandle = ^{
-        WelcomeViewController *vc = [[WelcomeViewController alloc] init];
+//    frameworkManager.welcomeFrameworkHandle = ^{
+//        WelcomeViewController *vc = [[WelcomeViewController alloc] init];
+//        NSNavigationController *navi = [[NSNavigationController alloc] initWithRootViewController:vc];
+//        self.window.rootViewController = navi;
+//    };
+//    frameworkManager.mainFrameworkHandle = ^{
+//        NSTabBarController *tabBC = [[NSTabBarController alloc] init];
+//        NSNavigationController *navi = [[NSNavigationController alloc] initWithRootViewController:tabBC];
+//        self.window.rootViewController = navi;
+//    };
+//    [frameworkManager toWelcomeFramework];
+    
+    
+    frameworkManager.mainFrameworkHandle = ^{
+        MainViewController *vc = [[MainViewController alloc] init];
         NSNavigationController *navi = [[NSNavigationController alloc] initWithRootViewController:vc];
         self.window.rootViewController = navi;
     };
-    frameworkManager.mainFrameworkHandle = ^{
-        NSTabBarController *tabBC = [[NSTabBarController alloc] init];
-        NSNavigationController *navi = [[NSNavigationController alloc] initWithRootViewController:tabBC];
-        self.window.rootViewController = navi;
-    };
-    [frameworkManager toWelcomeFramework];
+    [frameworkManager toMainFramework];
 }
 
 @end
