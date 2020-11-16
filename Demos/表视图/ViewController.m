@@ -241,6 +241,10 @@ typedef void(^returnPreviousPage)(UIAlertAction * _Nonnull action);
     return UITableViewCellEditingStyleDelete;
 }
 
+- (NSInteger)getNum {
+    return 100;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

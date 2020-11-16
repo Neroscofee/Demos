@@ -41,6 +41,18 @@
     doubleTap.numberOfTapsRequired = 2;
     [self.view addGestureRecognizer:doubleTap];
     
+    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeAction:)];
+    swipe.direction = UISwipeGestureRecognizerDirectionUp;
+    [self.view addGestureRecognizer:swipe];
+    
+    UISwipeGestureRecognizer *swipe1 = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeAction:)];
+    swipe1.direction = UISwipeGestureRecognizerDirectionDown;
+    [self.view addGestureRecognizer:swipe1];
+    
+    UISwipeGestureRecognizer *swipeR = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeAction:)];
+    swipeR.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeR];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -85,6 +97,32 @@
         self.lightningView.hidden = NO;
         self.plugView.hidden = NO;
         isTap = YES;
+    }
+}
+
+- (void)swipeAction:(UISwipeGestureRecognizer *)gr {
+    CGFloat bright = [UIScreen mainScreen].brightness;
+    NSLog(@"%f",bright);
+    
+    if (gr.direction == UISwipeGestureRecognizerDirectionUp) {
+        NSLog(@"向上滑动");
+        bright = bright + 0.1;
+        if (bright >= 1.0) {
+            bright = 1.0;
+        }
+        [UIScreen mainScreen].brightness = bright;
+    } else if (gr.direction == UISwipeGestureRecognizerDirectionDown) {
+        NSLog(@"向下滑动");
+        bright = bright - 0.1;
+        if (bright <= 0) {
+            bright = 0;
+        }
+        [UIScreen mainScreen].brightness = bright;
+    } else if (gr.direction == UISwipeGestureRecognizerDirectionLeft) {
+        NSLog(@"向左滑动");
+    } else if (gr.direction == UISwipeGestureRecognizerDirectionRight) {
+        NSLog(@"向右滑动");
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
 

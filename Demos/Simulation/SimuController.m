@@ -30,6 +30,9 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     
+    
+    
+    
 //    [UIScreen mainScreen].brightness = 0.5;
     
     [self.view addSubview:self.tf1];

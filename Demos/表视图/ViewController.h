@@ -10,6 +10,8 @@
 #import "MyDataSource.h"
 @interface ViewController : UIViewController<UITableViewDelegate>
 
+- (NSInteger)getNum;
+
 
 @end
 
