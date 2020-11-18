@@ -10,6 +10,7 @@
 
 @interface SnowViewController ()
 @property (nonatomic, assign) NSInteger count;
+@property (nonatomic, strong) NSTimer *timer;
 @end
 
 @implementation SnowViewController
@@ -17,9 +18,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
+    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeAction:)];
+    swipe.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipe];
+    
     self.count = 0;
-    [NSTimer scheduledTimerWithTimeInterval:1/5 target:self selector:@selector(Snow:) userInfo:nil repeats:YES];
+//    [NSTimer scheduledTimerWithTimeInterval:1/5 target:self selector:@selector(Snow:) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1/5 target:self selector:@selector(Snow:) userInfo:nil repeats:YES];
     // Do any additional setup after loading the view. 
+}
+
+- (void)swipeAction:(UISwipeGestureRecognizer *)gr {
+    if (gr.direction == UISwipeGestureRecognizerDirectionRight) {
+        NSLog(@"右滑返回");
+//        [self dismissViewControllerAnimated:YES completion:nil];
+        [self dismissViewControllerAnimated:YES completion:^{
+            [self.timer invalidate];
+        }];
+    }
 }
 
 - (void)Snow:(NSTimer *)timer {

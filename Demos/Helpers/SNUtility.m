@@ -16,4 +16,16 @@
     return line;
 }
 
++ (void)rightSlideBackWithTarget:(id)target {
+    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:target action:@selector(swipeAction:)];
+    swipe.direction = UISwipeGestureRecognizerDirectionRight;
+    [target addGestureRecognizer:swipe];
+}
+
+- (void)swipeAction:(UISwipeGestureRecognizer *)gr {
+    if (gr.direction == UISwipeGestureRecognizerDirectionRight) {
+        NSLog(@"右滑返回");
+    }
+}
+
 @end

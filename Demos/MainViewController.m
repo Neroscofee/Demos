@@ -8,13 +8,17 @@
 
 #import "MainViewController.h"
 #import "MainCell.h"
-
+#import "MainModel.h"
 #import "SimuController.h"
 #import "ChargeController.h"
+#import "SnowViewController.h"
+#import "AnimationTimer.h"
+#import "FireViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSArray *dataArray;
 
 @end
 
@@ -25,9 +29,20 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"Demos";
     
+    NSLog(@"%f",SCREEN_WIDTH);
+    NSLog(@"%f",SCREEN_HEIGHT);
+    
     [self.view addSubview:self.tableView];
     
     // Do any additional setup after loading the view.
+}
+
+- (NSArray *)dataArray {
+    if (!_dataArray) {
+        MainMoreManager *model = [[MainMoreManager alloc] init];
+        _dataArray = model.moreItemModels;
+    }
+    return _dataArray;
 }
 
 - (UITableView *)tableView {
@@ -46,7 +61,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 7;
+    return self.dataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -54,16 +69,22 @@
     if (!cell) {
         cell = [[MainCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([MainCell class])];
     }
-    cell.textLabel.text = @"这是啥";
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    MainModel *model = [self.dataArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = model.demosName;
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIViewController *pushVC = nil;
-    pushVC = [[NSClassFromString(@"ChargeController") alloc] init];
-//    [self.navigationController pushViewController:pushVC animated:YES];
-    pushVC.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentViewController:pushVC animated:YES completion:nil];
+    MainModel *model = [self.dataArray objectAtIndex:indexPath.row];
+    pushVC = [[NSClassFromString(model.controller) alloc] init];
+    if (model.isFullScreen) {
+        pushVC.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self presentViewController:pushVC animated:YES completion:nil];
+    } else {
+        [self.navigationController pushViewController:pushVC animated:YES];
+    }
 }
 /*
 #pragma mark - Navigation

@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIView *)createSeparateLine:(CGRect)frame color:(UIColor *)color;
 
++ (void)rightSlideBackWithTarget:(id)target;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -4,6 +4,14 @@
 <array>
 	<dict>
 		<key>isFullScreen</key>
+		<true/>
+		<key>controller</key>
+		<string>SnowViewController</string>
+		<key>demosName</key>
+		<string>下雪动画</string>
+	</dict>
+	<dict>
+		<key>isFullScreen</key>
 		<false/>
 		<key>controller</key>
 		<string>SimuController</string>
@@ -17,6 +25,22 @@
 		<string>ChargeController</string>
 		<key>demosName</key>
 		<string>正在充电</string>
+	</dict>
+	<dict>
+		<key>isFullScreen</key>
+		<false/>
+		<key>controller</key>
+		<string>AnimationTimer</string>
+		<key>demosName</key>
+		<string>连接中</string>
+	</dict>
+	<dict>
+		<key>isFullScreen</key>
+		<false/>
+		<key>controller</key>
+		<string>FireViewController</string>
+		<key>demosName</key>
+		<string>火焰心</string>
 	</dict>
 </array>
 </plist>

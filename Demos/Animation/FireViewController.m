@@ -26,6 +26,7 @@ static NSInteger count = 100;
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    self.title = @"夜空中💓最亮的你";
+    self.view.backgroundColor = [UIColor blackColor];
     FireButton *button = [FireButton buttonWithType:UIButtonTypeCustom];
     button.tag = 10000;
     button.backgroundColor = [UIColor clearColor];
