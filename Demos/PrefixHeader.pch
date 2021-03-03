@@ -14,6 +14,7 @@
 #import "AFNetworking.h"
 #import "UIImageView+WebCache.h"
 #import "SNUtility.h"
+#import "UIColor+NSColor.h"
 
 
 #pragma mark - 颜色初始化

@@ -28,4 +28,17 @@
     }
 }
 
++ (UILabel *)createLabelWithFrame:(CGRect)rect text:(NSString *)text font:(NSInteger)fontSize bold:(BOOL)isBold textColor:(UIColor *)textColor alignment:(NSTextAlignment)alignment {
+    UILabel *label = [[UILabel alloc] initWithFrame:rect];
+    if (isBold) {
+        label.font = [UIFont boldSystemFontOfSize:fontSize];
+    } else {
+        label.font = UIFontMake(fontSize);
+    }
+    label.textColor = textColor;
+    label.textAlignment = alignment;
+    label.text = text;
+    return label;
+}
+
 @end

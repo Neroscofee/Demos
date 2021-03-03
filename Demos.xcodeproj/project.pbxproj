@@ -64,6 +64,14 @@
 		4C2AA20C239A3AF000DA7240 /* catsound4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C2AA209239A3AF000DA7240 /* catsound4.mp3 */; };
 		4C2AA20E239A631100DA7240 /* fire_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C2AA20D239A631100DA7240 /* fire_start.png */; };
 		4C2AA210239A696800DA7240 /* fire_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C2AA20F239A696800DA7240 /* fire_stop.png */; };
+		4C5684B125ECC9C400B44293 /* UIColor+NSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5684B025ECC9C400B44293 /* UIColor+NSColor.m */; };
+		4C5684B725ECDB9900B44293 /* NSAttributedString+AttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5684B625ECDB9900B44293 /* NSAttributedString+AttributedString.m */; };
+		4C5684BD25ECDDEA00B44293 /* go3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5684BB25ECDDEA00B44293 /* go3@2x.png */; };
+		4C5684BE25ECDDEA00B44293 /* go3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5684BC25ECDDEA00B44293 /* go3@3x.png */; };
+		4C5684C325ECE6AF00B44293 /* go@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5684C225ECE6AF00B44293 /* go@2x.png */; };
+		4C5684C925EF2F6E00B44293 /* SiwxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5684C825EF2F6E00B44293 /* SiwxController.m */; };
+		4C6B445425946AF500D98CD2 /* CalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B445325946AF500D98CD2 /* CalController.m */; };
+		4C6B445A25946D5700D98CD2 /* CalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B445925946D5700D98CD2 /* CalButton.m */; };
 		4C91CD7725494718009B4114 /* SNUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C91CD7625494718009B4114 /* SNUtility.m */; };
 		4C91CD7C254948E6009B4114 /* calender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91CD7B254948E6009B4114 /* calender@2x.png */; };
 		4C91CD8225497B18009B4114 /* StcCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C91CD8125497B18009B4114 /* StcCell.m */; };
@@ -306,6 +314,19 @@
 		4C2AA209239A3AF000DA7240 /* catsound4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = catsound4.mp3; sourceTree = "<group>"; };
 		4C2AA20D239A631100DA7240 /* fire_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire_start.png; sourceTree = "<group>"; };
 		4C2AA20F239A696800DA7240 /* fire_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire_stop.png; sourceTree = "<group>"; };
+		4C5684AF25ECC9C400B44293 /* UIColor+NSColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+NSColor.h"; sourceTree = "<group>"; };
+		4C5684B025ECC9C400B44293 /* UIColor+NSColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NSColor.m"; sourceTree = "<group>"; };
+		4C5684B525ECDB9900B44293 /* NSAttributedString+AttributedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+AttributedString.h"; sourceTree = "<group>"; };
+		4C5684B625ECDB9900B44293 /* NSAttributedString+AttributedString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+AttributedString.m"; sourceTree = "<group>"; };
+		4C5684BB25ECDDEA00B44293 /* go3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "go3@2x.png"; sourceTree = "<group>"; };
+		4C5684BC25ECDDEA00B44293 /* go3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "go3@3x.png"; sourceTree = "<group>"; };
+		4C5684C225ECE6AF00B44293 /* go@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "go@2x.png"; sourceTree = "<group>"; };
+		4C5684C725EF2F6E00B44293 /* SiwxController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SiwxController.h; sourceTree = "<group>"; };
+		4C5684C825EF2F6E00B44293 /* SiwxController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiwxController.m; sourceTree = "<group>"; };
+		4C6B445225946AF400D98CD2 /* CalController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalController.h; sourceTree = "<group>"; };
+		4C6B445325946AF500D98CD2 /* CalController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalController.m; sourceTree = "<group>"; };
+		4C6B445825946D5700D98CD2 /* CalButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalButton.h; sourceTree = "<group>"; };
+		4C6B445925946D5700D98CD2 /* CalButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalButton.m; sourceTree = "<group>"; };
 		4C91CD7525494718009B4114 /* SNUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNUtility.h; sourceTree = "<group>"; };
 		4C91CD7625494718009B4114 /* SNUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNUtility.m; sourceTree = "<group>"; };
 		4C91CD7B254948E6009B4114 /* calender@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calender@2x.png"; sourceTree = "<group>"; };
@@ -552,6 +573,8 @@
 				4C91CD8125497B18009B4114 /* StcCell.m */,
 				4C91CD8B254A5C5B009B4114 /* StcModel.h */,
 				4C91CD8C254A5C5B009B4114 /* StcModel.m */,
+				4C5684C725EF2F6E00B44293 /* SiwxController.h */,
+				4C5684C825EF2F6E00B44293 /* SiwxController.m */,
 				4C91CD9C254A6BA1009B4114 /* stcData.plist */,
 				4C09A78B2546E115007115E0 /* BackChevron@2x.png */,
 				4C09A78C2546E115007115E0 /* BackChevron@3x.png */,
@@ -706,6 +729,17 @@
 			path = NSCat;
 			sourceTree = "<group>";
 		};
+		4C6B445125946ABC00D98CD2 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				4C6B445225946AF400D98CD2 /* CalController.h */,
+				4C6B445325946AF500D98CD2 /* CalController.m */,
+				4C6B445825946D5700D98CD2 /* CalButton.h */,
+				4C6B445925946D5700D98CD2 /* CalButton.m */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
 		4CAF4E74255BD87500838412 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -822,6 +856,10 @@
 				4C2AA1ED2398B1EF00DA7240 /* UIButton+NSButton.m */,
 				4C2AA1EF2398B27B00DA7240 /* UIImage+NSImage.h */,
 				4C2AA1F02398B27B00DA7240 /* UIImage+NSImage.m */,
+				4C5684AF25ECC9C400B44293 /* UIColor+NSColor.h */,
+				4C5684B025ECC9C400B44293 /* UIColor+NSColor.m */,
+				4C5684B525ECDB9900B44293 /* NSAttributedString+AttributedString.h */,
+				4C5684B625ECDB9900B44293 /* NSAttributedString+AttributedString.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -959,6 +997,9 @@
 				7FAF27C11F5FB301006C30DD /* wei.png */,
 				7FAF27C21F5FB301006C30DD /* jia.png */,
 				7FAF27C31F5FB301006C30DD /* zhao.png */,
+				4C5684BB25ECDDEA00B44293 /* go3@2x.png */,
+				4C5684BC25ECDDEA00B44293 /* go3@3x.png */,
+				4C5684C225ECE6AF00B44293 /* go@2x.png */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -1042,6 +1083,7 @@
 				7F16D5121E656323006B8572 /* 画折线图 */,
 				7F16D5641E65659A006B8572 /* 集合视图 */,
 				7F16D5711E65759F006B8572 /* 搜索框 */,
+				4C6B445125946ABC00D98CD2 /* Calculator */,
 				4C09A77B2546DC23007115E0 /* Simulation */,
 				7F16D5161E656345006B8572 /* Vendor */,
 				7FCB26B91D7EA31500DA95AE /* Main.storyboard */,
@@ -1213,6 +1255,7 @@
 				7FAF27BE1F5E8B39006C30DD /* DazTriangle.png in Resources */,
 				4C09A78D2546E115007115E0 /* BackChevron@2x.png in Resources */,
 				4C2AA206239A328900DA7240 /* catsound1.mp3 in Resources */,
+				4C5684BD25ECDDEA00B44293 /* go3@2x.png in Resources */,
 				7FAF27BC1F5E8B39006C30DD /* DazStarIcon@2x.png in Resources */,
 				7FAF27BD1F5E8B39006C30DD /* DazStarOutline.png in Resources */,
 				4C91CDD6254ACCFA009B4114 /* jiantou.png in Resources */,
@@ -1224,6 +1267,7 @@
 				7FAF27B71F5E8B39006C30DD /* DazFlake.png in Resources */,
 				4C91CD95254A68D0009B4114 /* unfold@2x.png in Resources */,
 				7FAF27C61F5FB301006C30DD /* zhao.png in Resources */,
+				4C5684C325ECE6AF00B44293 /* go@2x.png in Resources */,
 				C487F11A239BE34900CA3C2E /* 0.png in Resources */,
 				7FA9CA441FA09F2200BA4A48 /* AttachmentPoint_Mask@2x.png in Resources */,
 				C487F119239BE34900CA3C2E /* 6.png in Resources */,
@@ -1237,6 +1281,7 @@
 				7FA28D801EB862F400CC2702 /* raindrop_4@2x.png in Resources */,
 				7FAF27B61F5E8B39006C30DD /* DazFire.png in Resources */,
 				4C91CDC9254AC85C009B4114 /* shandian.png in Resources */,
+				4C5684BE25ECDDEA00B44293 /* go3@3x.png in Resources */,
 				4C91CDA2254A7571009B4114 /* lightunfold@2x.png in Resources */,
 				7FAF27C01F5E8B39006C30DD /* first@2x.png in Resources */,
 				C487F117239BE34900CA3C2E /* 2.png in Resources */,
@@ -1290,6 +1335,7 @@
 				C4107BEF239C1629007B4C20 /* NSFrameworkManager.m in Sources */,
 				4CA363E42519F2D1008D5DE3 /* BlockThirdController.m in Sources */,
 				4C2AA1CA2398AD4C00DA7240 /* UIImage+ForceDecode.m in Sources */,
+				4C5684B125ECC9C400B44293 /* UIColor+NSColor.m in Sources */,
 				7F16D5401E656345006B8572 /* PNColor.m in Sources */,
 				7FAF27A51F5E8964006C30DD /* FireButton.m in Sources */,
 				7F16D5541E6563D2006B8572 /* UIButton+BackgroundColor.m in Sources */,
@@ -1343,6 +1389,7 @@
 				4C2AA1D02398AD4C00DA7240 /* SDWebImageCompat.m in Sources */,
 				7F16D5841E6576B4006B8572 /* ViewController.m in Sources */,
 				7F16D50D1E6561B4006B8572 /* DrawLineViewController.m in Sources */,
+				4C6B445A25946D5700D98CD2 /* CalButton.m in Sources */,
 				7F16D5441E656345006B8572 /* PNLineChartDataItem.m in Sources */,
 				4C2AA17C2398A9C100DA7240 /* NSNavigationController.m in Sources */,
 				4C2AA1C72398AD4C00DA7240 /* SDWebImageManager.m in Sources */,
@@ -1370,10 +1417,12 @@
 				C49144B8210B715900B626BA /* GCDViewController.m in Sources */,
 				4C2AA1D62398AD4C00DA7240 /* SDWebImageDownloaderOperation.m in Sources */,
 				7F16D56E1E65659A006B8572 /* Square.m in Sources */,
+				4C5684C925EF2F6E00B44293 /* SiwxController.m in Sources */,
 				C44624DE20F4DFEF002A27F5 /* ToyProvider.m in Sources */,
 				7F16D5771E65759F006B8572 /* SearchTableViewController.m in Sources */,
 				4C09A7952547B718007115E0 /* SNButton.m in Sources */,
 				7F16D5811E6576B4006B8572 /* MyDataSource.m in Sources */,
+				4C6B445425946AF500D98CD2 /* CalController.m in Sources */,
 				7F16D54B1E656345006B8572 /* PNScatterChartDataItem.m in Sources */,
 				4C2AA1D22398AD4C00DA7240 /* SDWebImageCoder.m in Sources */,
 				4C2AA1C92398AD4C00DA7240 /* SDWebImageFrame.m in Sources */,
@@ -1390,6 +1439,7 @@
 				7F3C1BB61E696516002E536E /* BlockButtonViewController.m in Sources */,
 				4C2AA1CD2398AD4C00DA7240 /* UIImage+GIF.m in Sources */,
 				7F16D5821E6576B4006B8572 /* TestCollectionViewCell.m in Sources */,
+				4C5684B725ECDB9900B44293 /* NSAttributedString+AttributedString.m in Sources */,
 				4CAF4E77255BDD3000838412 /* MainCell.m in Sources */,
 				7FAF27A21F5E8953006C30DD /* FireViewController.m in Sources */,
 				4C2AA1F82398B73400DA7240 /* NSCatViewController.m in Sources */,

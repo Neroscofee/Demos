@@ -8,6 +8,7 @@
 
 #import "SimuController.h"
 #import "StcController.h"
+#import "SiwxController.h"
 
 @interface SimuController ()
 
@@ -19,6 +20,10 @@
 @property (nonatomic, strong) UITextField *tf6;
 @property (nonatomic, strong) UIButton *button;
 
+@property (nonatomic, strong) UITextField *tf7;
+@property (nonatomic, strong) UITextField *tf8;
+@property (nonatomic, strong) UITextField *tf9;
+@property (nonatomic, strong) UIButton *forwardButton;
 
 @end
 
@@ -41,10 +46,14 @@
     [self.view addSubview:self.tf4];
     [self.view addSubview:self.tf5];
     [self.view addSubview:self.tf6];
-    
+    [self.view addSubview:self.tf7];
+    [self.view addSubview:self.tf8];
+    [self.view addSubview:self.tf9];
     [self.view addSubview:self.button];
-    [self.button addTarget:self action:@selector(anotherVC) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.forwardButton];
     
+    [self.button addTarget:self action:@selector(anotherVC) forControlEvents:UIControlEventTouchUpInside];
+    [self.forwardButton addTarget:self action:@selector(forwardVC) forControlEvents:UIControlEventTouchUpInside];
     
     UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeAction:)];
     swipe.direction = UISwipeGestureRecognizerDirectionUp;
@@ -148,6 +157,46 @@
     return _button;
 }
 
+- (UITextField *)tf7 {
+    if (!_tf7) {
+        _tf7 = [[UITextField alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-250)/2, CGRectGetMaxY(self.button.frame)+40, 250, 40)];
+        _tf7.placeholder = @"mark";
+        _tf7.borderStyle = UITextBorderStyleRoundedRect;
+    }
+    return _tf7;
+}
+
+- (UITextField *)tf8 {
+    if (!_tf8) {
+        _tf8 = [[UITextField alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-250)/2, CGRectGetMaxY(self.tf7.frame)+10, 250, 40)];
+        _tf8.placeholder = @"3月3日";
+        _tf8.borderStyle = UITextBorderStyleRoundedRect;
+    }
+    return _tf8;
+}
+
+- (UITextField *)tf9 {
+    if (!_tf9) {
+        _tf9 = [[UITextField alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-250)/2, CGRectGetMaxY(self.tf8.frame)+10, 250, 40)];
+        _tf9.placeholder = @"a period of physical exercise that you do to keep fit";
+        _tf9.borderStyle = UITextBorderStyleRoundedRect;
+    }
+    return _tf9;
+}
+
+- (UIButton *)forwardButton {
+    if (!_forwardButton) {
+        _forwardButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _forwardButton.frame = CGRectMake((SCREEN_WIDTH-60)/2, CGRectGetMaxY(self.tf9.frame)+20, 60, 30);
+        _forwardButton.layer.cornerRadius = 10;
+        _forwardButton.layer.borderWidth = 0.5;
+        _forwardButton.layer.borderColor = [UIColor blackColor].CGColor;
+        [_forwardButton setTitle:@"确定" forState:UIControlStateNormal];
+        [_forwardButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    }
+    return _forwardButton;
+}
+
 - (void)anotherVC {
     StcController *vc = [[StcController alloc] init];
     vc.str1 = self.tf1.text;
@@ -160,6 +209,15 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (void)forwardVC {
+    SiwxController *vc = [[SiwxController alloc] init];
+    vc.headString = self.tf7.text;
+    vc.dateString = self.tf8.text;
+    vc.longString = self.tf9.text;
+
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.tf1 resignFirstResponder];
     [self.tf2 resignFirstResponder];
@@ -167,6 +225,9 @@
     [self.tf4 resignFirstResponder];
     [self.tf5 resignFirstResponder];
     [self.tf6 resignFirstResponder];
+    [self.tf7 resignFirstResponder];
+    [self.tf8 resignFirstResponder];
+    [self.tf9 resignFirstResponder];
 }
 
 /*

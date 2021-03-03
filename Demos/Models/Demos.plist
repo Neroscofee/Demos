@@ -42,5 +42,13 @@
 		<key>demosName</key>
 		<string>火焰心</string>
 	</dict>
+	<dict>
+		<key>isFullScreen</key>
+		<true/>
+		<key>controller</key>
+		<string>CalController</string>
+		<key>demosName</key>
+		<string>计算圣诞</string>
+	</dict>
 </array>
 </plist>
