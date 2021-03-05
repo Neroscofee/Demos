@@ -51,25 +51,26 @@
 }
 
 - (void)goToNextVC {
-//    BlockPassNumSecond *pns = [[BlockPassNumSecond alloc] init];
-//    [pns returnTextString:^(NSString *showStr) {
-//        self.showLabel.text = showStr;
+    BlockPassNumSecond *pns = [[BlockPassNumSecond alloc] init];
+    [pns returnTextString:^(NSString *showStr) {
+        self.showLabel.text = showStr;
+    }];
+//    pns.pstr = ^(NSString *textString, int a) {
+//        return [NSString stringWithFormat:@"%d%@",a,textString];
+//    };
+//    self.showLabel.text = [pns getTextString:^NSString *(NSString *textString, int a) {
+//        return [NSString stringWithFormat:@"%d%@",a,textString];
 //    }];
-////    pns.pstr = ^(NSString *textString, int a) {
-////        return [NSString stringWithFormat:@"%d%@",a,textString];
-////    };
-////    self.showLabel.text = [pns getTextString:^NSString *(NSString *textString, int a) {
-////        return [NSString stringWithFormat:@"%d%@",a,textString];
-////    }];
 //    [self presentViewController:pns animated:YES completion:nil];
+    [self.navigationController pushViewController:pns animated:YES];
     
-    WS(weakSelf);
-    BlockThirdController *vc = [[BlockThirdController alloc] init];
-    vc.passString = ^NSString * _Nullable(NSString * _Nonnull string) {
-        weakSelf.showLabel.text = string;
-        return string;
-    };
-    [self.navigationController pushViewController:vc animated:YES];
+//    WS(weakSelf);
+//    BlockThirdController *vc = [[BlockThirdController alloc] init];
+//    vc.passString = ^NSString * _Nullable(NSString * _Nonnull string) {
+//        weakSelf.showLabel.text = string;
+//        return string;
+//    };
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

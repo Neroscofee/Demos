@@ -14,6 +14,7 @@
 #import "SnowViewController.h"
 #import "AnimationTimer.h"
 #import "FireViewController.h"
+#import "BlockPassNumFirst.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 

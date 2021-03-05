@@ -9,6 +9,9 @@
 #import "BlockPassNumSecond.h"
 
 @interface BlockPassNumSecond ()
+{
+    BOOL isShow;
+}
 
 @end
 static NSString *restoreString = @"";
@@ -20,6 +23,8 @@ static NSString *restoreString = @"";
     [self.view addSubview:self.textField];
     [self.view addSubview:self.returnButton];
     
+    isShow = NO;
+    
     UIControl *control = [[UIControl alloc] initWithFrame:self.view.bounds];
     [control addTarget:self action:@selector(controlClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:control];
@@ -28,7 +33,7 @@ static NSString *restoreString = @"";
     [self.textField addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardDidHideNotification object:nil];
     //NSLog(@"************%d************",[self bianli:79310]);
 }
 
@@ -139,7 +144,15 @@ static NSString *restoreString = @"";
     NSTimeInterval animationDuration;
     [[notification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&animationDuration];
     [UIView animateWithDuration:animationDuration animations:^{
-        self.textField.frame = CGRectMake(self.textField.frame.origin.x, self.textField.frame.origin.y-keyboardRect.size.height, self.textField.frame.size.width, self.textField.frame.size.height);
+        if (!isShow) {
+            self.textField.frame = CGRectMake(self.textField.frame.origin.x, self.textField.frame.origin.y-keyboardRect.size.height, self.textField.frame.size.width, self.textField.frame.size.height);
+//            isShow = !isShow;
+        } else {
+            self.textField.frame = CGRectMake(self.textField.frame.origin.x, self.textField.frame.origin.y+keyboardRect.size.height, self.textField.frame.size.width, self.textField.frame.size.height);
+        }
+        isShow = !isShow;
+//        self.textField.frame = CGRectMake(self.textField.frame.origin.x, self.textField.frame.origin.y-keyboardRect.size.height, self.textField.frame.size.width, self.textField.frame.size.height);
+//        NSLog(@"%@",self.textField);
     }];
     
 //    [UIView animateWithDuration:animationDuration animations:^{
@@ -157,6 +170,7 @@ static NSString *restoreString = @"";
     CGRect keyboardRect = [[notification.userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue];
     NSString *str1 = NSStringFromCGRect(keyboardRect);
     NSLog(@"%@",str1);
+//    NSLog(@"%@",self.textField.frame.origin);
     NSTimeInterval animationDuration;
     [[notification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&animationDuration];
     [UIView beginAnimations:nil context:NULL];

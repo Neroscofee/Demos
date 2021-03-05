@@ -50,5 +50,13 @@
 		<key>demosName</key>
 		<string>计算圣诞</string>
 	</dict>
+	<dict>
+		<key>isFullScreen</key>
+		<false/>
+		<key>controller</key>
+		<string>BlockPassNumFirst</string>
+		<key>demosName</key>
+		<string>传值</string>
+	</dict>
 </array>
 </plist>
