@@ -125,10 +125,19 @@ static NSString *restoreString = @"";
 - (void)keyboardWillShow:(NSNotification *)notification {
     CGRect keyboardRect = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
     NSString *str1 = NSStringFromCGRect(keyboardRect);
-    NSLog(@"%@",str1);
+    NSLog(@"-------%@",str1);
+    
+    NSString *str = NSStringFromCGRect(self.textField.frame);
+    NSLog(@"*******%@",str);
+    
+    if (self.textField.frame.origin.y == 450) {
+        isShow = NO;
+    } else {
+        isShow = YES;
+    }
 //    keyboardRect = [self.textField convertRect:keyboardRect fromView:nil];
 //    NSString *str2= NSStringFromCGRect(keyboardRect);
-//    NSLog(@"%@",str2);
+//    NSLog(@"*******%@",str2);
 //    
 //    CGFloat keyboardTop = keyboardRect.origin.y;
 //    CGRect newTextFieldFrame = self.textField.bounds;
@@ -150,7 +159,7 @@ static NSString *restoreString = @"";
         } else {
             self.textField.frame = CGRectMake(self.textField.frame.origin.x, self.textField.frame.origin.y+keyboardRect.size.height, self.textField.frame.size.width, self.textField.frame.size.height);
         }
-        isShow = !isShow;
+//        isShow = !isShow;
 //        self.textField.frame = CGRectMake(self.textField.frame.origin.x, self.textField.frame.origin.y-keyboardRect.size.height, self.textField.frame.size.width, self.textField.frame.size.height);
 //        NSLog(@"%@",self.textField);
     }];
