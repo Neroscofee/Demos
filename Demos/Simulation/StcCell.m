@@ -26,7 +26,7 @@
         [self.contentView addSubview:self.title];
         [self.contentView addSubview:self.amount];
         [self.contentView addSubview:self.arrow];
-        [self.contentView addSubview:[SNUtility createSeparateLine:CGRectMake(12, 48, SCREEN_WIDTH-12, 1) color:UIColorMake(0xF1F1F1)]];
+//        [self.contentView addSubview:[SNUtility createSeparateLine:CGRectMake(12, 48, SCREEN_WIDTH-12, 1) color:UIColorMake(0xF1F1F1)]];
         
     }
     return self;

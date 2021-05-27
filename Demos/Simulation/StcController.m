@@ -39,7 +39,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = UIColorMake(0xF8F8F8);
     self.title = @"统计";
     [self getStcData];
 //    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -219,12 +219,13 @@
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.head.frame)+16, SCREEN_WIDTH, SCREEN_HEIGHT-Fit_NavigationBar_Height-Fit_Bottom_Safe_Height-CGRectGetMaxY(self.head.frame)-16) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.head.frame)+16, SCREEN_WIDTH, 490) style:UITableViewStylePlain];
         _tableView.bounces = NO;
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.delegate = self;
         _tableView.dataSource = self;
         [_tableView registerClass:[StcCell class] forCellReuseIdentifier:NSStringFromClass([StcCell class])];
+        _tableView.tableFooterView = [[UIView alloc] init];
     }
     return _tableView;
 }
@@ -239,7 +240,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.stcArray.count;
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
