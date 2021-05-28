@@ -15,7 +15,7 @@
 #import "UIImageView+WebCache.h"
 #import "SNUtility.h"
 #import "UIColor+NSColor.h"
-
+#import "IQKeyboardManager.h"
 
 #pragma mark - 颜色初始化
 /** 十六进制颜色 */

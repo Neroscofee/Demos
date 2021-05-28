@@ -63,6 +63,33 @@
     swipe1.direction = UISwipeGestureRecognizerDirectionDown;
     [self.view addGestureRecognizer:swipe1];
     
+    
+    [self.tf7 addObserver:self forKeyPath:@"tf7" options:NSKeyValueObservingOptionNew context:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    
+}
+
+- (void)dealloc {
+    [self.tf7 removeObserver:self forKeyPath:@"tf7"];
+}
+
+- (void)keyboardWillShow:(NSNotification *)notification {
+    CGRect keyboardRect = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    NSString *str1 = NSStringFromCGRect(keyboardRect);
+    NSLog(@"%@",str1);
+    //
+    NSTimeInterval anidur;
+    anidur = [[notification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    NSLog(@"---%f",anidur);
+    [UIView animateWithDuration:anidur animations:^{
+        self.tf7.frame = CGRectMake(self.tf7.frame.origin.x, self.tf7.frame.origin.y-keyboardRect.size.height, self.tf7.frame.size.width, self.tf7.frame.size.height);//
+    }];
+    
+    
 }
 
 - (void)swipeAction:(UISwipeGestureRecognizer *)gr {
@@ -218,17 +245,17 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self.tf1 resignFirstResponder];
-    [self.tf2 resignFirstResponder];
-    [self.tf3 resignFirstResponder];
-    [self.tf4 resignFirstResponder];
-    [self.tf5 resignFirstResponder];
-    [self.tf6 resignFirstResponder];
-    [self.tf7 resignFirstResponder];
-    [self.tf8 resignFirstResponder];
-    [self.tf9 resignFirstResponder];
-}
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    [self.tf1 resignFirstResponder];
+//    [self.tf2 resignFirstResponder];
+//    [self.tf3 resignFirstResponder];
+//    [self.tf4 resignFirstResponder];
+//    [self.tf5 resignFirstResponder];
+//    [self.tf6 resignFirstResponder];
+//    [self.tf7 resignFirstResponder];
+//    [self.tf8 resignFirstResponder];
+//    [self.tf9 resignFirstResponder];
+//}
 
 /*
 #pragma mark - Navigation

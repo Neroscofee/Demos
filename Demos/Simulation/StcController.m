@@ -46,7 +46,7 @@
 //    backButton.bounds = CGRectMake(0, 0, 24, 24);
 //    [backButton setImage:[UIImage imageNamed:@"BackChevron.png"] forState:UIControlStateNormal];
 //    [backButton addTarget:self action:@selector(backPrePage) forControlEvents:UIControlEventTouchUpInside];
-    
+    //self.view addsubview
     SNButton *backButton = [SNButton buttonWithType:UIButtonTypeCustom];
     backButton.frame = CGRectMake(50, 100, 70, 24);
     backButton.layoutType = ButtonLayoutTypeHorizon;

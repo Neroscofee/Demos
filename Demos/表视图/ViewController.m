@@ -30,37 +30,61 @@ typedef void(^returnPreviousPage)(UIAlertAction * _Nonnull action);
 @property (nonatomic, strong) UILabel *label2;
 @property (nonatomic, strong) UILabel *label3;
 
+@property (nonatomic, strong) NSArray *mealArray;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"鸽群聚餐听天由命";
+    self.title = @"吃饭听天由命";
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tLabel];
     [self.view addSubview:self.rbtn];
-    [self.view addSubview:self.label1];
-    [self.view addSubview:self.label2];
-    [self.view addSubview:self.label3];
+//    [self.view addSubview:self.label1];
+//    [self.view addSubview:self.label2];
+//    [self.view addSubview:self.label3];
     
     self.lnum = 0;
     self.tnum = 0;
     self.gnum = 0;
     
+    self.mealArray = [NSArray arrayWithObjects:@"酸菜牛肉",@"锅边洋芋",@"腊排骨",@"夜宴烧烤",@"柴火鸡",@"肥肠耗儿鱼",@"林家饭店",@"喜村土菜馆", nil];
+    
     self.timer = [NSTimer scheduledTimerWithTimeInterval:0.01 repeats:YES block:^(NSTimer * _Nonnull timer) {
-        int num = arc4random()%3+1;
+        int num = arc4random()%8;
         NSLog(@"%d",num);
-        if (num == 1) {
-            self.tLabel.text = @"腊排骨";
-            self.tLabel.textColor = [UIColor redColor];
-        } else if (num == 2) {
-            self.tLabel.text = @"土菜馆";
-            self.tLabel.textColor = [UIColor orangeColor];
-        } else {
-            self.tLabel.text = @"骨肉馆";
-            self.tLabel.textColor = [UIColor blueColor];
-        }
+        NSLog(@"那就今晚吃 %@ 吧!", self.mealArray[num]);
+        self.tLabel.text = self.mealArray[num];
+        self.tLabel.textColor = [UIColor randomColor];
+        
+        
+//        if (num == 1) {
+//            self.tLabel.text = @"酸菜牛肉";
+//            self.tLabel.textColor = [UIColor redColor];
+//        } else if (num == 2) {
+//            self.tLabel.text = @"锅边洋芋";
+//            self.tLabel.textColor = [UIColor orangeColor];
+//        } else if (num == 2) {
+//            self.tLabel.text = @"腊排骨";
+//            self.tLabel.textColor = [UIColor orangeColor];
+//        } else if (num == 2) {
+//            self.tLabel.text = @"夜宴烧烤";
+//            self.tLabel.textColor = [UIColor orangeColor];
+//        } else if (num == 2) {
+//            self.tLabel.text = @"柴火鸡";
+//            self.tLabel.textColor = [UIColor orangeColor];
+//        } else if (num == 2) {
+//            self.tLabel.text = @"肥肠耗儿鱼";
+//            self.tLabel.textColor = [UIColor orangeColor];
+//        } else if (num == 2) {
+//            self.tLabel.text = @"林家饭店";
+//            self.tLabel.textColor = [UIColor orangeColor];
+//        } else {
+//            self.tLabel.text = @"喜村土菜馆";
+//            self.tLabel.textColor = [UIColor blueColor];
+//        }
     }];
     [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     
