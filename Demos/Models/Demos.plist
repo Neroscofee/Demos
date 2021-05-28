@@ -58,5 +58,13 @@
 		<key>demosName</key>
 		<string>传值</string>
 	</dict>
+	<dict>
+		<key>isFullScreen</key>
+		<false/>
+		<key>controller</key>
+		<string>ViewController</string>
+		<key>demosName</key>
+		<string>聚餐听天由命</string>
+	</dict>
 </array>
 </plist>

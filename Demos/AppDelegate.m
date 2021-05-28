@@ -180,6 +180,11 @@
 }
 
 - (void)applicationFramework {
+    IQKeyboardManager *keyboardManager = [IQKeyboardManager sharedManager];
+    keyboardManager.enable = YES;
+    keyboardManager.enableAutoToolbar = NO;
+    keyboardManager.shouldResignOnTouchOutside = YES;
+    
     NSFrameworkManager *frameworkManager = [NSFrameworkManager sharedInstance];
 //    frameworkManager.welcomeFrameworkHandle = ^{
 //        WelcomeViewController *vc = [[WelcomeViewController alloc] init];
