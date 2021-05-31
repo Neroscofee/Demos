@@ -173,7 +173,7 @@
 - (UIImageView *)head {
     if (!_head) {
         _head = [[UIImageView alloc] initWithFrame:CGRectMake(13, CGRectGetMaxY(self.boldLine.frame)+15, 40, 40)];
-        _head.image = UIImageMake(@"heart.png");
+        _head.image = UIImageMake(@"W73.png");
         _head.layer.cornerRadius = 20;
         _head.layer.masksToBounds = YES;
     }

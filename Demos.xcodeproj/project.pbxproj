@@ -104,6 +104,7 @@
 		4CAF4E77255BDD3000838412 /* MainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF4E76255BDD3000838412 /* MainCell.m */; };
 		4CAF4E81255BDFB500838412 /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF4E80255BDFB500838412 /* MainModel.m */; };
 		4CAF4E86255BE84E00838412 /* Demos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CAF4E85255BE84E00838412 /* Demos.plist */; };
+		4CB74F47266487BD00D81EB9 /* W73.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB74F46266487BD00D81EB9 /* W73.png */; };
 		7F0C99DE1E56F315003C735F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0C99DD1E56F315003C735F /* AVFoundation.framework */; };
 		7F16D50C1E6561B4006B8572 /* DrawLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F16D5091E6561B4006B8572 /* DrawLine.m */; };
 		7F16D50D1E6561B4006B8572 /* DrawLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F16D50B1E6561B4006B8572 /* DrawLineViewController.m */; };
@@ -396,6 +397,7 @@
 		4CAF4E7F255BDFB500838412 /* MainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
 		4CAF4E80255BDFB500838412 /* MainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
 		4CAF4E85255BE84E00838412 /* Demos.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Demos.plist; sourceTree = "<group>"; };
+		4CB74F46266487BD00D81EB9 /* W73.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = W73.png; sourceTree = "<group>"; };
 		7F0C99DD1E56F315003C735F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7F16D5081E6561B4006B8572 /* DrawLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLine.h; sourceTree = "<group>"; };
 		7F16D5091E6561B4006B8572 /* DrawLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLine.m; sourceTree = "<group>"; };
@@ -633,6 +635,7 @@
 				4C91CDD5254ACCFA009B4114 /* jiantou.png */,
 				4C91CDC7254AC85C009B4114 /* shandian.png */,
 				4C91CDCD254ACC00009B4114 /* battery.png */,
+				4CB74F46266487BD00D81EB9 /* W73.png */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -1386,6 +1389,7 @@
 				C487F119239BE34900CA3C2E /* 6.png in Resources */,
 				C487F118239BE34900CA3C2E /* 5.png in Resources */,
 				7FA9CA451FA09F2200BA4A48 /* Box1@2x.png in Resources */,
+				4CB74F47266487BD00D81EB9 /* W73.png in Resources */,
 				4C2AA204239912EF00DA7240 /* test@2x.png in Resources */,
 				4C91CD9D254A6BA1009B4114 /* stcData.plist in Resources */,
 				7F42D9CA1EB327A5005F3C0A /* snow.png in Resources */,
