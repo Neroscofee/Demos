@@ -84,6 +84,9 @@
 		4C5684F82600965B00B44293 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5684E72600965B00B44293 /* IQUIView+Hierarchy.m */; };
 		4C5684F92600965B00B44293 /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5684EB2600965B00B44293 /* IQUIViewController+Additions.m */; };
 		4C5684FA2600965B00B44293 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5684ED2600965B00B44293 /* IQKeyboardReturnKeyHandler.m */; };
+		4C66719A2728073100722B97 /* ARPlaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6671992728073100722B97 /* ARPlaneController.m */; };
+		4C6671AE27280B5E00722B97 /* tool.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6671AD27280B5E00722B97 /* tool.scnassets */; };
+		4C6671B0272811E700722B97 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6671AF272811E700722B97 /* art.scnassets */; };
 		4C6B445425946AF500D98CD2 /* CalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B445325946AF500D98CD2 /* CalController.m */; };
 		4C6B445A25946D5700D98CD2 /* CalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B445925946D5700D98CD2 /* CalButton.m */; };
 		4C7755862609790000E05C13 /* fr.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4C7755852609790000E05C13 /* fr.rtf */; };
@@ -371,6 +374,10 @@
 		4C5684EB2600965B00B44293 /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIViewController+Additions.m"; sourceTree = "<group>"; };
 		4C5684EC2600965B00B44293 /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
 		4C5684ED2600965B00B44293 /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
+		4C6671982728073100722B97 /* ARPlaneController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARPlaneController.h; sourceTree = "<group>"; };
+		4C6671992728073100722B97 /* ARPlaneController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARPlaneController.m; sourceTree = "<group>"; };
+		4C6671AD27280B5E00722B97 /* tool.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = tool.scnassets; sourceTree = "<group>"; };
+		4C6671AF272811E700722B97 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		4C6B445225946AF400D98CD2 /* CalController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalController.h; sourceTree = "<group>"; };
 		4C6B445325946AF500D98CD2 /* CalController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalController.m; sourceTree = "<group>"; };
 		4C6B445825946D5700D98CD2 /* CalButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalButton.h; sourceTree = "<group>"; };
@@ -787,11 +794,8 @@
 		4C2BAEFB2727E10D001A6374 /* AR */ = {
 			isa = PBXGroup;
 			children = (
-				4CEBAF592727E41900FDF067 /* Scene.sks */,
-				4CEBAF5B2727E4F400FDF067 /* Scene.h */,
-				4CEBAF5C2727E4F400FDF067 /* Scene.m */,
-				4C2BAEFC2727E150001A6374 /* ARController.h */,
-				4C2BAEFD2727E150001A6374 /* ARController.m */,
+				4C6671972728052E00722B97 /* 飞机 */,
+				4C6671962728050C00722B97 /* 空中文字 */,
 			);
 			path = AR;
 			sourceTree = "<group>";
@@ -861,6 +865,29 @@
 				4C5684EB2600965B00B44293 /* IQUIViewController+Additions.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		4C6671962728050C00722B97 /* 空中文字 */ = {
+			isa = PBXGroup;
+			children = (
+				4CEBAF592727E41900FDF067 /* Scene.sks */,
+				4CEBAF5B2727E4F400FDF067 /* Scene.h */,
+				4CEBAF5C2727E4F400FDF067 /* Scene.m */,
+				4C2BAEFC2727E150001A6374 /* ARController.h */,
+				4C2BAEFD2727E150001A6374 /* ARController.m */,
+			);
+			path = "空中文字";
+			sourceTree = "<group>";
+		};
+		4C6671972728052E00722B97 /* 飞机 */ = {
+			isa = PBXGroup;
+			children = (
+				4C6671982728073100722B97 /* ARPlaneController.h */,
+				4C6671992728073100722B97 /* ARPlaneController.m */,
+				4C6671AF272811E700722B97 /* art.scnassets */,
+				4C6671AD27280B5E00722B97 /* tool.scnassets */,
+			);
+			path = "飞机";
 			sourceTree = "<group>";
 		};
 		4C6B445125946ABC00D98CD2 /* Calculator */ = {
@@ -1418,6 +1445,7 @@
 				4C2AA1FF2399114700DA7240 /* cat_mask.png in Resources */,
 				4C2AA1E72398AFED00DA7240 /* back@2x.png in Resources */,
 				7FA28D801EB862F400CC2702 /* raindrop_4@2x.png in Resources */,
+				4C6671B0272811E700722B97 /* art.scnassets in Resources */,
 				7FAF27B61F5E8B39006C30DD /* DazFire.png in Resources */,
 				4C91CDC9254AC85C009B4114 /* shandian.png in Resources */,
 				4C5684BE25ECDDEA00B44293 /* go3@3x.png in Resources */,
@@ -1434,6 +1462,7 @@
 				4C1B3B0A254901F300C2B976 /* heart.png in Resources */,
 				C487F116239BE34900CA3C2E /* 1.png in Resources */,
 				4C09A78E2546E115007115E0 /* BackChevron@3x.png in Resources */,
+				4C6671AE27280B5E00722B97 /* tool.scnassets in Resources */,
 				7FAF27B81F5E8B39006C30DD /* DazHeart.png in Resources */,
 				7FAF27C51F5FB301006C30DD /* jia.png in Resources */,
 				4C1B3AF72548032F00C2B976 /* right@2x.png in Resources */,
@@ -1589,6 +1618,7 @@
 				4C2AA1CF2398AD4C00DA7240 /* SDWebImageCoderHelper.m in Sources */,
 				4C5684F22600965B00B44293 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				7FCB26B21D7EA31500DA95AE /* main.m in Sources */,
+				4C66719A2728073100722B97 /* ARPlaneController.m in Sources */,
 				7F3C1BB61E696516002E536E /* BlockButtonViewController.m in Sources */,
 				4C2AA1CD2398AD4C00DA7240 /* UIImage+GIF.m in Sources */,
 				4C5684F82600965B00B44293 /* IQUIView+Hierarchy.m in Sources */,

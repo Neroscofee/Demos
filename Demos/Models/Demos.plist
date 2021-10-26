@@ -74,5 +74,13 @@
 		<key>demosName</key>
 		<string>空中文字</string>
 	</dict>
+	<dict>
+		<key>isFullScreen</key>
+		<false/>
+		<key>controller</key>
+		<string>ARPlaneController</string>
+		<key>demosName</key>
+		<string>鲫鱼号飞船</string>
+	</dict>
 </array>
 </plist>
