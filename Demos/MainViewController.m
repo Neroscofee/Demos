@@ -30,8 +30,11 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"Demos";
     
+    NSLog(@"%@",[[UIScreen mainScreen] currentMode]);
     NSLog(@"%f",SCREEN_WIDTH);
     NSLog(@"%f",SCREEN_HEIGHT);
+    NSLog(@"%f",Fit_NavigationBar_Height);
+    NSLog(@"%f",Fit_Bottom_Safe_Height);
     
     [self.view addSubview:self.tableView];
     

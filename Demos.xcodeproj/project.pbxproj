@@ -64,6 +64,7 @@
 		4C2AA20C239A3AF000DA7240 /* catsound4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C2AA209239A3AF000DA7240 /* catsound4.mp3 */; };
 		4C2AA20E239A631100DA7240 /* fire_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C2AA20D239A631100DA7240 /* fire_start.png */; };
 		4C2AA210239A696800DA7240 /* fire_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C2AA20F239A696800DA7240 /* fire_stop.png */; };
+		4C2BAEFE2727E150001A6374 /* ARController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2BAEFD2727E150001A6374 /* ARController.m */; };
 		4C5684B125ECC9C400B44293 /* UIColor+NSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5684B025ECC9C400B44293 /* UIColor+NSColor.m */; };
 		4C5684B725ECDB9900B44293 /* NSAttributedString+AttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5684B625ECDB9900B44293 /* NSAttributedString+AttributedString.m */; };
 		4C5684BD25ECDDEA00B44293 /* go3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5684BB25ECDDEA00B44293 /* go3@2x.png */; };
@@ -105,6 +106,8 @@
 		4CAF4E81255BDFB500838412 /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF4E80255BDFB500838412 /* MainModel.m */; };
 		4CAF4E86255BE84E00838412 /* Demos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CAF4E85255BE84E00838412 /* Demos.plist */; };
 		4CB74F47266487BD00D81EB9 /* W73.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB74F46266487BD00D81EB9 /* W73.png */; };
+		4CEBAF5A2727E41900FDF067 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4CEBAF592727E41900FDF067 /* Scene.sks */; };
+		4CEBAF5D2727E4F400FDF067 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEBAF5C2727E4F400FDF067 /* Scene.m */; };
 		7F0C99DE1E56F315003C735F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0C99DD1E56F315003C735F /* AVFoundation.framework */; };
 		7F16D50C1E6561B4006B8572 /* DrawLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F16D5091E6561B4006B8572 /* DrawLine.m */; };
 		7F16D50D1E6561B4006B8572 /* DrawLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F16D50B1E6561B4006B8572 /* DrawLineViewController.m */; };
@@ -329,6 +332,8 @@
 		4C2AA209239A3AF000DA7240 /* catsound4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = catsound4.mp3; sourceTree = "<group>"; };
 		4C2AA20D239A631100DA7240 /* fire_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire_start.png; sourceTree = "<group>"; };
 		4C2AA20F239A696800DA7240 /* fire_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire_stop.png; sourceTree = "<group>"; };
+		4C2BAEFC2727E150001A6374 /* ARController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARController.h; sourceTree = "<group>"; };
+		4C2BAEFD2727E150001A6374 /* ARController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARController.m; sourceTree = "<group>"; };
 		4C5684AF25ECC9C400B44293 /* UIColor+NSColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+NSColor.h"; sourceTree = "<group>"; };
 		4C5684B025ECC9C400B44293 /* UIColor+NSColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NSColor.m"; sourceTree = "<group>"; };
 		4C5684B525ECDB9900B44293 /* NSAttributedString+AttributedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+AttributedString.h"; sourceTree = "<group>"; };
@@ -398,6 +403,9 @@
 		4CAF4E80255BDFB500838412 /* MainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
 		4CAF4E85255BE84E00838412 /* Demos.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Demos.plist; sourceTree = "<group>"; };
 		4CB74F46266487BD00D81EB9 /* W73.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = W73.png; sourceTree = "<group>"; };
+		4CEBAF592727E41900FDF067 /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
+		4CEBAF5B2727E4F400FDF067 /* Scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		4CEBAF5C2727E4F400FDF067 /* Scene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
 		7F0C99DD1E56F315003C735F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7F16D5081E6561B4006B8572 /* DrawLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLine.h; sourceTree = "<group>"; };
 		7F16D5091E6561B4006B8572 /* DrawLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLine.m; sourceTree = "<group>"; };
@@ -774,6 +782,18 @@
 				4C2AA1F72398B73400DA7240 /* NSCatViewController.m */,
 			);
 			path = NSCat;
+			sourceTree = "<group>";
+		};
+		4C2BAEFB2727E10D001A6374 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				4CEBAF592727E41900FDF067 /* Scene.sks */,
+				4CEBAF5B2727E4F400FDF067 /* Scene.h */,
+				4CEBAF5C2727E4F400FDF067 /* Scene.m */,
+				4C2BAEFC2727E150001A6374 /* ARController.h */,
+				4C2BAEFD2727E150001A6374 /* ARController.m */,
+			);
+			path = AR;
 			sourceTree = "<group>";
 		};
 		4C5684CD2600965B00B44293 /* IQKeyboardManager */ = {
@@ -1177,6 +1197,7 @@
 				4CAF4E7E255BDF9200838412 /* Models */,
 				4CAF4E74255BD87500838412 /* Views */,
 				4C09A7922547B63B007115E0 /* Helpers */,
+				7F16D5161E656345006B8572 /* Vendor */,
 				4C2AA1E42398AFDC00DA7240 /* Resource */,
 				4C2AA1792398A2DD00DA7240 /* Base */,
 				7FCB26B31D7EA31500DA95AE /* AppDelegate.h */,
@@ -1200,7 +1221,7 @@
 				7F16D5711E65759F006B8572 /* 搜索框 */,
 				4C6B445125946ABC00D98CD2 /* Calculator */,
 				4C09A77B2546DC23007115E0 /* Simulation */,
-				7F16D5161E656345006B8572 /* Vendor */,
+				4C2BAEFB2727E10D001A6374 /* AR */,
 				7FCB26B91D7EA31500DA95AE /* Main.storyboard */,
 				7FCB26BC1D7EA31500DA95AE /* Assets.xcassets */,
 				7FCB26BE1D7EA31500DA95AE /* LaunchScreen.storyboard */,
@@ -1370,6 +1391,7 @@
 				7FAF27BE1F5E8B39006C30DD /* DazTriangle.png in Resources */,
 				4C09A78D2546E115007115E0 /* BackChevron@2x.png in Resources */,
 				4C2AA206239A328900DA7240 /* catsound1.mp3 in Resources */,
+				4CEBAF5A2727E41900FDF067 /* Scene.sks in Resources */,
 				4C5684BD25ECDDEA00B44293 /* go3@2x.png in Resources */,
 				7FAF27BC1F5E8B39006C30DD /* DazStarIcon@2x.png in Resources */,
 				7FAF27BD1F5E8B39006C30DD /* DazStarOutline.png in Resources */,
@@ -1449,6 +1471,7 @@
 				4C2AA1D52398AD4C00DA7240 /* SDImageCache.m in Sources */,
 				4C2AA1DE2398AD4C00DA7240 /* UIView+WebCache.m in Sources */,
 				7F42D9CD1EB327EA005F3C0A /* SnowViewController.m in Sources */,
+				4CEBAF5D2727E4F400FDF067 /* Scene.m in Sources */,
 				7F3C1B5C1E66BC82002E536E /* ProtocolViewController.m in Sources */,
 				C4107BEF239C1629007B4C20 /* NSFrameworkManager.m in Sources */,
 				4CA363E42519F2D1008D5DE3 /* BlockThirdController.m in Sources */,
@@ -1504,6 +1527,7 @@
 				7F16D53D1E656345006B8572 /* PNBarChart.m in Sources */,
 				7F16D56F1E65659A006B8572 /* TestViewController.m in Sources */,
 				4C2AA1D82398AD4C00DA7240 /* NSData+ImageContentType.m in Sources */,
+				4C2BAEFE2727E150001A6374 /* ARController.m in Sources */,
 				4C91CDBF254AC1E7009B4114 /* ChargeController.m in Sources */,
 				7FAF279F1F5D5099006C30DD /* RecipeController.m in Sources */,
 				7F3C1B641E67B260002E536E /* BlockResearch.m in Sources */,
@@ -1725,7 +1749,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Demos/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Demos/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fang.www.Demo9-6-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1742,7 +1766,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Demos/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Demos/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fang.www.Demo9-6-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";

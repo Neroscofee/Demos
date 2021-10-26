@@ -66,5 +66,13 @@
 		<key>demosName</key>
 		<string>聚餐听天由命</string>
 	</dict>
+	<dict>
+		<key>isFullScreen</key>
+		<false/>
+		<key>controller</key>
+		<string>ARController</string>
+		<key>demosName</key>
+		<string>空中文字</string>
+	</dict>
 </array>
 </plist>

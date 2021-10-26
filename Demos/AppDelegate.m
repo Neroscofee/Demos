@@ -119,7 +119,7 @@
 //    self.window.rootViewController = self.rootNaviController;
     
     [self applicationFramework];
-
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     [UINavigationBar appearance].translucent = NO;//可以影响界面锚点 NO 锚点从导航栏下开始
     

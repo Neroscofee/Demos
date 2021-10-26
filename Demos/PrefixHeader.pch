@@ -83,16 +83,16 @@
 #define BAR_HEIGHT ((SCREEN_TOP_BAR_HEIGHT) + (SCREEN_BOTTOM_BAR_HEIGHT)) //bar总高度
 
 // 状态栏高度
-#define Fit_StatusBar_Height ((iPhoneX || iPhoneXR || iPhoneXM) ? 44.f : 20.f)
+#define Fit_StatusBar_Height ((iPhoneX || iPhoneXR || iPhoneXM || iPhone12 || iPhone12PM) ? 44.f : 20.f)
 
 // 导航栏高度
-#define Fit_NavigationBar_Height ((iPhoneX || iPhoneXR || iPhoneXM)  ? 88.f : 64.f)
+#define Fit_NavigationBar_Height ((iPhoneX || iPhoneXR || iPhoneXM || iPhone12 || iPhone12PM)  ? 88.f : 64.f)
 
 // tabBar高度
-#define Fit_Tabbar_Height ((iPhoneX || iPhoneXR || iPhoneXM)  ? (49.f+34.f) : 49.f)
+#define Fit_Tabbar_Height ((iPhoneX || iPhoneXR || iPhoneXM || iPhone12 || iPhone12PM)  ? (49.f+34.f) : 49.f)
 
 // 底部安全区域
-#define Fit_Bottom_Safe_Height ((iPhoneX || iPhoneXR || iPhoneXM)  ? 34.f : 0.f)
+#define Fit_Bottom_Safe_Height ((iPhoneX || iPhoneXR || iPhoneXM || iPhone12 || iPhone12PM)  ? 34.f : 0.f)
 
 //状态栏高度
 #define Fit_StartusBar_Height [UIApplication sharedApplication].statusBarFrame.size.height
@@ -149,6 +149,8 @@
 
 #define iPhoneXR ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1624), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) : NO)
 #define iPhoneXM ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone12 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1170, 2532), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone12PM ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1284, 2778), [[UIScreen mainScreen] currentMode].size) : NO)
 
 #define KSOUFUN_NAV_HEIGHT  44
 
