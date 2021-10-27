@@ -26,8 +26,8 @@
     
     self.arscnView.session = [[ARSession alloc] init];
     
-    SCNScene *scene = [SCNScene sceneNamed:@"tool.scnassets/ship.scn"];
-    self.arscnView.scene = scene;
+//    SCNScene *scene = [SCNScene sceneNamed:@"ship.scn"];
+//    self.arscnView.scene = scene;
     
     // Do any additional setup after loading the view.
     
@@ -61,13 +61,28 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     // 1. 使用场景加载scn文件
-    SCNScene *scene = [SCNScene sceneNamed:@"tool.scnassets/ship.scn"];
-    
+    SCNScene *scene = [SCNScene sceneNamed:@"ship.scn"];
+
     SCNNode *shipNode = scene.rootNode.childNodes.firstObject;
-    shipNode.position = SCNVector3Make(0, -1, -1);
+    shipNode.position = SCNVector3Make(0, -1, 0.1);
+//    NSLog(@"%@",shipNode.orientation);
+//    shipNode.orientation = SCNVector4Make(0, 0, -0.2, 0);
+//    shipNode.worldRight =
+//    shipNode.orientation =
+//    SCNQuaternion quaternion = [self orientationFromCMQuaternion:shipNode.orientation];
+//      _cameraNode.orientation = quaternion;
     
     [self.arscnView.scene.rootNode addChildNode:shipNode];
 }
+//- (SCNQuaternion)orientationFromCMQuaternion:(CMQuaternion)q
+//{
+//    GLKQuaternion gq1 =  GLKQuaternionMakeWithAngleAndAxis(GLKMathDegreesToRadians(-90), 1, 0, 0); // add a rotation of the pitch 90 degrees
+//    GLKQuaternion gq2 =  GLKQuaternionMake(q.x, q.y, q.z, q.w); // the current orientation
+//    GLKQuaternion qp  =  GLKQuaternionMultiply(gq1, gq2); // get the "new" orientation
+//    CMQuaternion rq =   {.x = qp.x, .y = qp.y, .z = qp.z, .w = qp.w};
+//
+//    return SCNVector4Make(rq.x, rq.y, rq.z, rq.w);
+//}
 
 #pragma mark - ARSCNViewDelegate
 
