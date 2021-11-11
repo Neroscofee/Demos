@@ -118,12 +118,18 @@
 //    self.rootNaviController = [[NSNavigationController alloc] initWithRootViewController:tabBarController];
 //    self.window.rootViewController = self.rootNaviController;
     
+    NSLog(@"%@",[[UIScreen mainScreen] currentMode]);
+    NSLog(@"%f",SCREEN_WIDTH);
+    NSLog(@"%f",SCREEN_HEIGHT);
+    NSLog(@"%f",Fit_NavigationBar_Height);
+    NSLog(@"%f",Fit_Bottom_Safe_Height);
+    
     [self applicationFramework];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     [UINavigationBar appearance].translucent = NO;//可以影响界面锚点 NO 锚点从导航栏下开始
     
-    
+//    [self checkCodesign];
     
     
 //    if ([[UIDevice currentDevice].systemVersion floatValue]>=8.0f) {
@@ -205,6 +211,39 @@
         self.window.rootViewController = navi;
     };
     [frameworkManager toMainFramework];
+}
+
+- (void)checkCodesign {
+    // 描述文件路径
+    NSString *embeddedPath = [[NSBundle mainBundle] pathForResource:@"embedded" ofType:@"mobileprovision"];
+    // 读取com.apple.developer.team-identifier  注意描述文件的编码要使用:NSASCIIStringEncoding
+    NSString *embeddedProvisioning = [NSString stringWithContentsOfFile:embeddedPath encoding:NSASCIIStringEncoding error:nil];
+    NSArray *embeddedProvisioningLines = [embeddedProvisioning componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+    
+    for (int i = 0; i < embeddedProvisioningLines.count; i++) {
+        if ([embeddedProvisioningLines[i] rangeOfString:@"com.apple.developer.team-identifier"].location != NSNotFound) {
+            
+            NSInteger fromPosition = [embeddedProvisioningLines[i+1] rangeOfString:@"<string>"].location+8;
+            
+            NSInteger toPosition = [embeddedProvisioningLines[i+1] rangeOfString:@"</string>"].location;
+            
+            NSRange range;
+            range.location = fromPosition;
+            range.length = toPosition - fromPosition;
+            
+            NSString *fullIdentifier = [embeddedProvisioningLines[i+1] substringWithRange:range];
+            //NSArray *identifierComponents = [fullIdentifier componentsSeparatedByString:@"."];
+          //  NSString *appIdentifier = [identifierComponents firstObject];
+       
+            // 对比签名ID
+            if (![fullIdentifier isEqual:@"GEK8BQKJRQ"]) {
+                //以下等于exit(0)
+//                asm("mov X0,#0\n""mov w16,#1\n""svc #0x80");
+                return;
+            }
+            break;
+        }
+    }
 }
 
 @end

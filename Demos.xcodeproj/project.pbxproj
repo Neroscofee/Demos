@@ -105,6 +105,8 @@
 		4CA5F7CB2729570600AE68B5 /* vase.scn in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F7CA2729570500AE68B5 /* vase.scn */; };
 		4CA5F7D62729594E00AE68B5 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F7D42729594E00AE68B5 /* texture.png */; };
 		4CA5F7D72729594E00AE68B5 /* ship.scn in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F7D52729594E00AE68B5 /* ship.scn */; };
+		4CA5F7DC273D0E6900AE68B5 /* TestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5F7D8273D0E6900AE68B5 /* TestCollectionViewController.m */; };
+		4CA5F7DD273D0E6900AE68B5 /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5F7DA273D0E6900AE68B5 /* TestCollectionViewCell.m */; };
 		4CAF4E70255BD54A00838412 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF4E6F255BD54A00838412 /* MainViewController.m */; };
 		4CAF4E77255BDD3000838412 /* MainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF4E76255BDD3000838412 /* MainCell.m */; };
 		4CAF4E81255BDFB500838412 /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF4E80255BDFB500838412 /* MainModel.m */; };
@@ -143,8 +145,6 @@
 		7F16D5761E65759F006B8572 /* SearchData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F16D5731E65759F006B8572 /* SearchData.m */; };
 		7F16D5771E65759F006B8572 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F16D5751E65759F006B8572 /* SearchTableViewController.m */; };
 		7F16D5811E6576B4006B8572 /* MyDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F16D57A1E6576B4006B8572 /* MyDataSource.m */; };
-		7F16D5821E6576B4006B8572 /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F16D57C1E6576B4006B8572 /* TestCollectionViewCell.m */; };
-		7F16D5831E6576B4006B8572 /* TestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F16D57E1E6576B4006B8572 /* TestCollectionViewController.m */; };
 		7F16D5841E6576B4006B8572 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F16D5801E6576B4006B8572 /* ViewController.m */; };
 		7F29362E1E72A66100C5E7B5 /* c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F29362D1E72A66100C5E7B5 /* c.jpg */; };
 		7F3C1B5C1E66BC82002E536E /* ProtocolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3C1B5B1E66BC81002E536E /* ProtocolViewController.m */; };
@@ -404,6 +404,10 @@
 		4CA5F7CA2729570500AE68B5 /* vase.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = vase.scn; sourceTree = "<group>"; };
 		4CA5F7D42729594E00AE68B5 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
 		4CA5F7D52729594E00AE68B5 /* ship.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ship.scn; sourceTree = "<group>"; };
+		4CA5F7D8273D0E6900AE68B5 /* TestCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewController.m; sourceTree = "<group>"; };
+		4CA5F7D9273D0E6900AE68B5 /* TestCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewController.h; sourceTree = "<group>"; };
+		4CA5F7DA273D0E6900AE68B5 /* TestCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewCell.m; sourceTree = "<group>"; };
+		4CA5F7DB273D0E6900AE68B5 /* TestCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewCell.h; sourceTree = "<group>"; };
 		4CAF4E6E255BD54A00838412 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4CAF4E6F255BD54A00838412 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		4CAF4E75255BDD3000838412 /* MainCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainCell.h; sourceTree = "<group>"; };
@@ -478,10 +482,6 @@
 		7F16D5751E65759F006B8572 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
 		7F16D5791E6576B4006B8572 /* MyDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDataSource.h; sourceTree = "<group>"; };
 		7F16D57A1E6576B4006B8572 /* MyDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDataSource.m; sourceTree = "<group>"; };
-		7F16D57B1E6576B4006B8572 /* TestCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestCollectionViewCell.h; path = "../表视图/TestCollectionViewCell.h"; sourceTree = "<group>"; };
-		7F16D57C1E6576B4006B8572 /* TestCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestCollectionViewCell.m; path = "../表视图/TestCollectionViewCell.m"; sourceTree = "<group>"; };
-		7F16D57D1E6576B4006B8572 /* TestCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestCollectionViewController.h; path = "../表视图/TestCollectionViewController.h"; sourceTree = "<group>"; };
-		7F16D57E1E6576B4006B8572 /* TestCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestCollectionViewController.m; path = "../表视图/TestCollectionViewController.m"; sourceTree = "<group>"; };
 		7F16D57F1E6576B4006B8572 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7F16D5801E6576B4006B8572 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7F29362D1E72A66100C5E7B5 /* c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c.jpg; sourceTree = "<group>"; };
@@ -796,8 +796,8 @@
 		4C2BAEFB2727E10D001A6374 /* AR */ = {
 			isa = PBXGroup;
 			children = (
-				4C6671972728052E00722B97 /* 飞机 */,
-				4C6671962728050C00722B97 /* 空中文字 */,
+				4C6671972728052E00722B97 /* Plane */,
+				4C6671962728050C00722B97 /* Skywritting */,
 			);
 			path = AR;
 			sourceTree = "<group>";
@@ -869,7 +869,7 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		4C6671962728050C00722B97 /* 空中文字 */ = {
+		4C6671962728050C00722B97 /* Skywritting */ = {
 			isa = PBXGroup;
 			children = (
 				4CEBAF592727E41900FDF067 /* Scene.sks */,
@@ -878,10 +878,10 @@
 				4C2BAEFC2727E150001A6374 /* ARController.h */,
 				4C2BAEFD2727E150001A6374 /* ARController.m */,
 			);
-			path = "空中文字";
+			path = Skywritting;
 			sourceTree = "<group>";
 		};
-		4C6671972728052E00722B97 /* 飞机 */ = {
+		4C6671972728052E00722B97 /* Plane */ = {
 			isa = PBXGroup;
 			children = (
 				4C6671982728073100722B97 /* ARPlaneController.h */,
@@ -889,7 +889,7 @@
 				4CA5F7D52729594E00AE68B5 /* ship.scn */,
 				4CA5F7D42729594E00AE68B5 /* texture.png */,
 			);
-			path = "飞机";
+			path = Plane;
 			sourceTree = "<group>";
 		};
 		4C6B445125946ABC00D98CD2 /* Calculator */ = {
@@ -930,7 +930,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7F16D5071E6561B4006B8572 /* 画线 */ = {
+		7F16D5071E6561B4006B8572 /* DrawLine */ = {
 			isa = PBXGroup;
 			children = (
 				7F16D5081E6561B4006B8572 /* DrawLine.h */,
@@ -938,16 +938,16 @@
 				7F16D50A1E6561B4006B8572 /* DrawLineViewController.h */,
 				7F16D50B1E6561B4006B8572 /* DrawLineViewController.m */,
 			);
-			path = "画线";
+			path = DrawLine;
 			sourceTree = "<group>";
 		};
-		7F16D5121E656323006B8572 /* 画折线图 */ = {
+		7F16D5121E656323006B8572 /* DrawChat */ = {
 			isa = PBXGroup;
 			children = (
 				7F16D5131E656323006B8572 /* PNChartViewController.h */,
 				7F16D5141E656323006B8572 /* PNChartViewController.m */,
 			);
-			path = "画折线图";
+			path = DrawChat;
 			sourceTree = "<group>";
 		};
 		7F16D5161E656345006B8572 /* Vendor */ = {
@@ -1028,7 +1028,7 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		7F16D5641E65659A006B8572 /* 集合视图 */ = {
+		7F16D5641E65659A006B8572 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
 				7F16D5691E65659A006B8572 /* TestViewController.h */,
@@ -1039,15 +1039,15 @@
 				7F16D5681E65659A006B8572 /* Square.m */,
 				7F16D56B1E65659A006B8572 /* TriangleView.h */,
 				7F16D56C1E65659A006B8572 /* TriangleView.m */,
-				7F16D57B1E6576B4006B8572 /* TestCollectionViewCell.h */,
-				7F16D57C1E6576B4006B8572 /* TestCollectionViewCell.m */,
-				7F16D57D1E6576B4006B8572 /* TestCollectionViewController.h */,
-				7F16D57E1E6576B4006B8572 /* TestCollectionViewController.m */,
+				4CA5F7DB273D0E6900AE68B5 /* TestCollectionViewCell.h */,
+				4CA5F7DA273D0E6900AE68B5 /* TestCollectionViewCell.m */,
+				4CA5F7D9273D0E6900AE68B5 /* TestCollectionViewController.h */,
+				4CA5F7D8273D0E6900AE68B5 /* TestCollectionViewController.m */,
 			);
-			path = "集合视图";
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
-		7F16D5711E65759F006B8572 /* 搜索框 */ = {
+		7F16D5711E65759F006B8572 /* SearchBar */ = {
 			isa = PBXGroup;
 			children = (
 				7F16D5741E65759F006B8572 /* SearchTableViewController.h */,
@@ -1055,10 +1055,10 @@
 				7F16D5721E65759F006B8572 /* SearchData.h */,
 				7F16D5731E65759F006B8572 /* SearchData.m */,
 			);
-			path = "搜索框";
+			path = SearchBar;
 			sourceTree = "<group>";
 		};
-		7F16D5781E6576B4006B8572 /* 表视图 */ = {
+		7F16D5781E6576B4006B8572 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
 				7F16D57F1E6576B4006B8572 /* ViewController.h */,
@@ -1072,7 +1072,7 @@
 				7FAF279D1F5D5099006C30DD /* RecipeController.h */,
 				7FAF279E1F5D5099006C30DD /* RecipeController.m */,
 			);
-			path = "表视图";
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		7F3C1B591E66BC32002E536E /* Protocol */ = {
@@ -1243,11 +1243,11 @@
 				7F3C1B591E66BC32002E536E /* Protocol */,
 				7F3C1B7B1E68FE12002E536E /* Runtime */,
 				7F42D9BF1EAF208B005F3C0A /* Stack */,
-				7F16D5781E6576B4006B8572 /* 表视图 */,
-				7F16D5071E6561B4006B8572 /* 画线 */,
-				7F16D5121E656323006B8572 /* 画折线图 */,
-				7F16D5641E65659A006B8572 /* 集合视图 */,
-				7F16D5711E65759F006B8572 /* 搜索框 */,
+				7F16D5781E6576B4006B8572 /* TableView */,
+				7F16D5071E6561B4006B8572 /* DrawLine */,
+				7F16D5121E656323006B8572 /* DrawChat */,
+				7F16D5641E65659A006B8572 /* CollectionView */,
+				7F16D5711E65759F006B8572 /* SearchBar */,
 				4C6B445125946ABC00D98CD2 /* Calculator */,
 				4C09A77B2546DC23007115E0 /* Simulation */,
 				4C2BAEFB2727E10D001A6374 /* AR */,
@@ -1501,6 +1501,7 @@
 				4C2AA1EE2398B1EF00DA7240 /* UIButton+NSButton.m in Sources */,
 				7F3C1B6A1E67B60D002E536E /* BlockPassNumFirst.m in Sources */,
 				4C91CD8225497B18009B4114 /* StcCell.m in Sources */,
+				4CA5F7DD273D0E6900AE68B5 /* TestCollectionViewCell.m in Sources */,
 				4C2AA1D52398AD4C00DA7240 /* SDImageCache.m in Sources */,
 				4C2AA1DE2398AD4C00DA7240 /* UIView+WebCache.m in Sources */,
 				7F42D9CD1EB327EA005F3C0A /* SnowViewController.m in Sources */,
@@ -1546,8 +1547,8 @@
 				C44624E420F50449002A27F5 /* DealerProxy.m in Sources */,
 				4C2AA1DB2398AD4C00DA7240 /* SDWebImageGIFCoder.m in Sources */,
 				7F42D9C21EAF20F0005F3C0A /* StackForNSObject.m in Sources */,
-				7F16D5831E6576B4006B8572 /* TestCollectionViewController.m in Sources */,
 				4C5684EF2600965B00B44293 /* IQToolbar.m in Sources */,
+				4CA5F7DC273D0E6900AE68B5 /* TestCollectionViewController.m in Sources */,
 				7F16D53E1E656345006B8572 /* PNChartLabel.m in Sources */,
 				4C2AA1902398AD3700DA7240 /* AFSecurityPolicy.m in Sources */,
 				4C5684F42600965B00B44293 /* IQKeyboardManager.m in Sources */,
@@ -1626,7 +1627,6 @@
 				7F3C1BB61E696516002E536E /* BlockButtonViewController.m in Sources */,
 				4C2AA1CD2398AD4C00DA7240 /* UIImage+GIF.m in Sources */,
 				4C5684F82600965B00B44293 /* IQUIView+Hierarchy.m in Sources */,
-				7F16D5821E6576B4006B8572 /* TestCollectionViewCell.m in Sources */,
 				4C5684B725ECDB9900B44293 /* NSAttributedString+AttributedString.m in Sources */,
 				4CAF4E77255BDD3000838412 /* MainCell.m in Sources */,
 				7FAF27A21F5E8953006C30DD /* FireViewController.m in Sources */,
@@ -1783,10 +1783,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Demos/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Demos/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fang.www.Demo9-6-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1800,10 +1801,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Demos/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Demos/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fang.www.Demo9-6-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
