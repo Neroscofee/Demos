@@ -107,6 +107,15 @@
 		4CA5F7D72729594E00AE68B5 /* ship.scn in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F7D52729594E00AE68B5 /* ship.scn */; };
 		4CA5F7DC273D0E6900AE68B5 /* TestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5F7D8273D0E6900AE68B5 /* TestCollectionViewController.m */; };
 		4CA5F7DD273D0E6900AE68B5 /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5F7DA273D0E6900AE68B5 /* TestCollectionViewCell.m */; };
+		4CA5F7E1273D117C00AE68B5 /* SurveyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5F7E0273D117C00AE68B5 /* SurveyController.m */; };
+		4CA5F80B273D126400AE68B5 /* vase_ROUGHNESS.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F803273D126400AE68B5 /* vase_ROUGHNESS.png */; };
+		4CA5F80C273D126400AE68B5 /* vase_AO.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F804273D126400AE68B5 /* vase_AO.png */; };
+		4CA5F80D273D126400AE68B5 /* vase_SHADOW.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F805273D126400AE68B5 /* vase_SHADOW.png */; };
+		4CA5F80E273D126400AE68B5 /* vase_METALLIC.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F806273D126400AE68B5 /* vase_METALLIC.png */; };
+		4CA5F80F273D126400AE68B5 /* vase_NORMAL.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F807273D126400AE68B5 /* vase_NORMAL.png */; };
+		4CA5F810273D126400AE68B5 /* water_DIFFUSE.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F808273D126400AE68B5 /* water_DIFFUSE.png */; };
+		4CA5F811273D126400AE68B5 /* vase_DIFFUSE.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F809273D126400AE68B5 /* vase_DIFFUSE.png */; };
+		4CA5F812273D126400AE68B5 /* vase.scn in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F80A273D126400AE68B5 /* vase.scn */; };
 		4CAF4E70255BD54A00838412 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF4E6F255BD54A00838412 /* MainViewController.m */; };
 		4CAF4E77255BDD3000838412 /* MainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF4E76255BDD3000838412 /* MainCell.m */; };
 		4CAF4E81255BDFB500838412 /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF4E80255BDFB500838412 /* MainModel.m */; };
@@ -408,6 +417,16 @@
 		4CA5F7D9273D0E6900AE68B5 /* TestCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewController.h; sourceTree = "<group>"; };
 		4CA5F7DA273D0E6900AE68B5 /* TestCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewCell.m; sourceTree = "<group>"; };
 		4CA5F7DB273D0E6900AE68B5 /* TestCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewCell.h; sourceTree = "<group>"; };
+		4CA5F7DF273D117C00AE68B5 /* SurveyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SurveyController.h; sourceTree = "<group>"; };
+		4CA5F7E0273D117C00AE68B5 /* SurveyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SurveyController.m; sourceTree = "<group>"; };
+		4CA5F803273D126400AE68B5 /* vase_ROUGHNESS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vase_ROUGHNESS.png; sourceTree = "<group>"; };
+		4CA5F804273D126400AE68B5 /* vase_AO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vase_AO.png; sourceTree = "<group>"; };
+		4CA5F805273D126400AE68B5 /* vase_SHADOW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vase_SHADOW.png; sourceTree = "<group>"; };
+		4CA5F806273D126400AE68B5 /* vase_METALLIC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vase_METALLIC.png; sourceTree = "<group>"; };
+		4CA5F807273D126400AE68B5 /* vase_NORMAL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vase_NORMAL.png; sourceTree = "<group>"; };
+		4CA5F808273D126400AE68B5 /* water_DIFFUSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = water_DIFFUSE.png; sourceTree = "<group>"; };
+		4CA5F809273D126400AE68B5 /* vase_DIFFUSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vase_DIFFUSE.png; sourceTree = "<group>"; };
+		4CA5F80A273D126400AE68B5 /* vase.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = vase.scn; sourceTree = "<group>"; };
 		4CAF4E6E255BD54A00838412 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4CAF4E6F255BD54A00838412 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		4CAF4E75255BDD3000838412 /* MainCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainCell.h; sourceTree = "<group>"; };
@@ -796,6 +815,7 @@
 		4C2BAEFB2727E10D001A6374 /* AR */ = {
 			isa = PBXGroup;
 			children = (
+				4CA5F7DE273D10EC00AE68B5 /* Level */,
 				4C6671972728052E00722B97 /* Plane */,
 				4C6671962728050C00722B97 /* Skywritting */,
 			);
@@ -901,6 +921,39 @@
 				4C6B445925946D5700D98CD2 /* CalButton.m */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		4CA5F7DE273D10EC00AE68B5 /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				4CA5F7DF273D117C00AE68B5 /* SurveyController.h */,
+				4CA5F7E0273D117C00AE68B5 /* SurveyController.m */,
+				4CA5F801273D126400AE68B5 /* vase */,
+			);
+			path = Level;
+			sourceTree = "<group>";
+		};
+		4CA5F801273D126400AE68B5 /* vase */ = {
+			isa = PBXGroup;
+			children = (
+				4CA5F802273D126400AE68B5 /* textures */,
+				4CA5F80A273D126400AE68B5 /* vase.scn */,
+			);
+			path = vase;
+			sourceTree = "<group>";
+		};
+		4CA5F802273D126400AE68B5 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				4CA5F803273D126400AE68B5 /* vase_ROUGHNESS.png */,
+				4CA5F804273D126400AE68B5 /* vase_AO.png */,
+				4CA5F805273D126400AE68B5 /* vase_SHADOW.png */,
+				4CA5F806273D126400AE68B5 /* vase_METALLIC.png */,
+				4CA5F807273D126400AE68B5 /* vase_NORMAL.png */,
+				4CA5F808273D126400AE68B5 /* water_DIFFUSE.png */,
+				4CA5F809273D126400AE68B5 /* vase_DIFFUSE.png */,
+			);
+			path = textures;
 			sourceTree = "<group>";
 		};
 		4CAF4E74255BD87500838412 /* Views */ = {
@@ -1403,14 +1456,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA5F80E273D126400AE68B5 /* vase_METALLIC.png in Resources */,
 				4CA5F7CB2729570600AE68B5 /* vase.scn in Resources */,
 				4C1B3AF62548032F00C2B976 /* left@2x.png in Resources */,
 				7FCB6C7A1F6283E700DB8922 /* firework.wav in Resources */,
 				4C91CDB6254AAAE0009B4114 /* 111.png in Resources */,
 				7FAF27C41F5FB301006C30DD /* wei.png in Resources */,
 				4C2AA2002399114700DA7240 /* cat_fagu.png in Resources */,
+				4CA5F80C273D126400AE68B5 /* vase_AO.png in Resources */,
 				C487F114239BE34900CA3C2E /* 4.png in Resources */,
+				4CA5F80F273D126400AE68B5 /* vase_NORMAL.png in Resources */,
 				4CA5F7D62729594E00AE68B5 /* texture.png in Resources */,
+				4CA5F811273D126400AE68B5 /* vase_DIFFUSE.png in Resources */,
+				4CA5F812273D126400AE68B5 /* vase.scn in Resources */,
+				4CA5F810273D126400AE68B5 /* water_DIFFUSE.png in Resources */,
 				4C2AA20B239A3AF000DA7240 /* catsound2.mp3 in Resources */,
 				4C91CD7C254948E6009B4114 /* calender@2x.png in Resources */,
 				7FCB26C01D7EA31500DA95AE /* LaunchScreen.storyboard in Resources */,
@@ -1424,6 +1483,7 @@
 				4C09A78D2546E115007115E0 /* BackChevron@2x.png in Resources */,
 				4C2AA206239A328900DA7240 /* catsound1.mp3 in Resources */,
 				4CEBAF5A2727E41900FDF067 /* Scene.sks in Resources */,
+				4CA5F80D273D126400AE68B5 /* vase_SHADOW.png in Resources */,
 				4C5684BD25ECDDEA00B44293 /* go3@2x.png in Resources */,
 				7FAF27BC1F5E8B39006C30DD /* DazStarIcon@2x.png in Resources */,
 				7FAF27BD1F5E8B39006C30DD /* DazStarOutline.png in Resources */,
@@ -1448,6 +1508,7 @@
 				4C91CD9D254A6BA1009B4114 /* stcData.plist in Resources */,
 				7F42D9CA1EB327A5005F3C0A /* snow.png in Resources */,
 				4C2AA1FF2399114700DA7240 /* cat_mask.png in Resources */,
+				4CA5F80B273D126400AE68B5 /* vase_ROUGHNESS.png in Resources */,
 				4C2AA1E72398AFED00DA7240 /* back@2x.png in Resources */,
 				7FA28D801EB862F400CC2702 /* raindrop_4@2x.png in Resources */,
 				7FAF27B61F5E8B39006C30DD /* DazFire.png in Resources */,
@@ -1611,6 +1672,7 @@
 				4C6B445425946AF500D98CD2 /* CalController.m in Sources */,
 				7F16D54B1E656345006B8572 /* PNScatterChartDataItem.m in Sources */,
 				4C2AA1D22398AD4C00DA7240 /* SDWebImageCoder.m in Sources */,
+				4CA5F7E1273D117C00AE68B5 /* SurveyController.m in Sources */,
 				4C2AA1C92398AD4C00DA7240 /* SDWebImageFrame.m in Sources */,
 				7FA9CA491FA0A08400BA4A48 /* PushView.m in Sources */,
 				4C2AA1F42398B52200DA7240 /* NSTabBarController.m in Sources */,
