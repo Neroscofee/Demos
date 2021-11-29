@@ -102,7 +102,6 @@
 		4C91CDCE254ACC00009B4114 /* battery.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91CDCD254ACC00009B4114 /* battery.png */; };
 		4C91CDD6254ACCFA009B4114 /* jiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91CDD5254ACCFA009B4114 /* jiantou.png */; };
 		4CA363E42519F2D1008D5DE3 /* BlockThirdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA363E32519F2D1008D5DE3 /* BlockThirdController.m */; };
-		4CA5F7CB2729570600AE68B5 /* vase.scn in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F7CA2729570500AE68B5 /* vase.scn */; };
 		4CA5F7D62729594E00AE68B5 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F7D42729594E00AE68B5 /* texture.png */; };
 		4CA5F7D72729594E00AE68B5 /* ship.scn in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F7D52729594E00AE68B5 /* ship.scn */; };
 		4CA5F7DC273D0E6900AE68B5 /* TestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5F7D8273D0E6900AE68B5 /* TestCollectionViewController.m */; };
@@ -1457,7 +1456,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CA5F80E273D126400AE68B5 /* vase_METALLIC.png in Resources */,
-				4CA5F7CB2729570600AE68B5 /* vase.scn in Resources */,
 				4C1B3AF62548032F00C2B976 /* left@2x.png in Resources */,
 				7FCB6C7A1F6283E700DB8922 /* firework.wav in Resources */,
 				4C91CDB6254AAAE0009B4114 /* 111.png in Resources */,
