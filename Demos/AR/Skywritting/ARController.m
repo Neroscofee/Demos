@@ -103,6 +103,21 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
+ 
+ 
+ 9级  1张
+ 10级 2张
+ 11级 4张
+ 12级 7张
+ 13级 12张
+ 14级 20张
+ 15级 32张
+ 你先把所有金卡是几级列出来,然后再去数每张里多的相加就好了啊
+ 比如
+ 哈利11 赫敏11 麦格11 罗恩10
+ 飞贼10 钻心10 阿瓦达10 水牢10 龙蛋11 白龙10 凤凰10 闪电10 厉火10 石墩10
+ 
+ 
 */
 
 @end

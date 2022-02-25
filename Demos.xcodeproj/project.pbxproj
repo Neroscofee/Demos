@@ -409,7 +409,6 @@
 		4C91CDD5254ACCFA009B4114 /* jiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiantou.png; sourceTree = "<group>"; };
 		4CA363E22519F2D1008D5DE3 /* BlockThirdController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockThirdController.h; sourceTree = "<group>"; };
 		4CA363E32519F2D1008D5DE3 /* BlockThirdController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockThirdController.m; sourceTree = "<group>"; };
-		4CA5F7CA2729570500AE68B5 /* vase.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = vase.scn; sourceTree = "<group>"; };
 		4CA5F7D42729594E00AE68B5 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
 		4CA5F7D52729594E00AE68B5 /* ship.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ship.scn; sourceTree = "<group>"; };
 		4CA5F7D8273D0E6900AE68B5 /* TestCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewController.m; sourceTree = "<group>"; };
@@ -1306,7 +1305,6 @@
 				7FCB26B91D7EA31500DA95AE /* Main.storyboard */,
 				7FCB26BC1D7EA31500DA95AE /* Assets.xcassets */,
 				7FCB26BE1D7EA31500DA95AE /* LaunchScreen.storyboard */,
-				4CA5F7CA2729570500AE68B5 /* vase.scn */,
 				7FCB26C11D7EA31500DA95AE /* Info.plist */,
 				7FCB26B01D7EA31500DA95AE /* Supporting Files */,
 			);
