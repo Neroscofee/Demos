@@ -436,6 +436,7 @@
 		4CEBAF592727E41900FDF067 /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
 		4CEBAF5B2727E4F400FDF067 /* Scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
 		4CEBAF5C2727E4F400FDF067 /* Scene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
+		4CED0C3D27C8DF3100CA5F3A /* frxj.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = frxj.txt; sourceTree = "<group>"; };
 		7F0C99DD1E56F315003C735F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7F16D5081E6561B4006B8572 /* DrawLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLine.h; sourceTree = "<group>"; };
 		7F16D5091E6561B4006B8572 /* DrawLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLine.m; sourceTree = "<group>"; };
@@ -642,6 +643,7 @@
 		4C09A77B2546DC23007115E0 /* Simulation */ = {
 			isa = PBXGroup;
 			children = (
+				4CED0C3D27C8DF3100CA5F3A /* frxj.txt */,
 				4C7755852609790000E05C13 /* fr.rtf */,
 				4C91CDBD254AC1E7009B4114 /* ChargeController.h */,
 				4C91CDBE254AC1E7009B4114 /* ChargeController.m */,
