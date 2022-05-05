@@ -15,6 +15,7 @@
 #import "AnimationTimer.h"
 #import "FireViewController.h"
 #import "BlockPassNumFirst.h"
+#import "CompassController.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -87,6 +88,7 @@
         pushVC.modalPresentationStyle = UIModalPresentationFullScreen;
         [self presentViewController:pushVC animated:YES completion:nil];
     } else {
+        pushVC.title = model.demosName;
         [self.navigationController pushViewController:pushVC animated:YES];
     }
 }

@@ -87,6 +87,8 @@
 		4C66719A2728073100722B97 /* ARPlaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6671992728073100722B97 /* ARPlaneController.m */; };
 		4C6B445425946AF500D98CD2 /* CalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B445325946AF500D98CD2 /* CalController.m */; };
 		4C6B445A25946D5700D98CD2 /* CalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B445925946D5700D98CD2 /* CalButton.m */; };
+		4C743F93282361070074682A /* CompassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C743F92282361070074682A /* CompassController.m */; };
+		4C743F97282370D30074682A /* compassIM.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C743F96282370D30074682A /* compassIM.png */; };
 		4C7755862609790000E05C13 /* fr.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4C7755852609790000E05C13 /* fr.rtf */; };
 		4C91CD7725494718009B4114 /* SNUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C91CD7625494718009B4114 /* SNUtility.m */; };
 		4C91CD7C254948E6009B4114 /* calender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91CD7B254948E6009B4114 /* calender@2x.png */; };
@@ -389,6 +391,9 @@
 		4C6B445325946AF500D98CD2 /* CalController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalController.m; sourceTree = "<group>"; };
 		4C6B445825946D5700D98CD2 /* CalButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalButton.h; sourceTree = "<group>"; };
 		4C6B445925946D5700D98CD2 /* CalButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalButton.m; sourceTree = "<group>"; };
+		4C743F91282361070074682A /* CompassController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompassController.h; sourceTree = "<group>"; };
+		4C743F92282361070074682A /* CompassController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompassController.m; sourceTree = "<group>"; };
+		4C743F96282370D30074682A /* compassIM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compassIM.png; sourceTree = "<group>"; };
 		4C7755852609790000E05C13 /* fr.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = fr.rtf; sourceTree = "<group>"; };
 		4C91CD7525494718009B4114 /* SNUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNUtility.h; sourceTree = "<group>"; };
 		4C91CD7625494718009B4114 /* SNUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNUtility.m; sourceTree = "<group>"; };
@@ -799,6 +804,7 @@
 				4C2AA1FE2399114700DA7240 /* cat_fagu.png */,
 				4C2AA1FD2399114600DA7240 /* cat_mask.png */,
 				4C2AA203239912EF00DA7240 /* test@2x.png */,
+				4C743F96282370D30074682A /* compassIM.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -921,6 +927,15 @@
 				4C6B445925946D5700D98CD2 /* CalButton.m */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		4C743F90282360BF0074682A /* Compass */ = {
+			isa = PBXGroup;
+			children = (
+				4C743F91282361070074682A /* CompassController.h */,
+				4C743F92282361070074682A /* CompassController.m */,
+			);
+			path = Compass;
 			sourceTree = "<group>";
 		};
 		4CA5F7DE273D10EC00AE68B5 /* Level */ = {
@@ -1304,6 +1319,7 @@
 				4C6B445125946ABC00D98CD2 /* Calculator */,
 				4C09A77B2546DC23007115E0 /* Simulation */,
 				4C2BAEFB2727E10D001A6374 /* AR */,
+				4C743F90282360BF0074682A /* Compass */,
 				7FCB26B91D7EA31500DA95AE /* Main.storyboard */,
 				7FCB26BC1D7EA31500DA95AE /* Assets.xcassets */,
 				7FCB26BE1D7EA31500DA95AE /* LaunchScreen.storyboard */,
@@ -1512,6 +1528,7 @@
 				7FAF27B61F5E8B39006C30DD /* DazFire.png in Resources */,
 				4C91CDC9254AC85C009B4114 /* shandian.png in Resources */,
 				4C5684BE25ECDDEA00B44293 /* go3@3x.png in Resources */,
+				4C743F97282370D30074682A /* compassIM.png in Resources */,
 				4C91CDA2254A7571009B4114 /* lightunfold@2x.png in Resources */,
 				7FAF27C01F5E8B39006C30DD /* first@2x.png in Resources */,
 				C487F117239BE34900CA3C2E /* 2.png in Resources */,
@@ -1608,6 +1625,7 @@
 				7F42D9C21EAF20F0005F3C0A /* StackForNSObject.m in Sources */,
 				4C5684EF2600965B00B44293 /* IQToolbar.m in Sources */,
 				4CA5F7DC273D0E6900AE68B5 /* TestCollectionViewController.m in Sources */,
+				4C743F93282361070074682A /* CompassController.m in Sources */,
 				7F16D53E1E656345006B8572 /* PNChartLabel.m in Sources */,
 				4C2AA1902398AD3700DA7240 /* AFSecurityPolicy.m in Sources */,
 				4C5684F42600965B00B44293 /* IQKeyboardManager.m in Sources */,

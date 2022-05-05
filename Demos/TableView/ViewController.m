@@ -110,6 +110,11 @@ typedef void(^returnPreviousPage)(UIAlertAction * _Nonnull action);
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.timer invalidate];
+}
+
 - (UILabel *)tLabel {
     if (!_tLabel) {
         _tLabel = [[UILabel alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-100)/2, 100, 100, 16)];
