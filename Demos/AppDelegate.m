@@ -98,15 +98,15 @@
 //        SnowViewController *vc = [[SnowViewController alloc] init];//下雪动画
 //    RecipeController *vc = [[RecipeController alloc] init];//用plist当Model源
     
-//    FireViewController *vc = [[FireViewController alloc] init];//烟花
+    FireViewController *vc = [[FireViewController alloc] init];//烟花
 //    DynamicMenuViewController *vc = [[DynamicMenuViewController alloc] init];
 //    GCDViewController *vc = [[GCDViewController alloc] init];
 //    SimuController *vc = [[SimuController alloc] init];
 //    ChargeController *vc = [[ChargeController alloc] init];
 //    self.window.rootViewController = vc;
     
-//    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
-//    self.window.rootViewController = navi;
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = navi;
 //    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
 //    navi.navigationBar.barStyle = UIBarStyleBlack;
    
@@ -124,7 +124,7 @@
     NSLog(@"%f",Fit_NavigationBar_Height);
     NSLog(@"%f",Fit_Bottom_Safe_Height);
     
-    [self applicationFramework];
+//    [self applicationFramework];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     [UINavigationBar appearance].translucent = NO;//可以影响界面锚点 NO 锚点从导航栏下开始

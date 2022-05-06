@@ -16,6 +16,7 @@
     CAEmitterLayer *fireEmitter;
 }
 @property (nonatomic, strong) NSTimer *timer;
+@property (nonatomic, strong) UIImageView *julieBack;
 
 @end
 
@@ -25,14 +26,15 @@ static NSInteger count = 100;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.title = @"夜空中💓最亮的你";
+    self.title = @"夜空中💓最亮的你";
     self.view.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:self.julieBack];
     FireButton *button = [FireButton buttonWithType:UIButtonTypeCustom];
     button.tag = 10000;
     button.backgroundColor = [UIColor clearColor];
-    button.frame = CGRectMake(0, 0, 100, 50);
-    button.center = CGPointMake(SCREEN_WIDTH/2, 100);
-    [button setTitle:@"Start" forState:UIControlStateNormal];
+    button.frame = CGRectMake(10, 20, 100, 50);
+    button.center = CGPointMake(SCREEN_WIDTH/2-25, 220);
+    [button setTitle:@"拍拍我嘛~" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(Start:) forControlEvents:UIControlEventTouchUpInside];
 
     [self.view addSubview:button];
@@ -41,8 +43,8 @@ static NSInteger count = 100;
 
 - (void)Start:(UIButton *)button {
     if (button.tag%2 == 0) {
-        [button setTitle:@"Stop" forState:UIControlStateNormal];
-        [button setImage:UIImageMake(@"fire_stop.png") forState:UIControlStateNormal];
+        [button setTitle:@"请停止~" forState:UIControlStateNormal];
+//        [button setImage:UIImageMake(@"fire_stop.png") forState:UIControlStateNormal];
         button.tag--;
         if (!self.timer) {
             [self firework:nil];
@@ -50,8 +52,8 @@ static NSInteger count = 100;
         }
         [self fire:nil];
     } else {
-        [button setTitle:@"Start" forState:UIControlStateNormal];
-        [button setImage:UIImageMake(@"fire_start.png") forState:UIControlStateNormal];
+        [button setTitle:@"拍拍我嘛~" forState:UIControlStateNormal];
+//        [button setImage:UIImageMake(@"fire_start.png") forState:UIControlStateNormal];
         button.tag++;
         [fireEmitter removeFromSuperlayer];
         if (self.timer.isValid) {
@@ -71,6 +73,7 @@ static NSInteger count = 100;
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         
         NSString *path = [[NSBundle mainBundle] pathForResource:@"firework" ofType:@"wav"];
+        
         NSURL *url = [NSURL URLWithString:path];
         SystemSoundID soundID = 777;
         AudioServicesCreateSystemSoundID((__bridge CFURLRef _Nonnull)(url), &soundID);
@@ -120,7 +123,7 @@ static NSInteger count = 100;
     NSMutableArray *arr = [NSMutableArray arrayWithCapacity:0];
     for (int i = 0; i < 4; i++) {
         CAEmitterCell *spark = [CAEmitterCell emitterCell];
-        spark.birthRate = 10;//133
+        spark.birthRate = 15;//133
         spark.velocity = 130;
         spark.emissionRange = M_PI * 2;
         spark.yAcceleration = 80;
@@ -130,24 +133,24 @@ static NSInteger count = 100;
         spark.contentsScale = 4;
         //int value = arc4random()%4+1;
         switch (i) {
-            case 0:
-                spark.contents = (id)[UIImage imageNamed:@"zhao.png"].CGImage;
-                break;
-            case 1:
-                spark.contents = (id)[UIImage imageNamed:@"jia.png"].CGImage;
-                break;
-            case 2:
-                spark.contents = (id)[UIImage imageNamed:@"wei.png"].CGImage;
-                break;
 //            case 0:
-//                spark.contents = (id)[UIImage imageNamed:@"DazHeart.png"].CGImage;
+//                spark.contents = (id)[UIImage imageNamed:@"zhao.png"].CGImage;
 //                break;
 //            case 1:
-//                spark.contents = (id)[UIImage imageNamed:@"DazHeart.png"].CGImage;
+//                spark.contents = (id)[UIImage imageNamed:@"jia.png"].CGImage;
 //                break;
 //            case 2:
-//                spark.contents = (id)[UIImage imageNamed:@"DazHeart.png"].CGImage;
+//                spark.contents = (id)[UIImage imageNamed:@"wei.png"].CGImage;
 //                break;
+            case 0:
+                spark.contents = (id)[UIImage imageNamed:@"fu.png"].CGImage;
+                break;
+            case 1:
+                spark.contents = (id)[UIImage imageNamed:@"bo.png"].CGImage;
+                break;
+            case 2:
+                spark.contents = (id)[UIImage imageNamed:@"DazHeart.png"].CGImage;
+                break;
             case 3:
                 spark.contents = (id)[UIImage imageNamed:@"DazHeart.png"].CGImage;
                 break;
@@ -178,6 +181,14 @@ static NSInteger count = 100;
         [fireEmitter removeFromSuperlayer];
     }
     
+}
+
+- (UIImageView *)julieBack {
+    if (!_julieBack) {
+        _julieBack = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH)];
+        _julieBack.image = UIImageMake(@"J1000.png");
+    }
+    return _julieBack;
 }
 
 - (void)didReceiveMemoryWarning {
