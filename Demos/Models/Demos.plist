@@ -90,5 +90,13 @@
 		<key>demosName</key>
 		<string>指南针</string>
 	</dict>
+	<dict>
+		<key>isFullScreen</key>
+		<false/>
+		<key>controller</key>
+		<string>DrawLineViewController</string>
+		<key>demosName</key>
+		<string>绘画板</string>
+	</dict>
 </array>
 </plist>

@@ -16,6 +16,7 @@
 #import "FireViewController.h"
 #import "BlockPassNumFirst.h"
 #import "CompassController.h"
+#import "DrawLineViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 

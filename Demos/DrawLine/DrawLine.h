@@ -10,4 +10,10 @@
 
 @interface DrawLine : UIView
 
+@property (nonatomic, strong) NSMutableArray *line;
+@property (nonatomic, strong) NSMutableArray *lines;
+@property (nonatomic, assign) CGFloat lineWidth;
+@property (nonatomic, assign) CGFloat lineAlpha;
+@property (nonatomic, assign) NSInteger colorValue;
+
 @end
