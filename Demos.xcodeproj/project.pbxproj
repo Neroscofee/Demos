@@ -89,7 +89,6 @@
 		4C6B445A25946D5700D98CD2 /* CalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B445925946D5700D98CD2 /* CalButton.m */; };
 		4C743F93282361070074682A /* CompassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C743F92282361070074682A /* CompassController.m */; };
 		4C743F97282370D30074682A /* compassIM.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C743F96282370D30074682A /* compassIM.png */; };
-		4C7755862609790000E05C13 /* fr.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4C7755852609790000E05C13 /* fr.rtf */; };
 		4C91CD7725494718009B4114 /* SNUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C91CD7625494718009B4114 /* SNUtility.m */; };
 		4C91CD7C254948E6009B4114 /* calender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91CD7B254948E6009B4114 /* calender@2x.png */; };
 		4C91CD8225497B18009B4114 /* StcCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C91CD8125497B18009B4114 /* StcCell.m */; };
@@ -574,7 +573,7 @@
 		7FAF27B31F5E8B39006C30DD /* DazTriangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazTriangle.png; sourceTree = "<group>"; };
 		7FAF27B41F5E8B39006C30DD /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		7FAF27B51F5E8B39006C30DD /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		7FCB26AD1D7EA31500DA95AE /* Julie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Julie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FCB26AD1D7EA31500DA95AE /* Julie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Julie.app; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCB26B11D7EA31500DA95AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7FCB26B31D7EA31500DA95AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7FCB26B41D7EA31500DA95AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };

@@ -98,5 +98,13 @@
 		<key>demosName</key>
 		<string>绘画板</string>
 	</dict>
+	<dict>
+		<key>isFullScreen</key>
+		<false/>
+		<key>controller</key>
+		<string>DynamicMenuViewController</string>
+		<key>demosName</key>
+		<string>动态物理引擎</string>
+	</dict>
 </array>
 </plist>
