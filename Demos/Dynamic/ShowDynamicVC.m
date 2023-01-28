@@ -19,16 +19,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    self.navigationController.navigationBar.backgroundColor = [UIColor orangeColor];
+//    @available(iOS 13.0, *)
     DynamicBaseView *baseView = nil;
+    CGFloat k = [UIApplication sharedApplication].statusBarFrame.size.height;
+    CGFloat b = [UIApplication sharedApplication].windows.firstObject.safeAreaInsets.bottom;
     CGFloat StatusBarHeight = [[UIApplication sharedApplication] statusBarFrame].size.height;
     CGFloat NaviBarHeight = 44.0;
     self.view.backgroundColor = [UIColor whiteColor];
     switch (self.type) {
         case NSDynamicTypePush:
-            baseView = [[PushView alloc] initWithFrame:CGRectMake(0, 0, 375, self.view.bounds.size.height-StatusBarHeight-NaviBarHeight-34)];
+            baseView = [[PushView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-Fit_StatusBar_Height-NaviBarHeight-Fit_Bottom_Safe_Height)];
             break;
             case NSDynamicTypeSnap:
-            baseView = [[SnapView alloc] initWithFrame:CGRectMake(0, 0, 375, self.view.bounds.size.height-64)];
+            baseView = [[SnapView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-Fit_StatusBar_Height-NaviBarHeight-Fit_Bottom_Safe_Height)];
             break;
         default:
             break;

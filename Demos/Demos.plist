@@ -84,7 +84,7 @@
 	</dict>
 	<dict>
 		<key>isFullScreen</key>
-		<false/>
+		<true/>
 		<key>controller</key>
 		<string>CompassController</string>
 		<key>demosName</key>

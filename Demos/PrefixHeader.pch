@@ -83,19 +83,22 @@
 #define BAR_HEIGHT ((SCREEN_TOP_BAR_HEIGHT) + (SCREEN_BOTTOM_BAR_HEIGHT)) //bar总高度
 
 // 状态栏高度
-#define Fit_StatusBar_Height ((iPhoneX || iPhoneXR || iPhoneXM || iPhone12 || iPhone12PM) ? 44.f : 20.f)
+//#define Fit_StatusBar_Height ((iPhoneX || iPhoneXR || iPhoneXM || iPhone12 || iPhone12PM) ? 44.f : 20.f)
+
+//状态栏高度
+#define Fit_StatusBar_Height [UIApplication sharedApplication].statusBarFrame.size.height
 
 // 导航栏高度
-#define Fit_NavigationBar_Height ((iPhoneX || iPhoneXR || iPhoneXM || iPhone12 || iPhone12PM)  ? 88.f : 64.f)
+#define NavigationBar_Height 44.f
+
+// 状态栏+导航栏高度
+#define Fit_NavigationBar_Height ([UIApplication sharedApplication].statusBarFrame.size.height+44.f)
 
 // tabBar高度
 #define Fit_Tabbar_Height ((iPhoneX || iPhoneXR || iPhoneXM || iPhone12 || iPhone12PM)  ? (49.f+34.f) : 49.f)
 
 // 底部安全区域
-#define Fit_Bottom_Safe_Height ((iPhoneX || iPhoneXR || iPhoneXM || iPhone12 || iPhone12PM)  ? 34.f : 0.f)
-
-//状态栏高度
-#define Fit_StartusBar_Height [UIApplication sharedApplication].statusBarFrame.size.height
+#define Fit_Bottom_Safe_Height [UIApplication sharedApplication].windows.firstObject.safeAreaInsets.bottom
 
 //
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;

@@ -41,8 +41,19 @@
     [self.locationManager startUpdatingHeading];
     
     
-    
+    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeAction:)];
+    swipe.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipe];
     // Do any additional setup after loading the view.
+}
+
+- (void)swipeAction:(UISwipeGestureRecognizer *)gr {
+    if (gr.direction == UISwipeGestureRecognizerDirectionRight) {
+        NSLog(@"右滑返回");
+//        [self dismissViewControllerAnimated:YES completion:nil];
+        [self dismissViewControllerAnimated:YES completion:^{
+        }];
+    }
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading {

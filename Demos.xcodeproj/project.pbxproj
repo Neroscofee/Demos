@@ -984,7 +984,6 @@
 			children = (
 				4CAF4E7F255BDFB500838412 /* MainModel.h */,
 				4CAF4E80255BDFB500838412 /* MainModel.m */,
-				4CAF4E85255BE84E00838412 /* Demos.plist */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1291,6 +1290,7 @@
 			isa = PBXGroup;
 			children = (
 				4CAF4E7E255BDF9200838412 /* Models */,
+				4CAF4E85255BE84E00838412 /* Demos.plist */,
 				4CAF4E74255BD87500838412 /* Views */,
 				4C09A7922547B63B007115E0 /* Helpers */,
 				7F16D5161E656345006B8572 /* Vendor */,

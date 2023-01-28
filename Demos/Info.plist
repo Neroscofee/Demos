@@ -2,12 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>指南针正在使用您的定位</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>指南针需要使用您的定位</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>指南针需要使用您的定位</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -41,6 +35,12 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>AR环境需要使用您的相机，请点击“好”以允许访问。</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>指南针需要使用您的定位</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>指南针需要使用您的定位</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>指南针正在使用您的定位</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -51,8 +51,10 @@
 	</array>
 	<key>UIRequiresFullScreen</key>
 	<true/>
+	<key>UIStatusBarHidden</key>
+	<false/>
 	<key>UIStatusBarStyle</key>
-	<string>UIStatusBarStyleDefault</string>
+	<string></string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
