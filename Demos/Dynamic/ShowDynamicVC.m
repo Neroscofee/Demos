@@ -26,6 +26,7 @@
     CGFloat b = [UIApplication sharedApplication].windows.firstObject.safeAreaInsets.bottom;
     CGFloat StatusBarHeight = [[UIApplication sharedApplication] statusBarFrame].size.height;
     CGFloat NaviBarHeight = 44.0;
+    CGFloat t = Fit_Bottom_Safe_Height;
     self.view.backgroundColor = [UIColor whiteColor];
     switch (self.type) {
         case NSDynamicTypePush:

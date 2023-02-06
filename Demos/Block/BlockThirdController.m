@@ -51,6 +51,11 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void)dealloc {
+    NSLog(@"内存未泄漏~");
+    NSLog(@"%s", __func__);
+}
+
 /*
 #pragma mark - Navigation
 

@@ -34,7 +34,7 @@
         _showLabel.textAlignment = NSTextAlignmentCenter;
         _showLabel.font = [UIFont systemFontOfSize:18];
         [_showLabel sizeToFit];
-
+        
     }
     return _showLabel;
 }
@@ -51,34 +51,35 @@
 }
 
 - (void)goToNextVC {
-    BlockPassNumSecond *pns = [[BlockPassNumSecond alloc] init];
-    [pns returnTextString:^(NSString *showStr) {
-        self.showLabel.text = showStr;
-    }];
-//    pns.pstr = ^(NSString *textString, int a) {
-//        return [NSString stringWithFormat:@"%d%@",a,textString];
-//    };
+//    BlockPassNumSecond *pns = [[BlockPassNumSecond alloc] init];
+//    //    [pns returnTextString:^(NSString *showStr) {
+//    //        self.showLabel.text = showStr;
+//    //    }];
+//    //    pns.pstr = ^(NSString *textString, int a) {
+//    //        return [NSString stringWithFormat:@"%d%@",a,textString];
+//    //    };
 //    self.showLabel.text = [pns getTextString:^NSString *(NSString *textString, int a) {
 //        return [NSString stringWithFormat:@"%d%@",a,textString];
 //    }];
-//    [self presentViewController:pns animated:YES completion:nil];
-    [self.navigationController pushViewController:pns animated:YES];
+//    //    [self presentViewController:pns animated:YES completion:nil];
+//    [self.navigationController pushViewController:pns animated:YES];
     
-//    WS(weakSelf);
-//    BlockThirdController *vc = [[BlockThirdController alloc] init];
-//    vc.passString = ^NSString * _Nullable(NSString * _Nonnull string) {
-//        weakSelf.showLabel.text = string;
-//        return string;
-//    };
-//    [self.navigationController pushViewController:vc animated:YES];
+        WS(weakSelf);
+        BlockThirdController *vc = [[BlockThirdController alloc] init];
+        vc.passString = ^NSString * _Nullable(NSString * _Nonnull string) {
+            self.showLabel.text = string;
+//            self.showLabel.text = @"123123";
+            return string;
+        };
+        [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-//    BlockPassNumSecond *pns = [[BlockPassNumSecond alloc] init];
-//    self.showLabel.text = [pns getTextString:^NSString *(NSString *textString, int a) {
-//        return [NSString stringWithFormat:@"%d%@",a,textString];
-//    }];
+    //    BlockPassNumSecond *pns = [[BlockPassNumSecond alloc] init];
+    //    self.showLabel.text = [pns getTextString:^NSString *(NSString *textString, int a) {
+    //        return [NSString stringWithFormat:@"%d%@",a,textString];
+    //    }];5
     [_showLabel sizeToFit];//自适应,很有意思!
     _showLabel.center = CGPointMake(SCREEN_WIDTH/2, 100);
     [self.showLabel sizeToFit];
@@ -88,6 +89,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc {
+    NSLog(@"内存未泄漏~");
+    NSLog(@"%s", __func__);
 }
 
 /*

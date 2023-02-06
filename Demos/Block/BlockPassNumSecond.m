@@ -231,7 +231,9 @@ static NSString *restoreString = @"";
     if (self.pstr) {
         [self getTextString:self.pstr];
     }
-    [self dismissViewControllerAnimated:YES completion:nil];
+    
+//    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

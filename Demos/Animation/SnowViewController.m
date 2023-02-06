@@ -15,6 +15,11 @@
 
 @implementation SnowViewController
 
+- (void)dealloc {
+    NSLog(@"内存未泄漏~");
+    NSLog(@"%s", __func__);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
@@ -33,7 +38,7 @@
         NSLog(@"右滑返回");
 //        [self dismissViewControllerAnimated:YES completion:nil];
         [self dismissViewControllerAnimated:YES completion:^{
-            [self.timer invalidate];
+//            [self.timer invalidate];
         }];
     }
 }

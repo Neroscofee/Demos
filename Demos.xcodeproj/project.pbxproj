@@ -121,6 +121,7 @@
 		4CAF4E81255BDFB500838412 /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF4E80255BDFB500838412 /* MainModel.m */; };
 		4CAF4E86255BE84E00838412 /* Demos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CAF4E85255BE84E00838412 /* Demos.plist */; };
 		4CB74F47266487BD00D81EB9 /* W73.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB74F46266487BD00D81EB9 /* W73.png */; };
+		4CC629702990AEBF00AAC580 /* UIDevice+NSHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6296F2990AEBF00AAC580 /* UIDevice+NSHeight.m */; };
 		4CEBAF5A2727E41900FDF067 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4CEBAF592727E41900FDF067 /* Scene.sks */; };
 		4CEBAF5D2727E4F400FDF067 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEBAF5C2727E4F400FDF067 /* Scene.m */; };
 		7F0C99DE1E56F315003C735F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0C99DD1E56F315003C735F /* AVFoundation.framework */; };
@@ -437,6 +438,8 @@
 		4CAF4E80255BDFB500838412 /* MainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
 		4CAF4E85255BE84E00838412 /* Demos.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Demos.plist; sourceTree = "<group>"; };
 		4CB74F46266487BD00D81EB9 /* W73.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = W73.png; sourceTree = "<group>"; };
+		4CC6296E2990AEBF00AAC580 /* UIDevice+NSHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+NSHeight.h"; sourceTree = "<group>"; };
+		4CC6296F2990AEBF00AAC580 /* UIDevice+NSHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+NSHeight.m"; sourceTree = "<group>"; };
 		4CEBAF592727E41900FDF067 /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
 		4CEBAF5B2727E4F400FDF067 /* Scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
 		4CEBAF5C2727E4F400FDF067 /* Scene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
@@ -1090,6 +1093,8 @@
 				4C5684B025ECC9C400B44293 /* UIColor+NSColor.m */,
 				4C5684B525ECDB9900B44293 /* NSAttributedString+AttributedString.h */,
 				4C5684B625ECDB9900B44293 /* NSAttributedString+AttributedString.m */,
+				4CC6296E2990AEBF00AAC580 /* UIDevice+NSHeight.h */,
+				4CC6296F2990AEBF00AAC580 /* UIDevice+NSHeight.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -1657,6 +1662,7 @@
 				4C2AA1D92398AD4C00DA7240 /* UIImageView+WebCache.m in Sources */,
 				4C5684FA2600965B00B44293 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				4C2AA1CC2398AD4C00DA7240 /* SDWebImageDownloader.m in Sources */,
+				4CC629702990AEBF00AAC580 /* UIDevice+NSHeight.m in Sources */,
 				4C2AA1CB2398AD4C00DA7240 /* SDWebImageCodersManager.m in Sources */,
 				7FA9CA401FA09DE600BA4A48 /* DynamicBaseView.m in Sources */,
 				7F16D54C1E656345006B8572 /* UICountingLabel.m in Sources */,

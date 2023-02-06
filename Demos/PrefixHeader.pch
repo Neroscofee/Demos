@@ -16,6 +16,7 @@
 #import "SNUtility.h"
 #import "UIColor+NSColor.h"
 #import "IQKeyboardManager.h"
+#import "UIDevice+NSHeight.h"
 
 #pragma mark - 颜色初始化
 /** 十六进制颜色 */
@@ -98,7 +99,7 @@
 #define Fit_Tabbar_Height ((iPhoneX || iPhoneXR || iPhoneXM || iPhone12 || iPhone12PM)  ? (49.f+34.f) : 49.f)
 
 // 底部安全区域
-#define Fit_Bottom_Safe_Height [UIApplication sharedApplication].windows.firstObject.safeAreaInsets.bottom
+#define Fit_Bottom_Safe_Height [UIDevice getSafeBottom]
 
 //
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
