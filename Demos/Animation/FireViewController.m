@@ -41,6 +41,14 @@ static NSInteger count = 100;
 
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    if (self.timer.isValid) {
+        [self.timer invalidate];
+        self.timer = nil;
+    }
+}
+
 - (void)Start:(UIButton *)button {
     if (button.tag%2 == 0) {
         [button setTitle:@"请停止~" forState:UIControlStateNormal];
