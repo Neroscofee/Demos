@@ -106,5 +106,21 @@
 		<key>demosName</key>
 		<string>动态物理引擎</string>
 	</dict>
+	<dict>
+		<key>isFullScreen</key>
+		<false/>
+		<key>controller</key>
+		<string>NearToFarController</string>
+		<key>demosName</key>
+		<string>由近及远动画</string>
+	</dict>
+	<dict>
+		<key>isFullScreen</key>
+		<false/>
+		<key>controller</key>
+		<string>TestCollectionViewController</string>
+		<key>demosName</key>
+		<string>集合视图</string>
+	</dict>
 </array>
 </plist>

@@ -63,4 +63,8 @@
     return [UIDevice getTabBar] + [UIDevice getSafeBottom];
 }
 
++ (CGFloat)getContent {
+    return SCREEN_HEIGHT - [UIDevice getTopFullBar] - [UIDevice getSafeBottom];
+}
+
 @end

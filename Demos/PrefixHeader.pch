@@ -101,6 +101,7 @@
 // 底部安全区域
 #define Fit_Bottom_Safe_Height [UIDevice getSafeBottom]
 
+#define Fit_Content [UIDevice getContent]
 //
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 

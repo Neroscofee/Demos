@@ -102,6 +102,16 @@
 		4C91CDC9254AC85C009B4114 /* shandian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91CDC7254AC85C009B4114 /* shandian.png */; };
 		4C91CDCE254ACC00009B4114 /* battery.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91CDCD254ACC00009B4114 /* battery.png */; };
 		4C91CDD6254ACCFA009B4114 /* jiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91CDD5254ACCFA009B4114 /* jiantou.png */; };
+		4C91E49329AD9460001B2542 /* NearToFarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C91E49229AD9460001B2542 /* NearToFarController.m */; };
+		4C91E49E29AD994F001B2542 /* GLASS-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91E49529AD994F001B2542 /* GLASS-8.png */; };
+		4C91E49F29AD994F001B2542 /* GLASS-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91E49629AD994F001B2542 /* GLASS-4.png */; };
+		4C91E4A029AD994F001B2542 /* GLASS-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91E49729AD994F001B2542 /* GLASS-5.png */; };
+		4C91E4A129AD994F001B2542 /* GLASS-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91E49829AD994F001B2542 /* GLASS-7.png */; };
+		4C91E4A229AD994F001B2542 /* GLASS-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91E49929AD994F001B2542 /* GLASS-6.png */; };
+		4C91E4A329AD994F001B2542 /* GLASS-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91E49A29AD994F001B2542 /* GLASS-2.png */; };
+		4C91E4A429AD994F001B2542 /* GLASS-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91E49B29AD994F001B2542 /* GLASS-3.png */; };
+		4C91E4A529AD994F001B2542 /* GLASS-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91E49C29AD994F001B2542 /* GLASS-1.png */; };
+		4C91E4A629AD994F001B2542 /* GLASS-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91E49D29AD994F001B2542 /* GLASS-0.png */; };
 		4CA363E42519F2D1008D5DE3 /* BlockThirdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA363E32519F2D1008D5DE3 /* BlockThirdController.m */; };
 		4CA5F7D62729594E00AE68B5 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F7D42729594E00AE68B5 /* texture.png */; };
 		4CA5F7D72729594E00AE68B5 /* ship.scn in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F7D52729594E00AE68B5 /* ship.scn */; };
@@ -412,6 +422,17 @@
 		4C91CDC7254AC85C009B4114 /* shandian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shandian.png; sourceTree = "<group>"; };
 		4C91CDCD254ACC00009B4114 /* battery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battery.png; sourceTree = "<group>"; };
 		4C91CDD5254ACCFA009B4114 /* jiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiantou.png; sourceTree = "<group>"; };
+		4C91E49129AD9460001B2542 /* NearToFarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NearToFarController.h; sourceTree = "<group>"; };
+		4C91E49229AD9460001B2542 /* NearToFarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NearToFarController.m; sourceTree = "<group>"; };
+		4C91E49529AD994F001B2542 /* GLASS-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GLASS-8.png"; sourceTree = "<group>"; };
+		4C91E49629AD994F001B2542 /* GLASS-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GLASS-4.png"; sourceTree = "<group>"; };
+		4C91E49729AD994F001B2542 /* GLASS-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GLASS-5.png"; sourceTree = "<group>"; };
+		4C91E49829AD994F001B2542 /* GLASS-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GLASS-7.png"; sourceTree = "<group>"; };
+		4C91E49929AD994F001B2542 /* GLASS-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GLASS-6.png"; sourceTree = "<group>"; };
+		4C91E49A29AD994F001B2542 /* GLASS-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GLASS-2.png"; sourceTree = "<group>"; };
+		4C91E49B29AD994F001B2542 /* GLASS-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GLASS-3.png"; sourceTree = "<group>"; };
+		4C91E49C29AD994F001B2542 /* GLASS-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GLASS-1.png"; sourceTree = "<group>"; };
+		4C91E49D29AD994F001B2542 /* GLASS-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GLASS-0.png"; sourceTree = "<group>"; };
 		4CA363E22519F2D1008D5DE3 /* BlockThirdController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockThirdController.h; sourceTree = "<group>"; };
 		4CA363E32519F2D1008D5DE3 /* BlockThirdController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockThirdController.m; sourceTree = "<group>"; };
 		4CA5F7D42729594E00AE68B5 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
@@ -807,6 +828,32 @@
 				4C2AA1FD2399114600DA7240 /* cat_mask.png */,
 				4C2AA203239912EF00DA7240 /* test@2x.png */,
 				4C743F96282370D30074682A /* compassIM.png */,
+				C45B084926AC404600958B67 /* bo.png */,
+				7F29362D1E72A66100C5E7B5 /* c.jpg */,
+				7FAF27AB1F5E8B39006C30DD /* DazFire.png */,
+				7FAF27AC1F5E8B39006C30DD /* DazFlake.png */,
+				7FAF27AD1F5E8B39006C30DD /* DazHeart.png */,
+				7FAF27AE1F5E8B39006C30DD /* DazRing.png */,
+				7FAF27AF1F5E8B39006C30DD /* DazSmoke.png */,
+				7FAF27B01F5E8B39006C30DD /* DazStarIcon.png */,
+				7FAF27B11F5E8B39006C30DD /* DazStarIcon@2x.png */,
+				7FAF27B21F5E8B39006C30DD /* DazStarOutline.png */,
+				7FAF27B31F5E8B39006C30DD /* DazTriangle.png */,
+				4C2AA20D239A631100DA7240 /* fire_start.png */,
+				4C2AA20F239A696800DA7240 /* fire_stop.png */,
+				7FCB6C6E1F6273BD00DB8922 /* firework.wav */,
+				7FAF27B41F5E8B39006C30DD /* first.png */,
+				7FAF27B51F5E8B39006C30DD /* first@2x.png */,
+				C45B084A26AC404700958B67 /* fu.png */,
+				4C5684C225ECE6AF00B44293 /* go@2x.png */,
+				4C5684BB25ECDDEA00B44293 /* go3@2x.png */,
+				4C5684BC25ECDDEA00B44293 /* go3@3x.png */,
+				C45B084D26AC48C500958B67 /* J1000.png */,
+				7FA28D7F1EB862F400CC2702 /* raindrop_4@2x.png */,
+				7FA28D811EB8706C00CC2702 /* raindrop.png */,
+				7F42D9C91EB327A5005F3C0A /* snow.png */,
+				7FAF27A91F5E8B1A006C30DD /* snow1.png */,
+				4C91E49429AD994F001B2542 /* coffee */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -938,6 +985,22 @@
 				4C743F92282361070074682A /* CompassController.m */,
 			);
 			path = Compass;
+			sourceTree = "<group>";
+		};
+		4C91E49429AD994F001B2542 /* coffee */ = {
+			isa = PBXGroup;
+			children = (
+				4C91E49D29AD994F001B2542 /* GLASS-0.png */,
+				4C91E49C29AD994F001B2542 /* GLASS-1.png */,
+				4C91E49A29AD994F001B2542 /* GLASS-2.png */,
+				4C91E49B29AD994F001B2542 /* GLASS-3.png */,
+				4C91E49629AD994F001B2542 /* GLASS-4.png */,
+				4C91E49729AD994F001B2542 /* GLASS-5.png */,
+				4C91E49929AD994F001B2542 /* GLASS-6.png */,
+				4C91E49829AD994F001B2542 /* GLASS-7.png */,
+				4C91E49529AD994F001B2542 /* GLASS-8.png */,
+			);
+			path = coffee;
 			sourceTree = "<group>";
 		};
 		4CA5F7DE273D10EC00AE68B5 /* Level */ = {
@@ -1202,39 +1265,16 @@
 			children = (
 				7F42CF081E70107D00156F93 /* AnimationTimer.h */,
 				7F42CF091E70107D00156F93 /* AnimationTimer.m */,
-				7F42D9CB1EB327EA005F3C0A /* SnowViewController.h */,
-				7F42D9CC1EB327EA005F3C0A /* SnowViewController.m */,
-				7FAF27A01F5E8953006C30DD /* FireViewController.h */,
-				7FAF27A11F5E8953006C30DD /* FireViewController.m */,
-				7FAF27A31F5E8964006C30DD /* FireButton.h */,
-				7FAF27A41F5E8964006C30DD /* FireButton.m */,
 				7FAF27A61F5E898F006C30DD /* EmitterView.h */,
 				7FAF27A71F5E898F006C30DD /* EmitterView.m */,
-				7FCB6C6E1F6273BD00DB8922 /* firework.wav */,
-				4C2AA20D239A631100DA7240 /* fire_start.png */,
-				4C2AA20F239A696800DA7240 /* fire_stop.png */,
-				7FA28D811EB8706C00CC2702 /* raindrop.png */,
-				7FA28D7F1EB862F400CC2702 /* raindrop_4@2x.png */,
-				7F29362D1E72A66100C5E7B5 /* c.jpg */,
-				7F42D9C91EB327A5005F3C0A /* snow.png */,
-				7FAF27A91F5E8B1A006C30DD /* snow1.png */,
-				7FAF27AB1F5E8B39006C30DD /* DazFire.png */,
-				7FAF27AC1F5E8B39006C30DD /* DazFlake.png */,
-				7FAF27AD1F5E8B39006C30DD /* DazHeart.png */,
-				7FAF27AE1F5E8B39006C30DD /* DazRing.png */,
-				7FAF27AF1F5E8B39006C30DD /* DazSmoke.png */,
-				7FAF27B01F5E8B39006C30DD /* DazStarIcon.png */,
-				7FAF27B11F5E8B39006C30DD /* DazStarIcon@2x.png */,
-				7FAF27B21F5E8B39006C30DD /* DazStarOutline.png */,
-				7FAF27B31F5E8B39006C30DD /* DazTriangle.png */,
-				7FAF27B41F5E8B39006C30DD /* first.png */,
-				7FAF27B51F5E8B39006C30DD /* first@2x.png */,
-				4C5684BB25ECDDEA00B44293 /* go3@2x.png */,
-				4C5684BC25ECDDEA00B44293 /* go3@3x.png */,
-				4C5684C225ECE6AF00B44293 /* go@2x.png */,
-				C45B084926AC404600958B67 /* bo.png */,
-				C45B084A26AC404700958B67 /* fu.png */,
-				C45B084D26AC48C500958B67 /* J1000.png */,
+				7FAF27A31F5E8964006C30DD /* FireButton.h */,
+				7FAF27A41F5E8964006C30DD /* FireButton.m */,
+				7FAF27A01F5E8953006C30DD /* FireViewController.h */,
+				7FAF27A11F5E8953006C30DD /* FireViewController.m */,
+				4C91E49129AD9460001B2542 /* NearToFarController.h */,
+				4C91E49229AD9460001B2542 /* NearToFarController.m */,
+				7F42D9CB1EB327EA005F3C0A /* SnowViewController.h */,
+				7F42D9CC1EB327EA005F3C0A /* SnowViewController.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -1492,17 +1532,22 @@
 				7FCB26C01D7EA31500DA95AE /* LaunchScreen.storyboard in Resources */,
 				7FA9CA461FA09F2200BA4A48 /* BackgroundTile@2x.png in Resources */,
 				4C91CDCE254ACC00009B4114 /* battery.png in Resources */,
+				4C91E49F29AD994F001B2542 /* GLASS-4.png in Resources */,
 				7FAF27BF1F5E8B39006C30DD /* first.png in Resources */,
 				4C2AA210239A696800DA7240 /* fire_stop.png in Resources */,
 				4CAF4E86255BE84E00838412 /* Demos.plist in Resources */,
 				4C2AA20E239A631100DA7240 /* fire_start.png in Resources */,
 				7FAF27BE1F5E8B39006C30DD /* DazTriangle.png in Resources */,
+				4C91E49E29AD994F001B2542 /* GLASS-8.png in Resources */,
 				4C09A78D2546E115007115E0 /* BackChevron@2x.png in Resources */,
 				4C2AA206239A328900DA7240 /* catsound1.mp3 in Resources */,
+				4C91E4A229AD994F001B2542 /* GLASS-6.png in Resources */,
 				4CEBAF5A2727E41900FDF067 /* Scene.sks in Resources */,
 				4CA5F80D273D126400AE68B5 /* vase_SHADOW.png in Resources */,
+				4C91E4A129AD994F001B2542 /* GLASS-7.png in Resources */,
 				4C5684BD25ECDDEA00B44293 /* go3@2x.png in Resources */,
 				7FAF27BC1F5E8B39006C30DD /* DazStarIcon@2x.png in Resources */,
+				4C91E4A029AD994F001B2542 /* GLASS-5.png in Resources */,
 				7FAF27BD1F5E8B39006C30DD /* DazStarOutline.png in Resources */,
 				4C91CDD6254ACCFA009B4114 /* jiantou.png in Resources */,
 				7FAF27AA1F5E8B1A006C30DD /* snow1.png in Resources */,
@@ -1520,6 +1565,7 @@
 				7FA9CA451FA09F2200BA4A48 /* Box1@2x.png in Resources */,
 				4CB74F47266487BD00D81EB9 /* W73.png in Resources */,
 				4C2AA204239912EF00DA7240 /* test@2x.png in Resources */,
+				4C91E4A529AD994F001B2542 /* GLASS-1.png in Resources */,
 				4C91CD9D254A6BA1009B4114 /* stcData.plist in Resources */,
 				7F42D9CA1EB327A5005F3C0A /* snow.png in Resources */,
 				4C2AA1FF2399114700DA7240 /* cat_mask.png in Resources */,
@@ -1543,11 +1589,14 @@
 				4C2AA20C239A3AF000DA7240 /* catsound4.mp3 in Resources */,
 				C45B084E26AC48C500958B67 /* J1000.png in Resources */,
 				C487F115239BE34900CA3C2E /* 3.png in Resources */,
+				4C91E4A329AD994F001B2542 /* GLASS-2.png in Resources */,
 				4C1B3B0A254901F300C2B976 /* heart.png in Resources */,
 				C487F116239BE34900CA3C2E /* 1.png in Resources */,
 				4C09A78E2546E115007115E0 /* BackChevron@3x.png in Resources */,
 				7FAF27B81F5E8B39006C30DD /* DazHeart.png in Resources */,
 				4C1B3AF72548032F00C2B976 /* right@2x.png in Resources */,
+				4C91E4A629AD994F001B2542 /* GLASS-0.png in Resources */,
+				4C91E4A429AD994F001B2542 /* GLASS-3.png in Resources */,
 				7F29362E1E72A66100C5E7B5 /* c.jpg in Resources */,
 				4C2AA20A239A3AF000DA7240 /* catsound3.mp3 in Resources */,
 				4CA5F7D72729594E00AE68B5 /* ship.scn in Resources */,
@@ -1685,6 +1734,7 @@
 				4C2AA1D62398AD4C00DA7240 /* SDWebImageDownloaderOperation.m in Sources */,
 				7F16D56E1E65659A006B8572 /* Square.m in Sources */,
 				4C5684C925EF2F6E00B44293 /* SiwxController.m in Sources */,
+				4C91E49329AD9460001B2542 /* NearToFarController.m in Sources */,
 				C44624DE20F4DFEF002A27F5 /* ToyProvider.m in Sources */,
 				7F16D5771E65759F006B8572 /* SearchTableViewController.m in Sources */,
 				4C09A7952547B718007115E0 /* SNButton.m in Sources */,

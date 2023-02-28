@@ -38,7 +38,10 @@
         NSLog(@"右滑返回");
 //        [self dismissViewControllerAnimated:YES completion:nil];
         [self dismissViewControllerAnimated:YES completion:^{
-//            [self.timer invalidate];
+            if (self.timer.isValid) {
+                [self.timer invalidate];
+                self.timer = nil;
+            }
         }];
     }
 }

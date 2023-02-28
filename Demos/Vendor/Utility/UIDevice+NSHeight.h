@@ -33,6 +33,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 底部分栏+底部安全高度
 + (CGFloat)getBottomFullBar;
 
+/// 内容高度
++ (CGFloat)getContent;
+
 @end
 
 NS_ASSUME_NONNULL_END
