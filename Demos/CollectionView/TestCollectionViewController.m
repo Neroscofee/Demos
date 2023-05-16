@@ -19,7 +19,7 @@
 //}
 - (instancetype)init {
     //创建一个流式布局对象
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     //设置每个cell的大小
     layout.itemSize = CGSizeMake(80, 80);
     //设置每个cell间的最小水平间距

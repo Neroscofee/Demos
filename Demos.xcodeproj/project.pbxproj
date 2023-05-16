@@ -112,6 +112,9 @@
 		4C91E4A429AD994F001B2542 /* GLASS-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91E49B29AD994F001B2542 /* GLASS-3.png */; };
 		4C91E4A529AD994F001B2542 /* GLASS-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91E49C29AD994F001B2542 /* GLASS-1.png */; };
 		4C91E4A629AD994F001B2542 /* GLASS-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91E49D29AD994F001B2542 /* GLASS-0.png */; };
+		4C91E4A929ADDA48001B2542 /* NearToFarCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C91E4A829ADDA48001B2542 /* NearToFarCollection.m */; };
+		4C91E4AC29ADDAF1001B2542 /* MyCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C91E4AB29ADDAF1001B2542 /* MyCollectionViewFlowLayout.m */; };
+		4C91E4AF29ADFD85001B2542 /* NearToFarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C91E4AE29ADFD85001B2542 /* NearToFarCollectionViewCell.m */; };
 		4CA363E42519F2D1008D5DE3 /* BlockThirdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA363E32519F2D1008D5DE3 /* BlockThirdController.m */; };
 		4CA5F7D62729594E00AE68B5 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F7D42729594E00AE68B5 /* texture.png */; };
 		4CA5F7D72729594E00AE68B5 /* ship.scn in Resources */ = {isa = PBXBuildFile; fileRef = 4CA5F7D52729594E00AE68B5 /* ship.scn */; };
@@ -433,6 +436,12 @@
 		4C91E49B29AD994F001B2542 /* GLASS-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GLASS-3.png"; sourceTree = "<group>"; };
 		4C91E49C29AD994F001B2542 /* GLASS-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GLASS-1.png"; sourceTree = "<group>"; };
 		4C91E49D29AD994F001B2542 /* GLASS-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GLASS-0.png"; sourceTree = "<group>"; };
+		4C91E4A729ADDA48001B2542 /* NearToFarCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NearToFarCollection.h; sourceTree = "<group>"; };
+		4C91E4A829ADDA48001B2542 /* NearToFarCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NearToFarCollection.m; sourceTree = "<group>"; };
+		4C91E4AA29ADDAF1001B2542 /* MyCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		4C91E4AB29ADDAF1001B2542 /* MyCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		4C91E4AD29ADFD85001B2542 /* NearToFarCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NearToFarCollectionViewCell.h; sourceTree = "<group>"; };
+		4C91E4AE29ADFD85001B2542 /* NearToFarCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NearToFarCollectionViewCell.m; sourceTree = "<group>"; };
 		4CA363E22519F2D1008D5DE3 /* BlockThirdController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockThirdController.h; sourceTree = "<group>"; };
 		4CA363E32519F2D1008D5DE3 /* BlockThirdController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockThirdController.m; sourceTree = "<group>"; };
 		4CA5F7D42729594E00AE68B5 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
@@ -1177,6 +1186,12 @@
 				4CA5F7DA273D0E6900AE68B5 /* TestCollectionViewCell.m */,
 				4CA5F7D9273D0E6900AE68B5 /* TestCollectionViewController.h */,
 				4CA5F7D8273D0E6900AE68B5 /* TestCollectionViewController.m */,
+				4C91E4A729ADDA48001B2542 /* NearToFarCollection.h */,
+				4C91E4A829ADDA48001B2542 /* NearToFarCollection.m */,
+				4C91E4AA29ADDAF1001B2542 /* MyCollectionViewFlowLayout.h */,
+				4C91E4AB29ADDAF1001B2542 /* MyCollectionViewFlowLayout.m */,
+				4C91E4AD29ADFD85001B2542 /* NearToFarCollectionViewCell.h */,
+				4C91E4AE29ADFD85001B2542 /* NearToFarCollectionViewCell.m */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -1663,6 +1678,7 @@
 				4C2AA1DC2398AD4C00DA7240 /* SDImageCacheConfig.m in Sources */,
 				4C2AA1D12398AD4C00DA7240 /* SDWebImagePrefetcher.m in Sources */,
 				7F3C1B601E66C588002E536E /* ProImpleViewController.m in Sources */,
+				4C91E4AC29ADDAF1001B2542 /* MyCollectionViewFlowLayout.m in Sources */,
 				7F16D5701E65659A006B8572 /* TriangleView.m in Sources */,
 				7F16D5481E656345006B8572 /* PNRadarChartDataItem.m in Sources */,
 				4C91CD8D254A5C5B009B4114 /* StcModel.m in Sources */,
@@ -1716,9 +1732,11 @@
 				7FA9CA401FA09DE600BA4A48 /* DynamicBaseView.m in Sources */,
 				7F16D54C1E656345006B8572 /* UICountingLabel.m in Sources */,
 				4C5684F52600965B00B44293 /* IQNSArray+Sort.m in Sources */,
+				4C91E4A929ADDA48001B2542 /* NearToFarCollection.m in Sources */,
 				4C5684F92600965B00B44293 /* IQUIViewController+Additions.m in Sources */,
 				7F16D5491E656345006B8572 /* PNScatterChart.m in Sources */,
 				4C2AA1DD2398AD4C00DA7240 /* UIView+WebCacheOperation.m in Sources */,
+				4C91E4AF29ADFD85001B2542 /* NearToFarCollectionViewCell.m in Sources */,
 				4C2AA18D2398AD3700DA7240 /* AFURLSessionManager.m in Sources */,
 				C41B85521FC45765002445A8 /* DynamicMenuViewController.m in Sources */,
 				4C5684F02600965B00B44293 /* IQTitleBarButtonItem.m in Sources */,

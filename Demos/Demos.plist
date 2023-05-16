@@ -4,6 +4,14 @@
 <array>
 	<dict>
 		<key>isFullScreen</key>
+		<false/>
+		<key>controller</key>
+		<string>NearToFarCollection</string>
+		<key>demosName</key>
+		<string>由近及远</string>
+	</dict>
+	<dict>
+		<key>isFullScreen</key>
 		<true/>
 		<key>controller</key>
 		<string>SnowViewController</string>
@@ -120,7 +128,15 @@
 		<key>controller</key>
 		<string>TestCollectionViewController</string>
 		<key>demosName</key>
-		<string>集合视图</string>
+		<string>集合视图1</string>
+	</dict>
+	<dict>
+		<key>isFullScreen</key>
+		<false/>
+		<key>controller</key>
+		<string>TestViewController</string>
+		<key>demosName</key>
+		<string>集合视图2</string>
 	</dict>
 </array>
 </plist>
