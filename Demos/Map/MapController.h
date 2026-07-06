@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) MKMapView *mapView;
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) MKCircle *locationCircle;
+@property (nonatomic, strong) MKPointAnnotation *selectedAnnotation; // 用户选择的标注点
 
 @end
 
