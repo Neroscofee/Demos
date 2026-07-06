@@ -15,9 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeAction:)];
-    swipe.direction = UISwipeGestureRecognizerDirectionRight;
-    [self.view addGestureRecognizer:swipe];
+    UITapGestureRecognizer *tripleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tripleTapAction:)];
+    tripleTap.numberOfTapsRequired = 3;
+    [self.view addGestureRecognizer:tripleTap];
     
     self.mapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
     self.mapView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -49,11 +49,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 }
 
-- (void)swipeAction:(UISwipeGestureRecognizer *)gr {
-    if (gr.direction == UISwipeGestureRecognizerDirectionRight) {
-        NSLog(@"右滑返回");
-        [self dismissViewControllerAnimated:YES completion:nil];
-    }
+- (void)tripleTapAction:(UITapGestureRecognizer *)gr {
+    NSLog(@"三击返回");
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)checkLocationAuthorization {
@@ -226,9 +224,13 @@ NS_ASSUME_NONNULL_BEGIN
         return;
     }
     
-    // 只更新用户位置显示，不自动创建圆圈
-    // 用户需要长按地图来手动指定圆心位置
     NSLog(@"User Location Updated: (%f, %f)", location.coordinate.latitude, location.coordinate.longitude);
+    
+    if (!self.hasZoomedToUserLocation) {
+        self.hasZoomedToUserLocation = YES;
+        MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(location.coordinate, 500, 500);
+        [self.mapView setRegion:region animated:YES];
+    }
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
