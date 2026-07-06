@@ -147,7 +147,6 @@ static NSString const * identify = @"sg";
     [UIView animateWithDuration:0.8 animations:^{
         cell.layer.transform = CATransform3DMakeScale(1, 1, 1);
     }];
-    
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {

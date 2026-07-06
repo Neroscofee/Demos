@@ -9,6 +9,7 @@
 #import "SimuController.h"
 #import "StcController.h"
 #import "SiwxController.h"
+#import <AliyunFaceAuthFacade/AliyunFaceAuthFacade.h>
 
 @interface SimuController ()
 
@@ -35,7 +36,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     
-    
+    NSDictionary *metaInfo = [AliyunFaceAuthFacade getMetaInfo];
+    NSLog(@"SDK Meta Info: %@", metaInfo);
     
     
 //    [UIScreen mainScreen].brightness = 0.5;

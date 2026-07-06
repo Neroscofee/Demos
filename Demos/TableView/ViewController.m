@@ -29,7 +29,8 @@ typedef void(^returnPreviousPage)(UIAlertAction * _Nonnull action);
 @property (nonatomic, strong) UILabel *label1;
 @property (nonatomic, strong) UILabel *label2;
 @property (nonatomic, strong) UILabel *label3;
-
+@property (nonatomic, strong) UILabel *textLabel;
+@property (nonatomic, strong) UILabel *tempLabel;
 @property (nonatomic, strong) NSArray *mealArray;
 
 @end
@@ -113,6 +114,14 @@ typedef void(^returnPreviousPage)(UIAlertAction * _Nonnull action);
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self.timer invalidate];
+}
+
+- (UILabel *)tempLabel {
+    if (!_tempLabel) {
+        _tempLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 400)];
+        _tempLabel.text = @"linshi";
+    }
+    return _tempLabel;
 }
 
 - (UILabel *)tLabel {
@@ -230,6 +239,10 @@ typedef void(^returnPreviousPage)(UIAlertAction * _Nonnull action);
     self.label2.text = @"土菜馆的次数: 0";
     self.label3.text = @"骨肉馆的次数: 0";
     
+}
+
+- (NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 10;
 }
 
 - (void)alertViewWithTarget:(id)target title:(NSString *)alertString completion:(returnPreviousPage)returnPP {

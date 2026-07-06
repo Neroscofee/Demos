@@ -55,6 +55,7 @@
 #import "ChargeController.h"
 
 #import "MainViewController.h"
+#import <AliyunFaceAuthFacade/AliyunFaceAuthFacade.h>
 
 @interface AppDelegate ()
 
@@ -70,7 +71,7 @@
 //    [dp purchaseToyWithTitle:@"变形金刚"];
 //    [dp purchasePantsWithSize:PantsSizeMedium];
     
-    
+    [AliyunFaceAuthFacade initSDK];// 初始化SDK。
     
     
     

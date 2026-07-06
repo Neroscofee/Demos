@@ -138,5 +138,13 @@
 		<key>demosName</key>
 		<string>集合视图2</string>
 	</dict>
+	<dict>
+		<key>isFullScreen</key>
+		<true/>
+		<key>controller</key>
+		<string>MapController</string>
+		<key>demosName</key>
+		<string>地图标注</string>
+	</dict>
 </array>
 </plist>

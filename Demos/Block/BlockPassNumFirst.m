@@ -34,14 +34,13 @@
         _showLabel.textAlignment = NSTextAlignmentCenter;
         _showLabel.font = [UIFont systemFontOfSize:18];
         [_showLabel sizeToFit];
-        
     }
     return _showLabel;
 }
 
 - (UIButton *)showButton {
     if (!_showButton) {
-        _showButton = [[UIButton alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-60)/2, 200, 60, 44)];
+        _showButton = [[UIButton alloc] initWithFrame:CGRectMake((SCREEN_WIDTH - 60) / 2, 200, 60, 44)];
         _showButton.backgroundColor = [UIColor redColor];
         [_showButton setTitle:@"确定" forState:UIControlStateNormal];
         _showButton.layer.cornerRadius = 5;
@@ -51,27 +50,27 @@
 }
 
 - (void)goToNextVC {
-//    BlockPassNumSecond *pns = [[BlockPassNumSecond alloc] init];
-//    //    [pns returnTextString:^(NSString *showStr) {
-//    //        self.showLabel.text = showStr;
-//    //    }];
-//    //    pns.pstr = ^(NSString *textString, int a) {
-//    //        return [NSString stringWithFormat:@"%d%@",a,textString];
-//    //    };
-//    self.showLabel.text = [pns getTextString:^NSString *(NSString *textString, int a) {
-//        return [NSString stringWithFormat:@"%d%@",a,textString];
-//    }];
-//    //    [self presentViewController:pns animated:YES completion:nil];
-//    [self.navigationController pushViewController:pns animated:YES];
-    
-        WS(weakSelf);
-        BlockThirdController *vc = [[BlockThirdController alloc] init];
-        vc.passString = ^NSString * _Nullable(NSString * _Nonnull string) {
-            self.showLabel.text = string;
-//            self.showLabel.text = @"123123";
-            return string;
-        };
-        [self.navigationController pushViewController:vc animated:YES];
+    //    BlockPassNumSecond *pns = [[BlockPassNumSecond alloc] init];
+    //    //    [pns returnTextString:^(NSString *showStr) {
+    //    //        self.showLabel.text = showStr;
+    //    //    }];
+    //    //    pns.pstr = ^(NSString *textString, int a) {
+    //    //        return [NSString stringWithFormat:@"%d%@",a,textString];
+    //    //    };
+    //    self.showLabel.text = [pns getTextString:^NSString *(NSString *textString, int a) {
+    //        return [NSString stringWithFormat:@"%d%@",a,textString];
+    //    }];
+    //    //    [self presentViewController:pns animated:YES completion:nil];
+    //    [self.navigationController pushViewController:pns animated:YES];
+
+    WS(weakSelf);
+    BlockThirdController *vc = [[BlockThirdController alloc] init];
+    vc.passString = ^NSString *_Nullable(NSString *_Nonnull string) {
+        self.showLabel.text = string;
+        //            self.showLabel.text = @"123123";
+        return string;
+    };
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -80,10 +79,9 @@
     //    self.showLabel.text = [pns getTextString:^NSString *(NSString *textString, int a) {
     //        return [NSString stringWithFormat:@"%d%@",a,textString];
     //    }];5
-    [_showLabel sizeToFit];//自适应,很有意思!
-    _showLabel.center = CGPointMake(SCREEN_WIDTH/2, 100);
+    [_showLabel sizeToFit]; // 自适应,很有意思!
+    _showLabel.center = CGPointMake(SCREEN_WIDTH / 2, 100);
     [self.showLabel sizeToFit];
-    
 }
 
 - (void)didReceiveMemoryWarning {

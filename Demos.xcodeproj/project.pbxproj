@@ -239,6 +239,49 @@
 		C487F11A239BE34900CA3C2E /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = C487F113239BE34900CA3C2E /* 0.png */; };
 		C487F11D239BE4A800CA3C2E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C487F11C239BE4A800CA3C2E /* WelcomeViewController.m */; };
 		C49144B8210B715900B626BA /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C49144B7210B715900B626BA /* GCDViewController.m */; };
+		C4978A012E6EFD68001AA3DF /* DTFIdentityManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49789F42E6EFD68001AA3DF /* DTFIdentityManager.framework */; };
+		C4978A022E6EFD68001AA3DF /* MultiFactorFacade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49789F52E6EFD68001AA3DF /* MultiFactorFacade.framework */; };
+		C4978A032E6EFD68001AA3DF /* DTFNFCIdentityManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49789F62E6EFD68001AA3DF /* DTFNFCIdentityManager.framework */; };
+		C4978A042E6EFD68001AA3DF /* ToygerService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49789F72E6EFD68001AA3DF /* ToygerService.framework */; };
+		C4978A052E6EFD68001AA3DF /* APBToygerFacade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49789F82E6EFD68001AA3DF /* APBToygerFacade.framework */; };
+		C4978A062E6EFD68001AA3DF /* OCRDetectSDKForTech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49789F92E6EFD68001AA3DF /* OCRDetectSDKForTech.framework */; };
+		C4978A072E6EFD68001AA3DF /* AliyunFaceAuthFacade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49789FA2E6EFD68001AA3DF /* AliyunFaceAuthFacade.framework */; };
+		C4978A082E6EFD68001AA3DF /* DTFUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49789FB2E6EFD68001AA3DF /* DTFUtility.framework */; };
+		C4978A092E6EFD68001AA3DF /* faceguard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49789FC2E6EFD68001AA3DF /* faceguard.framework */; };
+		C4978A0A2E6EFD68001AA3DF /* VerifyNativeAbility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49789FD2E6EFD68001AA3DF /* VerifyNativeAbility.framework */; };
+		C4978A0B2E6EFD68001AA3DF /* APPSecuritySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49789FE2E6EFD68001AA3DF /* APPSecuritySDK.framework */; };
+		C4978A0C2E6EFD68001AA3DF /* ToygerNative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49789FF2E6EFD68001AA3DF /* ToygerNative.framework */; };
+		C4978A0D2E6EFD68001AA3DF /* BioAuthEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A002E6EFD68001AA3DF /* BioAuthEngine.framework */; };
+		C4978A0F2E6EFD89001AA3DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A0E2E6EFD89001AA3DF /* CoreGraphics.framework */; };
+		C4978A112E6EFDD6001AA3DF /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A102E6EFDD6001AA3DF /* Accelerate.framework */; };
+		C4978A132E6EFDDF001AA3DF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A122E6EFDDF001AA3DF /* SystemConfiguration.framework */; };
+		C4978A152E6EFDE7001AA3DF /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A142E6EFDE7001AA3DF /* AssetsLibrary.framework */; };
+		C4978A172E6EFDEF001AA3DF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A162E6EFDEF001AA3DF /* CoreTelephony.framework */; };
+		C4978A192E6EFDF8001AA3DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A182E6EFDF8001AA3DF /* QuartzCore.framework */; };
+		C4978A1B2E6EFE03001AA3DF /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A1A2E6EFE03001AA3DF /* CoreFoundation.framework */; };
+		C4978A1D2E6EFE0D001AA3DF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A1C2E6EFE0D001AA3DF /* CoreLocation.framework */; };
+		C4978A1F2E6EFE14001AA3DF /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A1E2E6EFE14001AA3DF /* ImageIO.framework */; };
+		C4978A212E6EFE1C001AA3DF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A202E6EFE1C001AA3DF /* CoreMedia.framework */; };
+		C4978A232E6EFE25001AA3DF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A222E6EFE25001AA3DF /* CoreMotion.framework */; };
+		C4978A252E6EFE36001AA3DF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A242E6EFE36001AA3DF /* WebKit.framework */; };
+		C4978A272E6EFE3E001AA3DF /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A262E6EFE3E001AA3DF /* libresolv.tbd */; };
+		C4978A292E6EFE45001AA3DF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A282E6EFE45001AA3DF /* libz.tbd */; };
+		C4978A2B2E6EFE4C001AA3DF /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A2A2E6EFE4C001AA3DF /* libc++.tbd */; };
+		C4978A2D2E6EFE54001AA3DF /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A2C2E6EFE54001AA3DF /* libc++.1.tbd */; };
+		C4978A2F2E6EFE5F001AA3DF /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A2E2E6EFE5F001AA3DF /* libc++abi.tbd */; };
+		C4978A312E6EFE66001AA3DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A302E6EFE66001AA3DF /* AudioToolbox.framework */; };
+		C4978A332E6EFE6E001AA3DF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A322E6EFE6E001AA3DF /* CFNetwork.framework */; };
+		C4978A352E6EFE77001AA3DF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A342E6EFE77001AA3DF /* MobileCoreServices.framework */; };
+		C4978A372E6EFE7E001AA3DF /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A362E6EFE7E001AA3DF /* libz.1.2.8.tbd */; };
+		C4978A392E6EFE86001AA3DF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A382E6EFE86001AA3DF /* AdSupport.framework */; };
+		C4978A3B2E6EFE90001AA3DF /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4978A3A2E6EFE90001AA3DF /* ReplayKit.framework */; };
+		C4978A3E2E6EFED9001AA3DF /* APBToygerFacade.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C4978A3C2E6EFED8001AA3DF /* APBToygerFacade.bundle */; };
+		C4978A3F2E6EFED9001AA3DF /* APBToygerFacadeSuitable.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C4978A3D2E6EFED9001AA3DF /* APBToygerFacadeSuitable.bundle */; };
+		C4978A412E6EFF04001AA3DF /* ToygerService.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C4978A402E6EFF04001AA3DF /* ToygerService.bundle */; };
+		C4978A432E6EFF22001AA3DF /* OCRXMedia.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C4978A422E6EFF22001AA3DF /* OCRXMedia.bundle */; };
+		C4978A452E6EFF39001AA3DF /* BioAuthEngine.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C4978A442E6EFF39001AA3DF /* BioAuthEngine.bundle */; };
+		C4978A472E6EFF50001AA3DF /* MultiFactorFacade.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C4978A462E6EFF50001AA3DF /* MultiFactorFacade.bundle */; };
+		C4DC27E52FFB7989000DC697 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DC27E42FFB7989000DC697 /* MapController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -606,7 +649,7 @@
 		7FAF27B31F5E8B39006C30DD /* DazTriangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazTriangle.png; sourceTree = "<group>"; };
 		7FAF27B41F5E8B39006C30DD /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		7FAF27B51F5E8B39006C30DD /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		7FCB26AD1D7EA31500DA95AE /* Julie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Julie.app; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FCB26AD1D7EA31500DA95AE /* Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCB26B11D7EA31500DA95AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7FCB26B31D7EA31500DA95AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7FCB26B41D7EA31500DA95AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -649,6 +692,50 @@
 		C487F11C239BE4A800CA3C2E /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		C49144B6210B715900B626BA /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		C49144B7210B715900B626BA /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		C49789F42E6EFD68001AA3DF /* DTFIdentityManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DTFIdentityManager.framework; path = Demos/frameworks/DTFIdentityManager.framework; sourceTree = "<group>"; };
+		C49789F52E6EFD68001AA3DF /* MultiFactorFacade.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultiFactorFacade.framework; path = Demos/frameworks/MultiFactorFacade.framework; sourceTree = "<group>"; };
+		C49789F62E6EFD68001AA3DF /* DTFNFCIdentityManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DTFNFCIdentityManager.framework; path = Demos/frameworks/DTFNFCIdentityManager.framework; sourceTree = "<group>"; };
+		C49789F72E6EFD68001AA3DF /* ToygerService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToygerService.framework; path = Demos/frameworks/ToygerService.framework; sourceTree = "<group>"; };
+		C49789F82E6EFD68001AA3DF /* APBToygerFacade.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APBToygerFacade.framework; path = Demos/frameworks/APBToygerFacade.framework; sourceTree = "<group>"; };
+		C49789F92E6EFD68001AA3DF /* OCRDetectSDKForTech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCRDetectSDKForTech.framework; path = Demos/frameworks/OCRDetectSDKForTech.framework; sourceTree = "<group>"; };
+		C49789FA2E6EFD68001AA3DF /* AliyunFaceAuthFacade.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AliyunFaceAuthFacade.framework; path = Demos/frameworks/AliyunFaceAuthFacade.framework; sourceTree = "<group>"; };
+		C49789FB2E6EFD68001AA3DF /* DTFUtility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DTFUtility.framework; path = Demos/frameworks/DTFUtility.framework; sourceTree = "<group>"; };
+		C49789FC2E6EFD68001AA3DF /* faceguard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = faceguard.framework; path = Demos/frameworks/faceguard.framework; sourceTree = "<group>"; };
+		C49789FD2E6EFD68001AA3DF /* VerifyNativeAbility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VerifyNativeAbility.framework; path = Demos/frameworks/VerifyNativeAbility.framework; sourceTree = "<group>"; };
+		C49789FE2E6EFD68001AA3DF /* APPSecuritySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APPSecuritySDK.framework; path = Demos/frameworks/APPSecuritySDK.framework; sourceTree = "<group>"; };
+		C49789FF2E6EFD68001AA3DF /* ToygerNative.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToygerNative.framework; path = Demos/frameworks/ToygerNative.framework; sourceTree = "<group>"; };
+		C4978A002E6EFD68001AA3DF /* BioAuthEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BioAuthEngine.framework; path = Demos/frameworks/BioAuthEngine.framework; sourceTree = "<group>"; };
+		C4978A0E2E6EFD89001AA3DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C4978A102E6EFDD6001AA3DF /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		C4978A122E6EFDDF001AA3DF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C4978A142E6EFDE7001AA3DF /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		C4978A162E6EFDEF001AA3DF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		C4978A182E6EFDF8001AA3DF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C4978A1A2E6EFE03001AA3DF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C4978A1C2E6EFE0D001AA3DF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C4978A1E2E6EFE14001AA3DF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C4978A202E6EFE1C001AA3DF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		C4978A222E6EFE25001AA3DF /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		C4978A242E6EFE36001AA3DF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C4978A262E6EFE3E001AA3DF /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		C4978A282E6EFE45001AA3DF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		C4978A2A2E6EFE4C001AA3DF /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		C4978A2C2E6EFE54001AA3DF /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		C4978A2E2E6EFE5F001AA3DF /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		C4978A302E6EFE66001AA3DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C4978A322E6EFE6E001AA3DF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C4978A342E6EFE77001AA3DF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C4978A362E6EFE7E001AA3DF /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = usr/lib/libz.1.2.8.tbd; sourceTree = SDKROOT; };
+		C4978A382E6EFE86001AA3DF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		C4978A3A2E6EFE90001AA3DF /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		C4978A3C2E6EFED8001AA3DF /* APBToygerFacade.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = APBToygerFacade.bundle; path = Demos/frameworks/APBToygerFacade.framework/APBToygerFacade.bundle; sourceTree = "<group>"; };
+		C4978A3D2E6EFED9001AA3DF /* APBToygerFacadeSuitable.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = APBToygerFacadeSuitable.bundle; path = Demos/frameworks/APBToygerFacade.framework/APBToygerFacadeSuitable.bundle; sourceTree = "<group>"; };
+		C4978A402E6EFF04001AA3DF /* ToygerService.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ToygerService.bundle; path = Demos/frameworks/ToygerService.framework/ToygerService.bundle; sourceTree = "<group>"; };
+		C4978A422E6EFF22001AA3DF /* OCRXMedia.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = OCRXMedia.bundle; path = Demos/frameworks/OCRDetectSDKForTech.framework/OCRXMedia.bundle; sourceTree = "<group>"; };
+		C4978A442E6EFF39001AA3DF /* BioAuthEngine.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BioAuthEngine.bundle; path = Demos/frameworks/BioAuthEngine.framework/BioAuthEngine.bundle; sourceTree = "<group>"; };
+		C4978A462E6EFF50001AA3DF /* MultiFactorFacade.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MultiFactorFacade.bundle; path = Demos/frameworks/MultiFactorFacade.framework/MultiFactorFacade.bundle; sourceTree = "<group>"; };
+		C4DC27E32FFB7989000DC697 /* MapController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
+		C4DC27E42FFB7989000DC697 /* MapController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -656,7 +743,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4978A3B2E6EFE90001AA3DF /* ReplayKit.framework in Frameworks */,
+				C4978A392E6EFE86001AA3DF /* AdSupport.framework in Frameworks */,
+				C4978A372E6EFE7E001AA3DF /* libz.1.2.8.tbd in Frameworks */,
+				C4978A352E6EFE77001AA3DF /* MobileCoreServices.framework in Frameworks */,
+				C4978A332E6EFE6E001AA3DF /* CFNetwork.framework in Frameworks */,
+				C4978A312E6EFE66001AA3DF /* AudioToolbox.framework in Frameworks */,
+				C4978A2F2E6EFE5F001AA3DF /* libc++abi.tbd in Frameworks */,
+				C4978A2D2E6EFE54001AA3DF /* libc++.1.tbd in Frameworks */,
+				C4978A2B2E6EFE4C001AA3DF /* libc++.tbd in Frameworks */,
+				C4978A292E6EFE45001AA3DF /* libz.tbd in Frameworks */,
+				C4978A272E6EFE3E001AA3DF /* libresolv.tbd in Frameworks */,
+				C4978A252E6EFE36001AA3DF /* WebKit.framework in Frameworks */,
 				7F0C99DE1E56F315003C735F /* AVFoundation.framework in Frameworks */,
+				C4978A232E6EFE25001AA3DF /* CoreMotion.framework in Frameworks */,
+				C4978A212E6EFE1C001AA3DF /* CoreMedia.framework in Frameworks */,
+				C4978A1F2E6EFE14001AA3DF /* ImageIO.framework in Frameworks */,
+				C4978A1D2E6EFE0D001AA3DF /* CoreLocation.framework in Frameworks */,
+				C4978A1B2E6EFE03001AA3DF /* CoreFoundation.framework in Frameworks */,
+				C4978A192E6EFDF8001AA3DF /* QuartzCore.framework in Frameworks */,
+				C4978A172E6EFDEF001AA3DF /* CoreTelephony.framework in Frameworks */,
+				C4978A152E6EFDE7001AA3DF /* AssetsLibrary.framework in Frameworks */,
+				C4978A132E6EFDDF001AA3DF /* SystemConfiguration.framework in Frameworks */,
+				C4978A112E6EFDD6001AA3DF /* Accelerate.framework in Frameworks */,
+				C4978A0F2E6EFD89001AA3DF /* CoreGraphics.framework in Frameworks */,
+				C4978A012E6EFD68001AA3DF /* DTFIdentityManager.framework in Frameworks */,
+				C4978A022E6EFD68001AA3DF /* MultiFactorFacade.framework in Frameworks */,
+				C4978A032E6EFD68001AA3DF /* DTFNFCIdentityManager.framework in Frameworks */,
+				C4978A042E6EFD68001AA3DF /* ToygerService.framework in Frameworks */,
+				C4978A052E6EFD68001AA3DF /* APBToygerFacade.framework in Frameworks */,
+				C4978A062E6EFD68001AA3DF /* OCRDetectSDKForTech.framework in Frameworks */,
+				C4978A072E6EFD68001AA3DF /* AliyunFaceAuthFacade.framework in Frameworks */,
+				C4978A082E6EFD68001AA3DF /* DTFUtility.framework in Frameworks */,
+				C4978A092E6EFD68001AA3DF /* faceguard.framework in Frameworks */,
+				C4978A0A2E6EFD68001AA3DF /* VerifyNativeAbility.framework in Frameworks */,
+				C4978A0B2E6EFD68001AA3DF /* APPSecuritySDK.framework in Frameworks */,
+				C4978A0C2E6EFD68001AA3DF /* ToygerNative.framework in Frameworks */,
+				C4978A0D2E6EFD68001AA3DF /* BioAuthEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1066,6 +1189,42 @@
 		7F0C99DC1E56F314003C735F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C4978A3A2E6EFE90001AA3DF /* ReplayKit.framework */,
+				C4978A382E6EFE86001AA3DF /* AdSupport.framework */,
+				C4978A362E6EFE7E001AA3DF /* libz.1.2.8.tbd */,
+				C4978A342E6EFE77001AA3DF /* MobileCoreServices.framework */,
+				C4978A322E6EFE6E001AA3DF /* CFNetwork.framework */,
+				C4978A302E6EFE66001AA3DF /* AudioToolbox.framework */,
+				C4978A2E2E6EFE5F001AA3DF /* libc++abi.tbd */,
+				C4978A2C2E6EFE54001AA3DF /* libc++.1.tbd */,
+				C4978A2A2E6EFE4C001AA3DF /* libc++.tbd */,
+				C4978A282E6EFE45001AA3DF /* libz.tbd */,
+				C4978A262E6EFE3E001AA3DF /* libresolv.tbd */,
+				C4978A242E6EFE36001AA3DF /* WebKit.framework */,
+				C4978A222E6EFE25001AA3DF /* CoreMotion.framework */,
+				C4978A202E6EFE1C001AA3DF /* CoreMedia.framework */,
+				C4978A1E2E6EFE14001AA3DF /* ImageIO.framework */,
+				C4978A1C2E6EFE0D001AA3DF /* CoreLocation.framework */,
+				C4978A1A2E6EFE03001AA3DF /* CoreFoundation.framework */,
+				C4978A182E6EFDF8001AA3DF /* QuartzCore.framework */,
+				C4978A162E6EFDEF001AA3DF /* CoreTelephony.framework */,
+				C4978A142E6EFDE7001AA3DF /* AssetsLibrary.framework */,
+				C4978A122E6EFDDF001AA3DF /* SystemConfiguration.framework */,
+				C4978A102E6EFDD6001AA3DF /* Accelerate.framework */,
+				C4978A0E2E6EFD89001AA3DF /* CoreGraphics.framework */,
+				C49789FA2E6EFD68001AA3DF /* AliyunFaceAuthFacade.framework */,
+				C49789F82E6EFD68001AA3DF /* APBToygerFacade.framework */,
+				C49789FE2E6EFD68001AA3DF /* APPSecuritySDK.framework */,
+				C4978A002E6EFD68001AA3DF /* BioAuthEngine.framework */,
+				C49789F42E6EFD68001AA3DF /* DTFIdentityManager.framework */,
+				C49789F62E6EFD68001AA3DF /* DTFNFCIdentityManager.framework */,
+				C49789FB2E6EFD68001AA3DF /* DTFUtility.framework */,
+				C49789FC2E6EFD68001AA3DF /* faceguard.framework */,
+				C49789F52E6EFD68001AA3DF /* MultiFactorFacade.framework */,
+				C49789F92E6EFD68001AA3DF /* OCRDetectSDKForTech.framework */,
+				C49789FF2E6EFD68001AA3DF /* ToygerNative.framework */,
+				C49789F72E6EFD68001AA3DF /* ToygerService.framework */,
+				C49789FD2E6EFD68001AA3DF /* VerifyNativeAbility.framework */,
 				7F0C99DD1E56F315003C735F /* AVFoundation.framework */,
 			);
 			name = Frameworks;
@@ -1328,6 +1487,12 @@
 		7FCB26A41D7EA31500DA95AE = {
 			isa = PBXGroup;
 			children = (
+				C4978A462E6EFF50001AA3DF /* MultiFactorFacade.bundle */,
+				C4978A442E6EFF39001AA3DF /* BioAuthEngine.bundle */,
+				C4978A422E6EFF22001AA3DF /* OCRXMedia.bundle */,
+				C4978A402E6EFF04001AA3DF /* ToygerService.bundle */,
+				C4978A3C2E6EFED8001AA3DF /* APBToygerFacade.bundle */,
+				C4978A3D2E6EFED9001AA3DF /* APBToygerFacadeSuitable.bundle */,
 				7FCB26AF1D7EA31500DA95AE /* Demos */,
 				7FCB26C91D7EA31600DA95AE /* DemosTests */,
 				7FCB26D41D7EA31600DA95AE /* DemosUITests */,
@@ -1339,7 +1504,7 @@
 		7FCB26AE1D7EA31500DA95AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7FCB26AD1D7EA31500DA95AE /* Julie.app */,
+				7FCB26AD1D7EA31500DA95AE /* Demos.app */,
 				7FCB26C61D7EA31600DA95AE /* DemosTests.xctest */,
 				7FCB26D11D7EA31600DA95AE /* DemosUITests.xctest */,
 			);
@@ -1375,6 +1540,7 @@
 				7F16D5121E656323006B8572 /* DrawChat */,
 				7F16D5641E65659A006B8572 /* CollectionView */,
 				7F16D5711E65759F006B8572 /* SearchBar */,
+				C4DC27DE2FFB78B9000DC697 /* Map */,
 				4C6B445125946ABC00D98CD2 /* Calculator */,
 				4C09A77B2546DC23007115E0 /* Simulation */,
 				4C2BAEFB2727E10D001A6374 /* AR */,
@@ -1425,6 +1591,15 @@
 			path = GCD;
 			sourceTree = "<group>";
 		};
+		C4DC27DE2FFB78B9000DC697 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C4DC27E32FFB7989000DC697 /* MapController.h */,
+				C4DC27E42FFB7989000DC697 /* MapController.m */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1442,7 +1617,7 @@
 			);
 			name = Demos;
 			productName = Demo9_6;
-			productReference = 7FCB26AD1D7EA31500DA95AE /* Julie.app */;
+			productReference = 7FCB26AD1D7EA31500DA95AE /* Demos.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7FCB26C51D7EA31600DA95AE /* DemosTests */ = {
@@ -1492,7 +1667,8 @@
 				TargetAttributes = {
 					7FCB26AC1D7EA31500DA95AE = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = GEK8BQKJRQ;
+						DevelopmentTeam = 7739HBZ82N;
+						LastSwiftMigration = 2660;
 					};
 					7FCB26C51D7EA31600DA95AE = {
 						CreatedOnToolsVersion = 7.2;
@@ -1530,6 +1706,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4978A472E6EFF50001AA3DF /* MultiFactorFacade.bundle in Resources */,
+				C4978A452E6EFF39001AA3DF /* BioAuthEngine.bundle in Resources */,
+				C4978A432E6EFF22001AA3DF /* OCRXMedia.bundle in Resources */,
+				C4978A412E6EFF04001AA3DF /* ToygerService.bundle in Resources */,
+				C4978A3E2E6EFED9001AA3DF /* APBToygerFacade.bundle in Resources */,
+				C4978A3F2E6EFED9001AA3DF /* APBToygerFacadeSuitable.bundle in Resources */,
 				4CA5F80E273D126400AE68B5 /* vase_METALLIC.png in Resources */,
 				4C1B3AF62548032F00C2B976 /* left@2x.png in Resources */,
 				7FCB6C7A1F6283E700DB8922 /* firework.wav in Resources */,
@@ -1696,6 +1878,7 @@
 				4C743F93282361070074682A /* CompassController.m in Sources */,
 				7F16D53E1E656345006B8572 /* PNChartLabel.m in Sources */,
 				4C2AA1902398AD3700DA7240 /* AFSecurityPolicy.m in Sources */,
+				C4DC27E52FFB7989000DC697 /* MapController.m in Sources */,
 				4C5684F42600965B00B44293 /* IQKeyboardManager.m in Sources */,
 				4C2AA1D42398AD4C00DA7240 /* SDAnimatedImageRep.m in Sources */,
 				4C2AA18B2398AD3700DA7240 /* AFURLResponseSerialization.m in Sources */,
@@ -1928,15 +2111,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = GEK8BQKJRQ;
+				DEVELOPMENT_TEAM = 7739HBZ82N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Demos/frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Demos/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Demos/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fang.www.Demo9-6-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1946,15 +2137,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = GEK8BQKJRQ;
+				DEVELOPMENT_TEAM = 7739HBZ82N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Demos/frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Demos/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Demos/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fang.www.Demo9-6-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
